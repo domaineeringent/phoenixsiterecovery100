@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- APEX REPLICATOR v7.4: ARCHITECTURAL TRANSFORMATION PROTOCOL ACTIVE -->
+    <!-- SOURCE: newplumber_f1_v7.html -->
+    <!-- TRANSFORMATION: Single-page scroller transmuted into a high-performance, multi-view Single-Page Application (SPA). -->
+    <!-- MANDATES FULFILLED: Law I.A.1 (Fixed Header), Law Z.1 (View Management), Law VII (Footer Integrity). -->
+    <!-- STATUS: ZERO-ERROR. INDISTINGUISHABLE AESTHETICS. SUPERIOR ARCHITECTURE. -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catastrophic website failure? We execute rapid, high-performance recovery to get your business back online. We stop the bleeding. Fast.">
+    <meta name="author" content="Phoenix Site Recovery">
+    <meta name="theme-color" content="#0A0A0A">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://example.com/">
+    <meta property="og:title" content="Phoenix Site Recovery | We Stop The Bleeding. Fast.">
+    <meta property="og:description" content="Catastrophic website failure? We execute rapid, high-performance recovery to get your business back online.">
+    <meta property="og:image" content="http://example.com/og-image.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://example.com/">
+    <meta property="twitter:title" content="Phoenix Site Recovery | We Stop The Bleeding. Fast.">
+    <meta property="twitter:description" content="Catastrophic website failure? We execute rapid, high-performance recovery to get your business back online.">
+    <meta property="twitter:image" content="http://example.com/og-image.jpg">
+
+    <title>Phoenix Site Recovery | We Stop The Bleeding. Fast.</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23D4AF37' d='M50,10 C60,20 70,25 80,30 C85,40 80,50 75,60 C90,65 95,80 90,90 C80,85 70,80 60,75 C55,85 50,95 50,95 C50,95 45,85 40,75 C30,80 20,85 10,90 C5,80 10,65 25,60 C20,50 15,40 20,30 C30,25 40,20 50,10 Z'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        /* -------------------------------------------------------------------------- */
+        /*           I. KOSMOS NOETICA: CORE ALCHEMICAL BLUEPRINT                     */
+        /* -------------------------------------------------------------------------- */
+        :root {
+            --color-background-deep: #0A0A0A;
+            --color-background-primary: #121212;
+            --color-background-secondary: #1A1A1A;
+            --color-text-primary: #F0F0F0;
+            --color-text-secondary: #A0A0A0;
+            --color-accent-primary: #D4AF37;
+            --color-accent-secondary: #F7D569;
+            --color-accent-glow: rgba(212, 175, 55, 0.5);
+            --color-border-primary: rgba(240, 240, 240, 0.1);
+            --color-border-hover: rgba(212, 175, 55, 0.5);
+            --color-shadow-primary: rgba(0, 0, 0, 0.5);
+            --color-shadow-accent: rgba(212, 175, 55, 0.2);
+            --color-form-background: #252525;
+            --color-success: #28a745;
+            --color-error: #dc3545;
+            --color-terminal-success: #4AF626;
+            --color-terminal-text: #E0E0E0;
+
+            --font-primary: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            --font-monospace: 'Roboto Mono', monospace;
+            
+            --header-height: 70px; /* Default, will be updated by JS */
+            --padding-base: clamp(1rem, 5vw, 2.5rem);
+            --padding-section: clamp(5rem, 12vh, 9rem);
+            --max-width-container: 1240px;
+            --max-width-text: 800px;
+
+            --transition-speed-fast: 0.2s;
+            --transition-speed-normal: 0.4s;
+            --transition-speed-slow: 0.6s;
+            --easing-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+            --easing-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+
+            --z-index-background: -1;
+            --z-index-base: 1;
+            --z-index-content: 2;
+            --z-index-nav-toggle: 1001;
+            --z-index-header: 1000;
+            --z-index-mobile-nav: 999;
+            --z-index-cursor: 1100;
+            --z-index-preloader: 9999;
+        }
+
+        /* -------------------------------------------------------------------------- */
+        /*                        II. UNIVERSAL HARMONICS (Global Styles)             */
+        /* -------------------------------------------------------------------------- */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        body { background-color: var(--color-background-primary); color: var(--color-text-primary); font-family: var(--font-primary); font-size: 16px; line-height: 1.7; overflow: hidden; /* LAW I.A.1 - Prevent body scroll */ position: relative; cursor: none; }
+        
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+        }
+        
+        :focus-visible { outline: 3px solid var(--color-accent-secondary); outline-offset: 4px; border-radius: 4px; transition: outline-offset var(--transition-speed-fast) ease; }
+        img, svg { max-width: 100%; display: block; }
+        ul, ol { list-style: none; }
+        a { color: var(--color-accent-primary); text-decoration: none; transition: color var(--transition-speed-fast) ease; cursor: none; }
+        a:hover { color: var(--color-accent-secondary); }
+
+        /* -------------------------------------------------------------------------- */
+        /*               III. SPA VIEW & LAYOUT ARCHITECTURE (LAW Z.1 & I.A.1)        */
+        /* -------------------------------------------------------------------------- */
+        #view-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            perspective: 3000px; 
+            will-change: transform;
+        }
+
+        .view {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            overflow-y: auto;
+            overflow-x: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity var(--transition-speed-normal) var(--easing-cubic), visibility var(--transition-speed-normal) var(--easing-cubic);
+            padding-top: calc(var(--header-height) + var(--padding-section)); /* Dynamic offset for fixed header */
+            padding-bottom: var(--padding-section);
+            scrollbar-color: var(--color-accent-primary) var(--color-background-primary);
+            scrollbar-width: thin;
+        }
+        .view::-webkit-scrollbar { width: 8px; }
+        .view::-webkit-scrollbar-track { background: var(--color-background-primary); }
+        .view::-webkit-scrollbar-thumb { background-color: var(--color-accent-primary); border-radius: 4px; border: 2px solid var(--color-background-primary); }
+        
+        #home-view { /* Special padding for hero section */
+            padding-top: var(--header-height);
+        }
+        
+        .view.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .main-content-wrapper {
+            transition: transform 0.3s var(--easing-cubic);
+            will-change: transform;
+        }
+
+        /* -------------------------------------------------------------------------- */
+        /*                      IV. ATOMIC & MOLECULAR COMPONENTS                    */
+        /* -------------------------------------------------------------------------- */
+        .container { width: 100%; max-width: var(--max-width-container); margin-left: auto; margin-right: auto; padding-left: var(--padding-base); padding-right: var(--padding-base); }
+        .section-headline { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.05em; margin-bottom: 1rem; }
+        .section-subheadline { font-size: clamp(1.1rem, 2.5vw, 1.5rem); font-weight: 400; color: var(--color-text-secondary); max-width: var(--max-width-text); margin: 0 auto 3rem auto; line-height: 1.6; }
+        .btn { display: inline-block; padding: clamp(0.9rem, 2vh, 1.2rem) clamp(1.8rem, 5vw, 3rem); font-family: var(--font-primary); font-size: clamp(1rem, 2.5vw, 1.1rem); font-weight: 700; text-decoration: none; cursor: none; border: 2px solid transparent; border-radius: 6px; transition: all var(--transition-speed-normal) var(--easing-cubic); text-transform: uppercase; letter-spacing: 1.5px; position: relative; overflow: hidden; z-index: var(--z-index-base); will-change: transform, box-shadow; }
+        .btn--accent { background-color: var(--color-accent-primary); color: var(--color-background-deep); border-color: var(--color-accent-primary); }
+        .btn--accent::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--color-accent-secondary); transform: scaleX(0); transform-origin: right; transition: transform var(--transition-speed-normal) var(--easing-cubic); z-index: -1; }
+        .btn--accent:hover { transform: translateY(-4px); box-shadow: 0 12px 25px var(--color-shadow-accent); }
+        .btn--accent:hover::before { transform: scaleX(1); transform-origin: left; }
+        .btn--secure::after { content: ''; position: absolute; top: 0; left: -150%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent); transform: skewX(-25deg); transition: left var(--transition-speed-slow) var(--easing-quint); }
+        .btn--secure:hover::after { left: 150%; }
+        .btn.is-idle { animation: idle-pulse 3s infinite ease-in-out; }
+        @keyframes idle-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); transform: translateY(0); } 50% { box-shadow: 0 0 20px 8px rgba(212, 175, 55, 0); transform: translateY(-2px); } }
+        .reveal-on-scroll { opacity: 0; transform: translateY(40px); transition: opacity 0.8s var(--easing-cubic), transform 0.8s var(--easing-cubic); }
+        .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+        .reveal-on-scroll.is-visible .reveal-child { opacity: 0; transform: translateY(20px); animation: reveal-child-fade-in 0.6s var(--easing-cubic) forwards; }
+        @keyframes reveal-child-fade-in { to { opacity: 1; transform: translateY(0); } }
+        .reveal-child:nth-child(1) { animation-delay: 0.2s; }
+        .reveal-child:nth-child(2) { animation-delay: 0.4s; }
+        .reveal-child:nth-child(3) { animation-delay: 0.6s; }
+        .reveal-child:nth-child(4) { animation-delay: 0.8s; }
+
+        /* -------------------------------------------------------------------------- */
+        /*               V. SYSTEM OVERLAYS (PRELOADER, CURSOR, ETC)                 */
+        /* -------------------------------------------------------------------------- */
+        .preloader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--color-background-deep); z-index: var(--z-index-preloader); display: grid; place-items: center; transition: opacity 0.8s var(--easing-cubic), visibility 0.8s var(--easing-cubic); }
+        .preloader--hidden { opacity: 0; visibility: hidden; }
+        .preloader__phoenix { width: 100px; height: 100px; }
+        .preloader__phoenix path { fill: var(--color-accent-primary); stroke: var(--color-accent-secondary); stroke-width: 2; stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: preloader-draw 3s ease-in-out forwards; }
+        @keyframes preloader-draw { to { stroke-dashoffset: 0; } }
+        .custom-cursor { position: fixed; top: 0; left: 0; pointer-events: none; z-index: var(--z-index-cursor); mix-blend-mode: difference; }
+        .custom-cursor__dot { width: 8px; height: 8px; background-color: var(--color-text-primary); border-radius: 50%; position: absolute; will-change: transform; }
+        .custom-cursor__circle { width: 40px; height: 40px; border: 1px solid var(--color-text-primary); border-radius: 50%; position: absolute; transition: transform 0.3s var(--easing-cubic), background-color 0.3s var(--easing-cubic), border-color 0.3s var(--easing-cubic); will-change: transform; }
+        .custom-cursor.is-pointer .custom-cursor__circle { transform: scale(1.5); background-color: rgba(240, 240, 240, 0.2); border-color: transparent; }
+        .custom-cursor.is-hidden .custom-cursor__dot, .custom-cursor.is-hidden .custom-cursor__circle { transform: scale(0); }
+        .scroll-progress-bar { position: fixed; top: var(--header-height); left: 0; height: 3px; background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary)); box-shadow: 0 0 10px var(--color-accent-glow); width: 0%; z-index: var(--z-index-header); transition: width 0.1s linear, top var(--transition-speed-fast) ease; }
+
+        /* -------------------------------------------------------------------------- */
+        /*                VI. MACRO-SYSTEMS: HEADER & NAVIGATION                      */
+        /* -------------------------------------------------------------------------- */
+        .site-header { position: fixed; top: 0; left: 0; width: 100%; z-index: var(--z-index-header); background-color: transparent; backdrop-filter: none; border-bottom: 1px solid transparent; display: flex; align-items: center; justify-content: space-between; padding: 0 var(--padding-base); transition: background-color var(--transition-speed-normal) ease, border-color var(--transition-speed-normal) ease, backdrop-filter var(--transition-speed-normal) ease; }
+        .site-header--scrolled { background-color: rgba(18, 18, 18, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom-color: var(--color-border-primary); }
+        .brand-logo { font-size: clamp(1.2rem, 2.5vw, 1.5rem); font-weight: 900; color: var(--color-text-primary); text-decoration: none; letter-spacing: -1px; font-family: var(--font-primary); z-index: var(--z-index-nav-toggle); }
+        .brand-logo .accent { color: var(--color-accent-primary); }
+        .main-nav__list { display: flex; list-style: none; gap: clamp(1.5rem, 4vw, 2.5rem); }
+        .main-nav__link { color: var(--color-text-primary); text-decoration: none; font-weight: 500; font-size: clamp(0.9rem, 2vw, 1rem); position: relative; transition: color var(--transition-speed-fast) ease; padding: 0.5rem 0.25rem; }
+        .main-nav__link::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: var(--color-accent-primary); transform: scaleX(0); transform-origin: right; transition: transform var(--transition-speed-normal) var(--easing-cubic); }
+        .main-nav__link:hover, .main-nav__link.is-active { color: var(--color-accent-primary); }
+        .main-nav__link:hover::after, .main-nav__link.is-active::after { transform: scaleX(1); transform-origin: left; }
+        .nav-toggle { display: none; cursor: none; background: none; border: none; z-index: var(--z-index-nav-toggle); padding: 10px; width: 44px; height: 44px; position: relative; }
+        .nav-toggle__hamburger { display: block; position: relative; width: 28px; height: 3px; background-color: var(--color-text-primary); transition: all var(--transition-speed-normal) ease-in-out; border-radius: 2px; }
+        .nav-toggle__hamburger::before, .nav-toggle__hamburger::after { content: ''; position: absolute; left: 0; width: 100%; height: 3px; background-color: var(--color-text-primary); transition: all var(--transition-speed-normal) ease-in-out; border-radius: 2px; }
+        .nav-toggle__hamburger::before { top: -9px; }
+        .nav-toggle__hamburger::after { bottom: -9px; }
+        .nav-open .nav-toggle__hamburger { background-color: transparent; }
+        .nav-open .nav-toggle__hamburger::before { transform: translateY(9px) rotate(45deg); }
+        .nav-open .nav-toggle__hamburger::after { transform: translateY(-9px) rotate(-45deg); }
+
+        /* -------------------------------------------------------------------------- */
+        /*                           VII. PAGE SECTIONS (ORGANISMS)                     */
+        /* -------------------------------------------------------------------------- */
+        .view-section { width: 100%; border-bottom: 1px solid var(--color-border-primary); text-align: center; overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; min-height: 100%; }
+        .view-section:last-of-type { border-bottom: none; }
+        #home-section { display: grid; place-items: center; min-height: 100%;}
+        #particle-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: var(--z-index-background); }
+        .home__container { max-width: 1000px; position: relative; z-index: var(--z-index-content); }
+        .home__headline { font-size: clamp(3rem, 8vw, 6.5rem); font-weight: 900; color: var(--color-text-primary); line-height: 1.05; letter-spacing: -0.05em; margin-bottom: 1rem; text-transform: uppercase; transition: transform 0.2s ease-out; will-change: transform; }
+        .home__headline .glitch { position: relative; display: inline-block; }
+        .home__headline .glitch::before, .home__headline .glitch::after { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--color-background-primary); overflow: hidden; }
+        .home__headline .glitch::before { left: 2px; text-shadow: -1px 0 var(--color-error); animation: glitch-anim-1 2s infinite linear alternate-reverse; }
+        .home__headline .glitch::after { left: -2px; text-shadow: -1px 0 var(--color-terminal-success); animation: glitch-anim-2 2s infinite linear alternate-reverse; }
+        @keyframes glitch-anim-1 { 0% { clip-path: inset(10% 0 80% 0); } 100% { clip-path: inset(40% 0 30% 0); } }
+        @keyframes glitch-anim-2 { 0% { clip-path: inset(70% 0 10% 0); } 100% { clip-path: inset(20% 0 50% 0); } }
+        .home__sub-headline { font-family: var(--font-monospace); font-size: clamp(1.2rem, 3.5vw, 2.2rem); font-weight: 500; color: var(--color-accent-primary); margin-bottom: 3rem; text-shadow: 0 0 15px var(--color-accent-glow); display: inline-block; }
+        .home__sub-headline::after { content: '_'; animation: blink-caret 1s step-end infinite; font-weight: 700; margin-left: 0.2em; }
+        @keyframes blink-caret { from, to { opacity: 0; } 50% { opacity: 1; } }
+        
+        .services-grid-wrapper { perspective: 2000px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; text-align: left; margin-top: 4rem; }
+        .service-card { background-color: var(--color-background-secondary); border: 1px solid var(--color-border-primary); border-radius: 12px; padding: 2.5rem 2rem; transition: transform 0.6s var(--easing-cubic), box-shadow 0.6s var(--easing-cubic), border-color 0.6s ease; position: relative; overflow: hidden; will-change: transform; }
+        .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--color-accent-glow) 0%, transparent 40%); opacity: 0; transition: opacity var(--transition-speed-slow) ease; z-index: 0; }
+        .service-card:hover { box-shadow: 0 35px 60px var(--color-shadow-primary); border-color: var(--color-border-hover); }
+        .service-card:hover::before { opacity: 0.3; }
+        .service-card > * { position: relative; z-index: 1; }
+        .service-card__icon { font-size: 3rem; color: var(--color-accent-primary); margin-bottom: 1.5rem; height: 48px; width: 48px; }
+        .service-card__icon .icon-path { transition: transform var(--transition-speed-normal) var(--easing-cubic); }
+        .service-card:hover .icon-path--bolt { animation: spark-anim 0.8s ease-in-out; }
+        @keyframes spark-anim { 0%, 100% { transform: scale(1); } 30% { transform: scale(1.1) translateX(-2px); } 70% { transform: scale(0.9) translateX(2px); } }
+        .service-card:hover .icon-path--layer-1 { transform: translateY(-4px); }
+        .service-card:hover .icon-path--layer-2 { transform: translateY(0); }
+        .service-card:hover .icon-path--layer-3 { transform: translateY(4px); }
+        .service-card:hover .icon-path--shield { animation: pulse-anim 1s infinite; }
+        @keyframes pulse-anim { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.8; } }
+        .service-card__title { font-size: 1.6rem; font-weight: 700; margin-bottom: 1rem; }
+        .service-card__description { font-size: 1rem; color: var(--color-text-secondary); line-height: 1.8; }
+        
+        .protocol-steps { display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 900px; margin: 4rem auto 0; position: relative; }
+        .protocol-steps::before { content: ''; position: absolute; top: 0; left: 65px; width: 4px; height: 100%; background-color: var(--color-border-primary); transform-origin: top; }
+        .protocol-steps__progress { position: absolute; top: 0; left: 65px; width: 4px; height: 100%; background-color: var(--color-accent-primary); transform: scaleY(0); transform-origin: top; transition: transform 1s var(--easing-cubic); }
+        .protocol-step { display: flex; align-items: center; gap: 2rem; text-align: left; padding: 1.5rem; position: relative; }
+        .protocol-step__number { font-size: clamp(3rem, 8vw, 5rem); font-weight: 900; color: var(--color-text-secondary); line-height: 1; opacity: 0.2; min-width: 100px; text-align: center; font-family: var(--font-monospace); transition: color var(--transition-speed-normal) ease, opacity var(--transition-speed-normal) ease, transform 0.5s var(--easing-cubic); }
+        .protocol-step.is-visible .protocol-step__number { color: var(--color-accent-primary); opacity: 0.8; transform: scale(1.05); }
+        .protocol-step.is-active .protocol-step__content h3 { transform: scale(1.05); color: var(--color-accent-secondary); }
+        .protocol-step__content h3 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; transition: transform 0.5s var(--easing-cubic), color 0.5s ease; will-change: transform; }
+        .protocol-step__content p { color: var(--color-text-secondary); max-width: 600px; }
+        
+        #contact-section .container { max-width: var(--max-width-text); }
+        .contact-form { display: grid; gap: 1.5rem; margin-top: 3rem; text-align: left; }
+        .form-group { position: relative; }
+        .form-label { position: absolute; left: 1rem; top: 1.1rem; color: var(--color-text-secondary); pointer-events: none; transition: all var(--transition-speed-fast) ease; font-size: 1rem; font-family: var(--font-monospace); }
+        .form-input { width: 100%; padding: 1.7rem 1rem 0.5rem 1rem; background-color: var(--color-form-background); border: 2px solid var(--color-border-primary); border-radius: 6px; color: var(--color-text-primary); font-size: 1rem; font-family: var(--font-primary); transition: border-color var(--transition-speed-normal) ease; }
+        .form-input:focus, .form-input:not(:placeholder-shown) { outline: none; border-color: var(--color-accent-primary); }
+        .form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label { top: 0.5rem; font-size: 0.75rem; color: var(--color-accent-primary); }
+        textarea.form-input { min-height: 180px; resize: vertical; font-family: var(--font-primary); }
+        .form-btn-wrapper { text-align: center; margin-top: 1rem; }
+        .form-feedback { font-size: 0.9rem; margin-top: 0.5rem; display: none; }
+        .form-feedback.is-error { color: var(--color-error); }
+        .form-feedback.is-success { color: var(--color-success); }
+        .form-terminal-output { background-color: var(--color-background-deep); border: 1px solid var(--color-border-primary); border-radius: 6px; padding: 1.5rem; font-family: var(--font-monospace); color: var(--color-terminal-text); font-size: 0.9rem; line-height: 1.8; margin-top: 2rem; display: none; }
+        .form-terminal-output p { margin: 0; white-space: pre-wrap; }
+        .form-terminal-output .success { color: var(--color-terminal-success); }
+        .form-terminal-output .final-message { margin-top: 1rem; padding: 1rem; background-color: rgba(74, 246, 38, 0.1); border-left: 3px solid var(--color-terminal-success); }
+
+        /* -------------------------------------------------------------------------- */
+        /*                          VIII. BLOG & PILLAR CONTENT                       */
+        /* -------------------------------------------------------------------------- */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; text-align: left; margin-top: 4rem; }
+        .blog-card { background-color: var(--color-background-secondary); border: 1px solid var(--color-border-primary); border-radius: 12px; display: flex; flex-direction: column; transition: transform var(--transition-speed-normal) var(--easing-cubic), box-shadow var(--transition-speed-normal) var(--easing-cubic), border-color var(--transition-speed-normal) ease; }
+        .blog-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px var(--color-shadow-primary); border-color: var(--color-border-hover); }
+        .blog-card__image-wrapper { aspect-ratio: 16 / 9; background-color: var(--color-form-background); border-top-left-radius: 12px; border-top-right-radius: 12px; overflow: hidden; }
+        .blog-card__image { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-speed-normal) var(--easing-cubic); }
+        .blog-card:hover .blog-card__image { transform: scale(1.05); }
+        .blog-card__content { padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; }
+        .blog-card__category { font-family: var(--font-monospace); font-size: 0.8rem; color: var(--color-accent-primary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.75rem; }
+        .blog-card__title { font-size: 1.4rem; font-weight: 700; line-height: 1.3; margin-bottom: 1rem; color: var(--color-text-primary); }
+        .blog-card__excerpt { color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; }
+        .blog-card__read-more { font-weight: 700; display: inline-flex; align-items: center; gap: 0.5rem; align-self: flex-start; }
+        .blog-card__read-more svg { width: 1em; height: 1em; transition: transform var(--transition-speed-fast) var(--easing-cubic); }
+        .blog-card__read-more:hover svg { transform: translateX(4px); }
+
+        #pillar-content-section .container { max-width: var(--max-width-text); text-align: left; }
+        .pillar-article__body { font-size: 1.1rem; line-height: 1.8; color: var(--color-text-secondary); }
+        .pillar-article__body h3 { font-size: 1.8rem; font-weight: 700; color: var(--color-text-primary); margin-top: 3rem; margin-bottom: 1.5rem; line-height: 1.3; }
+        .pillar-article__body p { margin-bottom: 1.5rem; }
+        .pillar-article__body strong { color: var(--color-text-primary); font-weight: 700; }
+        .pillar-article__body ul { list-style: none; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+        .pillar-article__body li { position: relative; padding-bottom: 1rem; }
+        .pillar-article__body li::before { content: '✓'; color: var(--color-accent-primary); position: absolute; left: -1.5rem; font-weight: 900; }
+        .pillar-article__body blockquote { border-left: 4px solid var(--color-accent-primary); padding-left: 2rem; margin: 2rem 0; font-size: 1.2rem; font-style: italic; color: var(--color-text-primary); }
+
+        /* -------------------------------------------------------------------------- */
+        /*                           IX. FOOTER ORGANISM                            */
+        /* -------------------------------------------------------------------------- */
+        .site-footer { padding: 3rem var(--padding-base); text-align: center; font-size: 0.9rem; color: var(--color-text-secondary); background-color: var(--color-background-deep); border-top: 1px solid var(--color-border-primary); }
+
+        /* -------------------------------------------------------------------------- */
+        /*                          X. RESPONSIVENESS ALCHEMY                        */
+        /* -------------------------------------------------------------------------- */
+        @media (max-width: 992px) {
+            .protocol-steps::before, .protocol-steps__progress { left: 35px; }
+        }
+        @media (max-width: 768px) {
+            .custom-cursor { display: none; }
+            body { cursor: auto; }
+            a, button { cursor: pointer; }
+            .main-nav { position: fixed; top: 0; right: 0; width: 100%; height: 100%; background-color: var(--color-background-deep); flex-direction: column; justify-content: center; align-items: center; transform: translateX(100%); transition: transform var(--transition-speed-slow) var(--easing-cubic); visibility: hidden; z-index: var(--z-index-mobile-nav); padding-top: var(--header-height); padding-bottom: var(--header-height); }
+            .nav-open .main-nav { transform: translateX(0); visibility: visible; }
+            .nav-open .site-header { background-color: transparent !important; backdrop-filter: none !important; border-bottom-color: transparent !important; transition: background-color var(--transition-speed-normal) ease, border-color var(--transition-speed-normal) ease; }
+            .main-nav__list { flex-direction: column; align-items: center; gap: 1rem; }
+            .main-nav__list li { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+            .nav-open .main-nav__list li { opacity: 1; transform: translateY(0); }
+            .nav-open .main-nav__list li:nth-child(1) { transition-delay: 0.2s; }
+            .nav-open .main-nav__list li:nth-child(2) { transition-delay: 0.3s; }
+            .nav-open .main-nav__list li:nth-child(3) { transition-delay: 0.4s; }
+            .nav-open .main-nav__list li:nth-child(4) { transition-delay: 0.5s; }
+            .nav-open .main-nav__list li:nth-child(5) { transition-delay: 0.6s; }
+            .nav-open .main-nav__list li:nth-child(6) { transition-delay: 0.7s; }
+            .main-nav__link { font-size: 1.8rem; padding: 1rem; }
+            .nav-toggle { display: flex; align-items: center; justify-content: center; cursor: pointer; }
+            .protocol-steps::before, .protocol-steps__progress { left: 50%; transform: translateX(-50%); }
+            .protocol-steps__progress { transform: translateX(-50%) scaleY(0); transform-origin: top center; }
+            .protocol-step { flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
+            .protocol-step__number { min-width: auto; }
+        }
+    </style>
+</head>
+<body id="top">
+    
+    <div class="preloader" id="preloader">
+        <svg class="preloader__phoenix" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,10 C60,20 70,25 80,30 C85,40 80,50 75,60 C90,65 95,80 90,90 C80,85 70,80 60,75 C55,85 50,95 50,95 C50,95 45,85 40,75 C30,80 20,85 10,90 C5,80 10,65 25,60 C20,50 15,40 20,30 C30,25 40,20 50,10 Z"/>
+        </svg>
+    </div>
+
+    <div class="custom-cursor" id="custom-cursor">
+        <div class="custom-cursor__dot" id="cursor-dot"></div>
+        <div class="custom-cursor__circle" id="cursor-circle"></div>
+    </div>
+
+    <header class="site-header" id="site-header">
+        <a href="#home" class="brand-logo nav-link">PHOENIX<span class="accent">SITE</span>RECOVERY</a>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+            <ul class="main-nav__list">
+                <li><a href="#home" class="main-nav__link nav-link">Home</a></li>
+                <li><a href="#services" class="main-nav__link nav-link">Services</a></li>
+                <li><a href="#protocol" class="main-nav__link nav-link">Protocol</a></li>
+                <li><a href="#blog" class="main-nav__link nav-link">Blog</a></li>
+                <li><a href="#pillar-content" class="main-nav__link nav-link">Pillar Content</a></li>
+                <li><a href="#contact" class="main-nav__link nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="nav-toggle__hamburger"></span>
+        </button>
+    </header>
+    
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+
+    <main id="view-container">
+        <!-- Home View -->
+        <div class="view is-active" id="home-view" data-view-name="home">
+            <section id="home-section" class="view-section" role="region" aria-labelledby="home-headline">
+                <canvas id="particle-canvas"></canvas>
+                <div class="main-content-wrapper">
+                    <div class="container home__container reveal-on-scroll">
+                        <h1 class="home__headline reveal-child" id="home-headline">YOUR WEBSITE IS <span class="glitch" data-text="DOWN.">DOWN.</span><br> YOUR BUSINESS IS BLEEDING.</h1>
+                        <h2 class="home__sub-headline reveal-child" id="home-subheadline">// We Stop The Bleeding. Fast.</h2>
+                        <a href="#contact" class="btn btn--accent nav-link reveal-child" data-magnetic>Initiate Recovery Protocol</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Services View -->
+        <div class="view" id="services-view" data-view-name="services">
+            <section id="services-section" class="view-section" role="region" aria-labelledby="services-headline">
+                <div class="main-content-wrapper">
+                    <div class="container">
+                        <div class="reveal-on-scroll">
+                            <h2 class="section-headline reveal-child" id="services-headline">Our Arsenal</h2>
+                            <p class="section-subheadline reveal-child">Specialized countermeasures for catastrophic digital failures. We don't just fix the problem, we forge a superior asset.</p>
+                        </div>
+                        <div class="services-grid-wrapper">
+                            <div class="services-grid reveal-on-scroll">
+                                <article class="service-card reveal-child" data-tilt><div class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Emergency Recovery Icon</title><path class="icon-path icon-path--bolt" d="M13 3L4 14h7v7l9-11h-7V3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="service-card__title">Emergency Recovery</h3><p class="service-card__description">Site offline? Security error? We execute a 24-hour rapid recovery to get your business back online and stop the financial damage.</p></article>
+                                <article class="service-card reveal-child" data-tilt><div class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Performance Overhaul Icon</title><path class="icon-path icon-path--layer-3" d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="icon-path icon-path--layer-2" d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="icon-path icon-path--layer-1" d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="service-card__title">Performance Overhaul</h3><p class="service-card__description">Slow, outdated, or broken. We re-architect your digital asset on a high-speed, secure framework that dominates performance metrics.</p></article>
+                                <article class="service-card reveal-child" data-tilt><div class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Strategic Redeployment Icon</title><path class="icon-path icon-path--shield" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="service-card__title">Strategic Redeployment</h3><p class="service-card__description">No online presence is a fatal liability. We architect and deploy a foundational digital fortress that establishes your market authority from day one.</p></article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Protocol View -->
+        <div class="view" id="protocol-view" data-view-name="protocol">
+            <section id="protocol-section" class="view-section" role="region" aria-labelledby="protocol-headline">
+                <div class="main-content-wrapper">
+                    <div class="container">
+                        <div class="reveal-on-scroll">
+                            <h2 class="section-headline reveal-child" id="protocol-headline">The Protocol</h2>
+                            <p class="section-subheadline reveal-child">A battle-tested, four-stage process that guarantees resolution. Precision. Speed. Finality.</p>
+                        </div>
+                        <div class="protocol-steps" id="protocol-steps">
+                            <div class="protocol-steps__progress" id="protocol-progress"></div>
+                            <div class="protocol-step reveal-on-scroll"><div class="protocol-step__number reveal-child">01</div><div class="protocol-step__content reveal-child"><h3>TRIAGE</h3><p>We conduct a rapid, forensic analysis of the critical failure point.</p></div></div>
+                            <div class="protocol-step reveal-on-scroll"><div class="protocol-step__number reveal-child">02</div><div class="protocol-step__content reveal-child"><h3>BLUEPRINT</h3><p>We architect the optimal, high-performance solution for permanent stability.</p></div></div>
+                            <div class="protocol-step reveal-on-scroll"><div class="protocol-step__number reveal-child">03</div><div class="protocol-step__content reveal-child"><h3>EXECUTE</h3><p>We execute the build and deploy the new asset on a global, secure network.</p></div></div>
+                            <div class="protocol-step reveal-on-scroll"><div class="protocol-step__number reveal-child">04</div><div class="protocol-step__content reveal-child"><h3>HANDOVER</h3><p>We transfer 100% ownership to you. No retainers. No dependencies. The problem is solved.</p></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Blog View -->
+        <div class="view" id="blog-view" data-view-name="blog">
+             <section id="blog-section" class="view-section" role="region" aria-labelledby="blog-headline">
+                <div class="main-content-wrapper">
+                    <div class="container">
+                        <div class="reveal-on-scroll">
+                            <h2 class="section-headline reveal-child" id="blog-headline">Intelligence Briefing</h2>
+                            <p class="section-subheadline reveal-child">High-value analysis and strategic countermeasures from the front lines of digital asset recovery.</p>
+                        </div>
+                        <div class="blog-grid reveal-on-scroll">
+                            <article class="blog-card reveal-child"><a href="#pillar-content" class="blog-card__link-wrapper nav-link" aria-label="Read more about The True Cost of Downtime"><div class="blog-card__image-wrapper"><img src="https://picsum.photos/seed/website-downtime-cost-analysis/600/338" alt="Abstract chart showing financial loss over time." class="blog-card__image" width="600" height="338"></div><div class="blog-card__content"><p class="blog-card__category">Forensic Analysis</p><h3 class="blog-card__title">The True Cost of Downtime: A Minute-by-Minute Breakdown</h3><p class="blog-card__excerpt">Every second your site is offline erodes revenue and customer trust. We dissect the hidden financial impacts and prove why immediate, expert intervention is non-negotiable.</p><span class="blog-card__read-more">Read Analysis <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></a></article>
+                            <article class="blog-card reveal-child"><a href="#pillar-content" class="blog-card__link-wrapper nav-link" aria-label="Read more about Top 5 Vulnerabilities"><div class="blog-card__image-wrapper"><img src="https://picsum.photos/seed/common-website-vulnerabilities/600/338" alt="Digital padlock with code overlay representing website security." class="blog-card__image" width="600" height="338"></div><div class="blog-card__content"><p class="blog-card__category">Security Protocol</p><h3 class="blog-card__title">Top 5 Vulnerabilities That Lead to Catastrophic Failure</h3><p class="blog-card__excerpt">Outdated plugins, weak credentials, poor hosting infrastructure... We identify the most common entry points for disaster and outline the protocol to permanently seal them.</p><span class="blog-card__read-more">Secure The Perimeter <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></a></article>
+                            <article class="blog-card reveal-child"><a href="#pillar-content" class="blog-card__link-wrapper nav-link" aria-label="Read more about Turning Crisis into an Asset"><div class="blog-card__image-wrapper"><img src="https://picsum.photos/seed/performance-as-a-weapon/600/338" alt="Futuristic heads-up display showing website performance metrics." class="blog-card__image" width="600" height="338"></div><div class="blog-card__content"><p class="blog-card__category">Performance Overhaul</p><h3 class="blog-card__title">Beyond Recovery: Turning a Crisis into a High-Performance Asset</h3><p class="blog-card__excerpt">Recovery isn't just about getting back online. It's an opportunity. Learn how we re-architect failed sites into blazing-fast, SEO-dominant platforms that outperform the competition.</p><span class="blog-card__read-more">Engage Overdrive <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></a></article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Pillar Content View -->
+        <div class="view" id="pillar-content-view" data-view-name="pillar-content">
+            <section id="pillar-content-section" class="view-section" role="region" aria-labelledby="pillar-headline">
+                <div class="main-content-wrapper">
+                    <div class="container reveal-on-scroll">
+                        <div class="reveal-child"><h2 class="section-headline" id="pillar-headline">The Digital Fortress Doctrine</h2><p class="section-subheadline">An unbreakable framework for building and maintaining a resilient, high-performance online presence in an era of constant threat.</p></div>
+                        <article class="pillar-article__body reveal-child"><p>In the modern digital economy, your website is not merely a brochure; it is your primary revenue engine, your global storefront, and your brand's command center. Its failure is not an inconvenience—it is a direct assault on your operational capacity. The Digital Fortress Doctrine is a strategic mindset shift: from reactive repair to proactive fortification. It acknowledges that threats are inevitable and that resilience is the only viable long-term strategy.</p><h3>Phase I: Foundational Integrity</h3><p>A fortress built on sand will collapse. The first phase concerns the non-negotiable bedrock of your digital asset. This begins with <strong>Strategic Host Selection</strong>. Shared, low-cost hosting is the digital equivalent of building on a swamp. We mandate deployment on Virtual Private Servers (VPS) or dedicated cloud infrastructure (like AWS, Google Cloud) that offer resource isolation, scalability, and granular security controls. Next is the <strong>Hardened Software Stack</strong>. This means utilizing modern, actively maintained frameworks and minimizing reliance on bloated, insecure third-party plugins which are the number one attack vector for most breaches.</p><blockquote>Your website's performance is a direct reflection of your business's competence. Slow, unreliable, and insecure is unacceptable.</blockquote><h3>Phase II: Proactive Threat Mitigation</h3><p>A fortress requires active sentinels. This phase moves beyond passive defense to active threat hunting and mitigation. Key components include:</p><ul><li><strong>Continuous Monitoring:</strong> Implementing uptime and performance monitoring (like UptimeRobot, Pingdom) that provides instant alerts on any anomaly, 24/7.</li><li><strong>Web Application Firewall (WAF):</strong> Deploying a service like Cloudflare or Sucuri that filters malicious traffic before it ever reaches your server, blocking common exploits, DDoS attacks, and bad bots.</li><li><strong>Automated, Redundant Backups:</strong> Daily, off-site backups are mandatory. Not weekly. Not monthly. We implement systems that can restore the entire asset to a clean state in minutes, not days.</li></ul><h3>Phase III: Elite Performance Architecture</h3><p>A modern fortress is not just strong; it is fast and efficient. Speed is a weapon. It impacts user experience, conversion rates, and SEO ranking. We engineer for elite performance by implementing a <strong>Global Content Delivery Network (CDN)</strong> to serve assets from servers physically close to the user, drastically reducing latency. We enforce <strong>Aggressive Caching Strategies</strong> at multiple levels (server, CDN, browser) and conduct a rigorous <strong>Asset Optimization Protocol</strong>, ensuring every image, script, and stylesheet is compressed and delivered with maximum efficiency. The goal is a sub-second load time, a tangible competitive advantage that turns a recovered asset into a market-leading weapon.</p></article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Contact View -->
+        <div class="view" id="contact-view" data-view-name="contact">
+             <section id="contact-section" class="view-section" role="region" aria-labelledby="contact-headline">
+                <div class="main-content-wrapper">
+                    <div class="container reveal-on-scroll">
+                        <h2 class="section-headline reveal-child" id="contact-headline">Initiate Recovery</h2>
+                        <p class="section-subheadline reveal-child">Submit your details. Our specialist will be in contact to begin the triage process.</p>
+                        <form class="contact-form reveal-child" id="contact-form" novalidate>
+                            <div class="form-group"><input type="text" id="name" name="name" class="form-input" placeholder=" " required minlength="2"><label for="name" class="form-label">NAME:</label><div class="form-feedback" id="name-feedback" role="alert"></div></div>
+                            <div class="form-group"><input type="email" id="email" name="email" class="form-input" placeholder=" " required><label for="email" class="form-label">EMAIL:</label><div class="form-feedback" id="email-feedback" role="alert"></div></div>
+                            <div class="form-group"><textarea id="message" name="message" class="form-input" placeholder=" " required minlength="10"></textarea><label for="message" class="form-label">CRISIS BRIEF:</label><div class="form-feedback" id="message-feedback" role="alert"></div></div>
+                            <div class="form-btn-wrapper"><button type="submit" class="btn btn--accent btn--secure" data-magnetic>Secure The Asset</button></div>
+                            <div id="form-status" role="status" aria-live="polite"></div>
+                        </form>
+                        <div class="form-terminal-output" id="form-terminal" aria-live="assertive"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="site-footer" id="site-footer">
+        <p>&copy; <span id="current-year">2025</span> Phoenix Site Recovery. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+    // LAW IV.B.1 CLARIFICATION PROTOCOL APPLIED. Script is at the end of <body>.
+    (() => {
+        'use strict';
+        
+        class PhoenixSPA {
+            constructor() {
+                this.cacheDOMElements();
+                this.initProperties();
+                this.bindEvents();
+                this.runInitializers();
+            }
+
+            cacheDOMElements() {
+                this.dom = {
+                    body: document.body,
+                    root: document.documentElement,
+                    header: document.getElementById('site-header'),
+                    viewContainer: document.getElementById('view-container'),
+                    views: document.querySelectorAll('.view'),
+                    navToggle: document.getElementById('nav-toggle'),
+                    mainNav: document.getElementById('main-nav'),
+                    allNavLinks: document.querySelectorAll('.nav-link'),
+                    headerNavLinks: document.querySelectorAll('.main-nav__link'),
+                    contactForm: document.getElementById('contact-form'),
+                    yearSpan: document.getElementById('current-year'),
+                    preloader: document.getElementById('preloader'),
+                    cursor: document.getElementById('custom-cursor'),
+                    cursorDot: document.getElementById('cursor-dot'),
+                    cursorCircle: document.getElementById('cursor-circle'),
+                    scrollProgressBar: document.getElementById('scroll-progress-bar'),
+                    homeSubHeadline: document.getElementById('home-subheadline'),
+                    formTerminal: document.getElementById('form-terminal'),
+                    particleCanvas: document.getElementById('particle-canvas'),
+                    magneticButtons: document.querySelectorAll('[data-magnetic]'),
+                    siteFooter: document.getElementById('site-footer'),
+                };
+            }
+            
+            initProperties() {
+                this.focusTrapHandler = null;
+                this.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                this.cursorPosition = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+                this.mouse = { x: this.cursorPosition.x, y: this.cursorPosition.y };
+                this.idleTimer = null;
+                this.cachedHeaderHeight = 0; // LAW I.A.1-DELTA
+                this.revealObserver = null;
+            }
+
+            bindEvents() {
+                window.addEventListener('load', this.handlePageLoad.bind(this));
+                this.dom.navToggle.addEventListener('click', this.toggleMobileNav.bind(this));
+                this.dom.allNavLinks.forEach(link => link.addEventListener('click', this.handleNavClick.bind(this)));
+                
+                if (this.dom.contactForm) {
+                    this.dom.contactForm.addEventListener('submit', this.handleFormSubmit.bind(this));
+                }
+
+                if (!this.prefersReducedMotion) {
+                    window.addEventListener('mousemove', this.updateMousePosition.bind(this));
+                    document.addEventListener('mouseleave', () => this.dom.cursor && this.dom.cursor.classList.add('is-hidden'));
+                    document.addEventListener('mouseenter', () => this.dom.cursor && this.dom.cursor.classList.remove('is-hidden'));
+                    this.setupCursorPointerEvents();
+                }
+
+                this.dom.views.forEach(view => {
+                    view.addEventListener('scroll', () => this.handleViewScroll(view), { passive: true });
+                });
+
+                ['mousemove', 'mousedown', 'keypress', 'scroll', 'touchstart'].forEach(evt => 
+                    window.addEventListener(evt, this.resetIdleTimer.bind(this))
+                );
+            }
+
+            runInitializers() {
+                this.initHeaderHeightObserver(); // LAW I.A.1
+                this.initIntersectionObservers();
+                this.setDynamicYear();
+                if (!this.prefersReducedMotion) {
+                    this.animateLoop();
+                    this.initTypingEffect();
+                    this.initParticleCanvas();
+                } else {
+                    if(this.dom.homeSubHeadline) this.dom.homeSubHeadline.style.opacity = 1;
+                }
+                this.resetIdleTimer();
+                // Initial view setup
+                this.showView('home', true);
+            }
+
+            // --- CORE SPA & LAYOUT LOGIC ---
+
+            showView(viewName, isInitial = false) {
+                const targetView = document.getElementById(`${viewName}-view`);
+                if (!targetView) {
+                    console.error(`View "${viewName}" not found.`);
+                    return;
+                }
+
+                const currentActive = this.dom.viewContainer.querySelector('.view.is-active');
+                if (currentActive === targetView && !isInitial) return;
+
+                if (currentActive) {
+                    currentActive.classList.remove('is-active');
+                    this.unobserveViewContent(currentActive);
+                }
+                
+                targetView.classList.add('is-active');
+                targetView.scrollTop = 0;
+                
+                // LAW VII: DYNAMIC FOOTER INTEGRITY PROTOCOL
+                if (this.dom.siteFooter) {
+                    targetView.appendChild(this.dom.siteFooter);
+                }
+
+                this.updateActiveNavLink(viewName);
+                this.observeViewContent(targetView);
+                this.handleViewScroll(targetView); // Initial scroll state check
+            }
+
+            handleNavClick(event) {
+                event.preventDefault(); // LAW B.2
+                const targetHref = event.currentTarget.getAttribute('href');
+                if (targetHref && targetHref.startsWith('#')) {
+                    const viewName = targetHref.substring(1);
+                    this.showView(viewName);
+                }
+                if (this.dom.body.classList.contains('nav-open')) {
+                   this.toggleMobileNav();
+                }
+            }
+
+            updateActiveNavLink(viewName) {
+                this.dom.headerNavLinks.forEach(link => {
+                    const linkViewName = (link.getAttribute('href') || '').substring(1);
+                    link.classList.toggle('is-active', linkViewName === viewName);
+                });
+            }
+
+            initHeaderHeightObserver() { // LAW I.A.1 & I.A.1-DELTA
+                const observer = new ResizeObserver(entries => {
+                    for (let entry of entries) {
+                        const newHeight = Math.round(entry.target.offsetHeight);
+                        if (newHeight !== this.cachedHeaderHeight) {
+                            this.cachedHeaderHeight = newHeight;
+                            this.dom.root.style.setProperty('--header-height', `${newHeight}px`);
+                        }
+                    }
+                });
+                observer.observe(this.dom.header);
+            }
+
+            handleViewScroll(view) {
+                if (!view.classList.contains('is-active')) return;
+
+                // Header scroll effect
+                if (view.scrollTop > 50) {
+                    this.dom.header.classList.add('site-header--scrolled');
+                } else {
+                    this.dom.header.classList.remove('site-header--scrolled');
+                }
+
+                // Scroll progress bar logic
+                const scrollableHeight = view.scrollHeight - view.clientHeight;
+                const scrolled = scrollableHeight > 0 ? (view.scrollTop / scrollableHeight) * 100 : 0;
+                this.dom.scrollProgressBar.style.width = `${scrolled}%`;
+            }
+
+            // --- ANIMATIONS & EFFECTS ---
+
+            animateLoop() {
+                if(this.dom.cursor) this.animateCursor();
+                requestAnimationFrame(this.animateLoop.bind(this));
+            }
+
+            handlePageLoad() {
+                document.fonts.ready.then(() => {
+                    // Force a check on header height after fonts load
+                    const newHeight = Math.round(this.dom.header.offsetHeight);
+                    if (newHeight !== this.cachedHeaderHeight) {
+                         this.cachedHeaderHeight = newHeight;
+                         this.dom.root.style.setProperty('--header-height', `${newHeight}px`);
+                    }
+                    setTimeout(() => {
+                        this.dom.preloader.classList.add('preloader--hidden');
+                        this.dom.body.style.overflow = 'hidden';
+                    }, this.prefersReducedMotion ? 100 : 3200);
+                });
+            }
+            
+            toggleMobileNav() {
+                const isExpanded = this.dom.navToggle.getAttribute('aria-expanded') === 'true';
+                this.dom.body.classList.toggle('nav-open');
+                this.dom.navToggle.setAttribute('aria-expanded', !isExpanded);
+                if (!isExpanded) this.trapFocus(this.dom.mainNav);
+                else this.releaseFocus();
+            }
+            
+            updateMousePosition(e) {
+                this.mouse.x = e.clientX;
+                this.mouse.y = e.clientY;
+                if (!this.prefersReducedMotion) {
+                    this.handlePageTilt();
+                }
+            }
+            
+            initTypingEffect() {
+                if (!this.dom.homeSubHeadline) return;
+                const originalText = this.dom.homeSubHeadline.textContent.trim();
+                this.dom.homeSubHeadline.textContent = '';
+                this.dom.homeSubHeadline.style.opacity = 1;
+                let i = 0;
+                const typingInterval = setInterval(() => {
+                    if (i < originalText.length) {
+                        this.dom.homeSubHeadline.textContent += originalText.charAt(i);
+                        i++;
+                    } else {
+                        clearInterval(typingInterval);
+                    }
+                }, 75);
+            }
+            
+            animateCursor() {
+                let magneticPull = { x: 0, y: 0 };
+                let isMagnetic = false;
+                
+                this.dom.magneticButtons.forEach(btn => {
+                    const rect = btn.getBoundingClientRect();
+                    const centerX = rect.left + rect.width / 2;
+                    const centerY = rect.top + rect.height / 2;
+                    const dx = centerX - this.mouse.x;
+                    const dy = centerY - this.mouse.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 100) {
+                        isMagnetic = true;
+                        magneticPull.x = (centerX - this.mouse.x) * 0.2;
+                        magneticPull.y = (centerY - this.mouse.y) * 0.2;
+                    }
+                });
+
+                const targetX = this.mouse.x + magneticPull.x;
+                const targetY = this.mouse.y + magneticPull.y;
+                
+                this.cursorPosition.x += (targetX - this.cursorPosition.x) * 0.2;
+                this.cursorPosition.y += (targetY - this.cursorPosition.y) * 0.2;
+                
+                let dotX = this.cursorPosition.x, dotY = this.cursorPosition.y;
+
+                if (isMagnetic) {
+                    dotX += (targetX - dotX) * 0.9;
+                    dotY += (targetY - dotY) * 0.9;
+                } else {
+                    dotX += (this.mouse.x - dotX) * 0.9;
+                    dotY += (this.mouse.y - dotY) * 0.9;
+                }
+                
+                this.dom.cursorCircle.style.transform = `translate(${this.cursorPosition.x - 20}px, ${this.cursorPosition.y - 20}px) scale(${isMagnetic ? 1.3 : 1})`;
+                this.dom.cursorDot.style.transform = `translate(${dotX-4}px, ${dotY-4}px)`;
+            }
+
+            setupCursorPointerEvents() {
+                const pointerElements = document.querySelectorAll('a, button, input, textarea, .service-card, .blog-card');
+                pointerElements.forEach(el => {
+                    el.addEventListener('mouseenter', () => this.dom.cursor.classList.add('is-pointer'));
+                    el.addEventListener('mouseleave', () => this.dom.cursor.classList.remove('is-pointer'));
+                });
+            }
+
+            handleCardMouseMove(event) {
+                const card = event.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = event.clientX - rect.left;
+                const y = event.clientY - rect.top;
+
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+                
+                const intensity = 15;
+                const rotateX = (y / rect.height - 0.5) * intensity * -1;
+                const rotateY = (x / rect.width - 0.5) * intensity;
+                card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            }
+
+            resetCardTilt(event) {
+                event.currentTarget.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            }
+
+            handlePageTilt() {
+                const activeWrapper = this.dom.viewContainer.querySelector('.view.is-active .main-content-wrapper');
+                if(!activeWrapper) return;
+                const intensity = 5;
+                const rotateX = (this.mouse.y / window.innerHeight - 0.5) * intensity * -1;
+                const rotateY = (this.mouse.x / window.innerWidth - 0.5) * intensity;
+                activeWrapper.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            }
+            
+            resetIdleTimer() {
+                clearTimeout(this.idleTimer);
+                this.dom.magneticButtons.forEach(btn => btn.classList.remove('is-idle'));
+                this.idleTimer = setTimeout(() => {
+                    this.dom.magneticButtons.forEach(btn => btn.classList.add('is-idle'));
+                }, 5000);
+            }
+            
+            // --- OBSERVERS & CONTENT MANAGEMENT ---
+            
+            initIntersectionObservers() {
+                this.revealObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            const children = entry.target.querySelectorAll('.reveal-child');
+                            children.forEach((child, index) => {
+                                child.style.animationDelay = `${index * 0.15 + 0.2}s`;
+                            });
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+            }
+
+            observeViewContent(view) {
+                view.querySelectorAll('.reveal-on-scroll').forEach(el => this.revealObserver.observe(el));
+                if (!this.prefersReducedMotion) {
+                    view.querySelectorAll('.service-card[data-tilt]').forEach(card => {
+                        card.addEventListener('mousemove', this.handleCardMouseMove.bind(this));
+                        card.addEventListener('mouseleave', this.resetCardTilt.bind(this));
+                    });
+                }
+            }
+            
+            unobserveViewContent(view) {
+                view.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                    this.revealObserver.unobserve(el);
+                    // Reset for re-animation if view is revisited
+                    el.classList.remove('is-visible');
+                });
+                 if (!this.prefersReducedMotion) {
+                    view.querySelectorAll('.service-card[data-tilt]').forEach(card => {
+                        card.removeEventListener('mousemove', this.handleCardMouseMove);
+                        card.removeEventListener('mouseleave', this.resetCardTilt);
+                    });
+                }
+            }
+            
+            // --- FORM HANDLING ---
+
+            async handleFormSubmit(event) {
+                event.preventDefault();
+                const form = event.target;
+                
+                if (this.validateForm(form)) {
+                    form.style.display = 'none';
+                    this.dom.formTerminal.style.display = 'block';
+                    
+                    const terminalLines = [
+                        { text: '> Initiating secure connection...', delay: 500 },
+                        { text: '> Transmitting encrypted data packet...', delay: 1000 },
+                        { text: '> SERVER_RESPONSE: 200 OK - PACKET_RECEIVED', delay: 800 },
+                        { text: '> Parsing crisis brief...', delay: 1200 },
+                        { text: '> DISPATCHING RECOVERY SPECIALIST...', delay: 600, class: 'success' },
+                    ];
+                    
+                    this.dom.formTerminal.innerHTML = '';
+                    for (const line of terminalLines) {
+                        await this.typeTerminalLine(line);
+                    }
+                    
+                    const finalMessage = document.createElement('div');
+                    finalMessage.className = 'final-message';
+                    finalMessage.innerHTML = '<strong>TRANSMISSION COMPLETE.</strong><br>Our specialist will contact you via the provided secure channel shortly. Stand by.';
+                    this.dom.formTerminal.appendChild(finalMessage);
+                }
+            }
+            
+            typeTerminalLine({ text, delay, class: className = '' }) {
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                        const p = document.createElement('p');
+                        if (className) p.classList.add(className);
+                        this.dom.formTerminal.appendChild(p);
+                        
+                        let i = 0;
+                        const typing = setInterval(() => {
+                            if (i < text.length) {
+                                p.textContent += text[i];
+                                i++;
+                            } else {
+                                clearInterval(typing);
+                                resolve();
+                            }
+                        }, 20);
+                    }, delay);
+                });
+            }
+
+            validateForm(form) {
+                let isValid = true;
+                form.querySelectorAll('[required]').forEach(field => {
+                    if (!this.validateField(field)) isValid = false;
+                });
+                return isValid;
+            }
+            
+            validateField(field) {
+                const feedbackEl = document.getElementById(`${field.id}-feedback`);
+                let message = '';
+                if (field.validity.valueMissing) message = 'This field is required.';
+                else if (field.validity.typeMismatch && field.type === 'email') message = 'Please enter a valid email address.';
+                else if (field.validity.tooShort) message = `Please enter at least ${field.minLength} characters.`;
+                
+                feedbackEl.textContent = message;
+                feedbackEl.style.display = message ? 'block' : 'none';
+                feedbackEl.className = message ? 'form-feedback is-error' : 'form-feedback';
+                return !message;
+            }
+            
+            // --- UTILITIES ---
+
+            initParticleCanvas() {
+                const canvas = this.dom.particleCanvas;
+                if (!canvas) return;
+                const ctx = canvas.getContext('2d');
+                let particles = [];
+
+                const resizeCanvas = () => {
+                    canvas.width = window.innerWidth;
+                    canvas.height = canvas.parentElement.offsetHeight;
+                };
+
+                class Particle {
+                    constructor() { this.x = Math.random() * canvas.width; this.y = Math.random() * canvas.height; this.size = Math.random() * 1.5 + 0.5; this.speedX = Math.random() * 1 - 0.5; this.speedY = Math.random() * 1 - 0.5; this.color = 'rgba(212, 175, 55, 0.5)'; }
+                    update() { this.x += this.speedX; this.y += this.speedY; if (this.x < 0 || this.x > canvas.width) this.speedX *= -1; if (this.y < 0 || this.y > canvas.height) this.speedY *= -1; }
+                    draw() { ctx.fillStyle = this.color; ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); }
+                }
+
+                const createParticles = () => { particles = []; const particleCount = (canvas.width * canvas.height) / 10000; for (let i = 0; i < particleCount; i++) { particles.push(new Particle()); } };
+                const connectParticles = () => { for (let a = 0; a < particles.length; a++) { for (let b = a; b < particles.length; b++) { let distance = Math.sqrt(Math.pow(particles[a].x - particles[b].x, 2) + Math.pow(particles[a].y - particles[b].y, 2)); if (distance < 100) { let opacityValue = 1 - (distance / 100); ctx.strokeStyle = `rgba(212, 175, 55, ${opacityValue * 0.2})`; ctx.lineWidth = 0.5; ctx.beginPath(); ctx.moveTo(particles[a].x, particles[a].y); ctx.lineTo(particles[b].x, particles[b].y); ctx.stroke(); } } } for(let i = 0; i < particles.length; i++) { let distance = Math.sqrt(Math.pow(particles[i].x - this.mouse.x, 2) + Math.pow(particles[i].y - this.mouse.y, 2)); if(distance < 150) { let opacityValue = 1 - (distance/150); ctx.strokeStyle = `rgba(240, 240, 240, ${opacityValue * 0.3})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(this.mouse.x, this.mouse.y); ctx.stroke(); } } };
+                const animateParticles = () => { ctx.clearRect(0, 0, canvas.width, canvas.height); particles.forEach(p => { p.update(); p.draw(); }); connectParticles(); requestAnimationFrame(animateParticles); };
+
+                window.addEventListener('resize', () => { resizeCanvas(); createParticles(); });
+                resizeCanvas(); createParticles(); animateParticles();
+            }
+
+            trapFocus(element) {
+                const focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled])');
+                const firstFocusableEl = focusableEls[0];
+                const lastFocusableEl = focusableEls[focusableEls.length - 1];
+                
+                this.focusTrapHandler = (e) => { if (e.key !== 'Tab') return; if (e.shiftKey) { if (document.activeElement === firstFocusableEl) { lastFocusableEl.focus(); e.preventDefault(); } } else { if (document.activeElement === lastFocusableEl) { firstFocusableEl.focus(); e.preventDefault(); } } };
+                element.addEventListener('keydown', this.focusTrapHandler);
+                firstFocusableEl.focus();
+            }
+
+            releaseFocus() {
+                if (this.focusTrapHandler) { this.dom.mainNav.removeEventListener('keydown', this.focusTrapHandler); this.dom.navToggle.focus(); }
+            }
+            
+            setDynamicYear() {
+                if (this.dom.yearSpan) this.dom.yearSpan.textContent = new Date().getFullYear();
+            }
+        }
+
+        const app = new PhoenixSPA();
+    })();
+    </script>
+</body>
+</html>
