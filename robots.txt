@@ -1,0 +1,7 @@
+# Allow all user agents full access to the site for indexing.
+User-agent: *
+Allow: /
+
+# Provide the location of the sitemap for efficient crawling.
+# (A sitemap.xml should be generated and placed at this location)
+Sitemap: https://contractor-template10.pages.dev/sitemap.xml
