@@ -4,4 +4,5 @@ Allow: /
 
 # Provide the location of the sitemap for efficient crawling.
 # (A sitemap.xml should be generated and placed at this location)
-Sitemap: https://contractor-template10.pages.dev/sitemap.xml
+
+Sitemap: https://phoenixsiterecovery.com/sitemap.xml
