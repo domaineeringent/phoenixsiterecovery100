@@ -1,9 +1,3 @@
-/robots.txt
-  Cache-Control: no-cache, no-transform, private, must-revalidate
-
-/index.html
-  Cache-Control: no-transform
-
 /*
   Cache-Control: public, max-age=2592000
 
