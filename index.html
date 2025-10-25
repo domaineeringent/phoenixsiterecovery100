@@ -1104,8 +1104,9 @@ function handleRouting() {
 // --- END: Valerian Dynamic Content Engine ---
 
 
-// --- START: Application Initialization ---
+// --- START: Application Initialization (Corrected) ---
 function init() {
+    // These are still fine here. They are lightweight.
     handleHeaderHeight();
     handleHeaderScroll();
     setupTestimonialSlider();
@@ -1113,18 +1114,20 @@ function init() {
     document.body.addEventListener('click', handleGlobalClick);
     mobileNavToggle.addEventListener("click", toggleMobileNav);
     
-    // STRATEGIC FIX #1: This logic is now moved into the preloader timeout
-    handleRouting(); // Initial route handling on page load
-
+    // The timeout now handles ALL post-load logic
     setTimeout(() => {
         if (preloader) preloader.classList.add("is-hidden");
         document.body.classList.add("is-loaded");
-        // STRATEGIC FIX #1: Run initial animation setup AFTER preloader is hidden
+
+        // *** MOVED THE HEAVY LIFTING HERE ***
+        // Run the routing logic AFTER the page is visually ready.
+        handleRouting(); // Initial route handling on page load
+
         const initialView = document.querySelector('.view.is-active');
         if (initialView) {
             setupScrollAnimationsForView(initialView);
         }
-    }, 500);
+    }, 500); // You could even lower this to ~100-200ms
 }
 
 const headerObserver = new ResizeObserver(handleHeaderHeight);
