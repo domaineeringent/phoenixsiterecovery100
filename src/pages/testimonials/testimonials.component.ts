@@ -52,6 +52,8 @@ export class TestimonialsComponent {
       { name: 'Stripe', imageUrl: 'https://picsum.photos/seed/stripe/200/50' }
     ]
   };
+
+  allAuthorityLogos = [...this.authorityLogos.seenOn, ...this.authorityLogos.tech];
   
   featuredStory = {
     name: 'John Doe, JD Roofing',

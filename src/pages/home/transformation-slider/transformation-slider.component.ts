@@ -1,12 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AnimateOnScrollDirective } from '../../../directives/animate-on-scroll.directive';
 import { CountUpDirective } from '../../../directives/count-up.directive';
 
 @Component({
   selector: 'app-transformation-slider',
   standalone: true,
-  imports: [CommonModule, AnimateOnScrollDirective, CountUpDirective],
+  imports: [CommonModule, CountUpDirective],
   templateUrl: './transformation-slider.component.html',
   styleUrl: './transformation-slider.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -2,12 +2,11 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CtaSectionComponent } from '../../components/shared/cta-section/cta-section.component';
 import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  imports: [CommonModule, CtaSectionComponent, AnimateOnScrollDirective, RouterLink],
+  imports: [CommonModule, CtaSectionComponent, AnimateOnScrollDirective],
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -90,8 +89,9 @@ export class ContactComponent {
         subtext: 'Average weekly lost revenue from missed opportunities.'
     },
     faqs: [
-        { q: 'How long is the call?', a: 'We block off 30 minutes to be safe, but we can usually cover everything in 20 minutes. We respect your time.' },
+        { q: 'Is this really free?', a: '100% free. There is no cost, no obligation, and no credit card required. Our goal is to provide value first.' },
         { q: 'What do I need to prepare?', a: 'Nothing. Just come with an open mind and be ready to talk about your business goals and challenges.' },
+        { q: 'Will this be a technical call?', a: 'Not at all. We speak in plain English and focus on business results, not technical jargon.' },
         { q: 'Is there any obligation to buy?', a: 'Absolutely not. This is a strategy session, not a sales pitch. We\'ll show you a plan, and if you want our help to implement it, great. If not, the plan is yours to keep, no strings attached.' }
     ],
     otherMethods: {

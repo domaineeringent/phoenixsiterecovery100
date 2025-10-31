@@ -1,14 +1,13 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
-import { RouterLink } from '@angular/router';
 import { CtaSectionComponent } from '../../components/shared/cta-section/cta-section.component';
 
 @Component({
   selector: 'app-book-call',
   templateUrl: './book-call.component.html',
   standalone: true,
-  imports: [CommonModule, AnimateOnScrollDirective, RouterLink, CtaSectionComponent],
+  imports: [CommonModule, AnimateOnScrollDirective, CtaSectionComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BookCallComponent {

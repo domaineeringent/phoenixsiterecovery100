@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, inject, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BlogService, BlogPost } from '../../services/blog.service';
 import { CtaSectionComponent } from '../../components/shared/cta-section/cta-section.component';
 
 @Component({
   selector: 'app-blog-post',
   templateUrl: './blog-post.component.html',
-  imports: [CommonModule, RouterLink, CtaSectionComponent],
+  imports: [CommonModule, CtaSectionComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
 })
