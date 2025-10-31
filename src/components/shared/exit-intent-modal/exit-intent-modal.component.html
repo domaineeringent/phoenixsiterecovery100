@@ -1,0 +1,43 @@
+@if(exitIntentService.showModal()) {
+<div class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4" (click)="exitIntentService.closeModal()">
+  <div class="w-full max-w-2xl bg-white dark:bg-slate-900 rounded-2xl shadow-2xl ring-1 ring-black/10 dark:ring-white/10 transform transition-all duration-300 ease-out scale-95 animate-scale-in" (click)="$event.stopPropagation()">
+    <div class="p-8 md:p-12 text-center">
+      <h2 class="text-3xl md:text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">
+        <span class="text-amber-500 dark:text-amber-400">Wait!</span> Before you go...
+      </h2>
+      <p class="mt-4 max-w-xl mx-auto text-slate-600 dark:text-slate-300">
+        Download our FREE guide: <span class="font-bold text-slate-800 dark:text-white">"The 5 Biggest Marketing Mistakes Contractors Make (And How to Fix Them)"</span>. It's packed with actionable advice to help you get more leads.
+      </p>
+      
+      <form class="mt-8 max-w-md mx-auto space-y-4">
+        <div>
+          <input type="email" placeholder="Enter your email address" class="block w-full bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500 text-slate-900 dark:text-white placeholder:text-slate-500">
+        </div>
+        <button type="submit" class="w-full bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-colors duration-300">
+          Download The Free Guide
+        </button>
+      </form>
+
+      <button (click)="exitIntentService.closeModal()" class="mt-4 text-xs text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
+        No thanks, I don't want more leads.
+      </button>
+    </div>
+  </div>
+</div>
+}
+
+<style>
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out forwards;
+  }
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>

@@ -1,0 +1,21 @@
+<div class="fixed top-0 left-0 w-full h-1 z-[9999] overflow-hidden bg-amber-400/20">
+  <div class="absolute h-full bg-amber-400 w-full animate-loading-indeterminate" style="box-shadow: 0 0 10px #fbbf24, 0 0 5px #fbbf24;"></div>
+</div>
+<style>
+  @keyframes indeterminate-animation {
+    0% {
+      transform: translateX(0) scaleX(0);
+    }
+    40% {
+      transform: translateX(0) scaleX(0.4);
+    }
+    100% {
+      transform: translateX(100%) scaleX(0.5);
+    }
+  }
+
+  .animate-loading-indeterminate {
+    transform-origin: 0% 50%;
+    animation: indeterminate-animation 1.5s infinite linear;
+  }
+</style>

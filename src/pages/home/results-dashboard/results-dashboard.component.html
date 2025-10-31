@@ -1,0 +1,18 @@
+<section class="bg-slate-50 dark:bg-slate-950 py-20 md:py-32">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">Proof, Not <span class="text-amber-500 dark:text-amber-400">Promises</span></h2>
+            <p class="mt-4 text-slate-600 dark:text-slate-300">Talk is cheap. Here are the real-world results we deliver for contractors across the country.</p>
+        </div>
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            @for(item of keyNumbers; track item.label) {
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-lg text-center shadow-xl" appAnimateOnScroll>
+                    <p class="text-5xl md:text-6xl font-bold font-oswald text-amber-500 dark:text-amber-400">
+                        {{item.prefix}}<span [appCountUp]="item.value">0</span>{{item.suffix}}
+                    </p>
+                    <p class="mt-2 text-slate-700 dark:text-slate-300 uppercase tracking-wider font-semibold text-sm">{{item.label}}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,48 @@
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">Trusted by Hundreds of <span class="text-amber-500 dark:text-amber-400">Contractors</span></h2>
+      <p class="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">Hear directly from contractors who have transformed their business with Phoenix Recovery.</p>
+    </div>
+
+    @if (currentTestimonial(); as testimonial) {
+      <div class="mt-12 max-w-4xl mx-auto relative">
+        <!-- Main Image/Video -->
+        <div class="relative group aspect-video bg-slate-900 rounded-lg overflow-hidden shadow-2xl ring-2 ring-amber-400/50">
+          <!-- Ideal Image: A high-quality thumbnail from a video testimonial, showing a contractor in their work environment (e.g., on a roof, in front of a van) looking happy. -->
+          <img [src]="testimonial.videoThumbnailUrl" [alt]="'Testimonial from ' + testimonial.name" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <button class="text-white bg-amber-500/80 rounded-full h-24 w-24 flex items-center justify-center hover:bg-amber-500 transition-all duration-300 transform hover:scale-110">
+              <span class="sr-only">Play Video</span>
+              <svg class="w-12 h-12 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quote -->
+        <div class="mt-6 text-center text-slate-800 dark:text-white">
+          <h3 class="text-2xl font-bold">{{ testimonial.name }}</h3>
+          <p class="text-amber-500 dark:text-amber-400 font-semibold">{{ testimonial.company }}</p>
+        </div>
+
+        <!-- Controls -->
+        <button (click)="prev()" class="absolute top-1/2 -translate-y-1/2 -left-4 md:-left-16 w-12 h-12 bg-white/80 dark:bg-slate-700/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white dark:hover:bg-slate-600 transition-colors">
+          <span class="sr-only">Previous</span>
+          <svg class="w-6 h-6 text-slate-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <button (click)="next()" class="absolute top-1/2 -translate-y-1/2 -right-4 md:-right-16 w-12 h-12 bg-white/80 dark:bg-slate-700/80 rounded-full shadow-lg flex items-center justify-center hover:bg-white dark:hover:bg-slate-600 transition-colors">
+          <span class="sr-only">Next</span>
+          <svg class="w-6 h-6 text-slate-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+      </div>
+
+      <!-- Dots -->
+      <div class="flex justify-center space-x-2 mt-8">
+        @for (item of testimonials(); track item; let i = $index) {
+          <button (click)="goTo(i)" class="w-3 h-3 rounded-full transition-colors" [class]="currentIndex() === i ? 'bg-amber-400' : 'bg-slate-300 dark:bg-slate-600 hover:bg-slate-400 dark:hover:bg-slate-500'"></button>
+        }
+      </div>
+    }
+  </div>
+</section>

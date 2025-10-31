@@ -1,0 +1,38 @@
+<div class="feature-stack-container bg-slate-50 dark:bg-slate-800 py-20 overflow-hidden">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="text-center">
+            <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The All-In-One Command Center</h2>
+            <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">We replaced the expensive, confusing "patchwork" of separate tools with one simple, powerful, and affordable platform built for the trades.</p>
+        </div>
+
+        <div class="animation-container mt-12 h-[200vh]">
+            <div class="sticky top-0 h-screen flex items-center justify-center">
+                <div class="w-full max-w-md relative">
+                    <!-- ROI Counter -->
+                    <div class="roi-counter">
+                        <p class="text-sm text-slate-500 dark:text-slate-400">Potential ROI</p>
+                        <p class="text-7xl font-oswald font-bold text-green-500">{{roi}}x</p>
+                    </div>
+
+                    <!-- Value Stack -->
+                    <div class="value-stack flex flex-col-reverse">
+                        <!-- Base Cost -->
+                        <div class="stack-block cost-block">
+                            <p class="font-bold">Platform Cost</p>
+                            <p class="text-2xl font-bold">${{platformCost}}/mo</p>
+                        </div>
+                        <!-- Value Adds -->
+                        @for(item of valueAdds; track item.name) {
+                            <div class="stack-block value-block {{item.color}}" [style.height.px]="item.height">
+                                <p class="font-bold">{{item.name}}</p>
+                                <p class="text-2xl font-bold">+${{item.value | number}}</p>
+                                <p class="text-xs opacity-80">{{item.description}}</p>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

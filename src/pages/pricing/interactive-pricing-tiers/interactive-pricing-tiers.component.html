@@ -1,0 +1,74 @@
+<div class="bg-slate-100 dark:bg-slate-900 py-20" id="pricing">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="text-center">
+      <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">Finally, A Plan That Makes Sense</h2>
+      <p class="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">Stop paying for a dozen tools that don't work together. Get the one system that does it all, for one simple, predictable price.</p>
+    </div>
+
+    <!-- Billing Cycle Toggle -->
+    <div class="mt-10 flex justify-center items-center gap-4">
+      <span class="font-semibold text-slate-700 dark:text-slate-300" [class.text-amber-500]="billingCycle() === 'monthly'">Monthly</span>
+      <button (click)="setBillingCycle(billingCycle() === 'monthly' ? 'annually' : 'monthly')" class="relative w-14 h-8 rounded-full p-1 transition-colors" [class]="billingCycle() === 'annually' ? 'bg-green-500' : 'bg-slate-300 dark:bg-slate-700'">
+        <span class="block w-6 h-6 bg-white rounded-full shadow-md transform transition-transform" [class.translate-x-6]="billingCycle() === 'annually'"></span>
+      </button>
+      <span class="font-semibold text-slate-700 dark:text-slate-300" [class.text-amber-500]="billingCycle() === 'annually'">Annually</span>
+       <span class="ml-2 px-2 py-1 text-xs font-bold text-green-800 bg-green-200 rounded-full transition-opacity" [class.opacity-0]="billingCycle() === 'monthly'">2 Months FREE</span>
+    </div>
+
+    <div class="mt-8 grid lg:grid-cols-2 gap-8 items-start">
+        <!-- Advanced Plan -->
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-lg border-2 border-amber-400 shadow-2xl relative" appAnimateOnScroll>
+             <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-900 text-sm font-bold uppercase tracking-wider px-4 py-1 rounded-full">Most Popular</div>
+            <h3 class="text-3xl font-oswald uppercase text-slate-800 dark:text-white tracking-wider">Advanced</h3>
+            <p class="mt-2 text-slate-500 dark:text-slate-400">The complete command center to run & market your business.</p>
+            <div class="my-6 h-20">
+              @if(billingCycle() === 'monthly') {
+                <div>
+                  <span class="price-value text-5xl font-bold text-slate-900 dark:text-white">${{advanced.monthly}}</span>
+                  <span class="text-slate-500 dark:text-slate-400">/mo</span>
+                </div>
+              } @else {
+                <div>
+                  <p class="text-slate-500 dark:text-slate-400 text-sm">Billed Annually</p>
+                  <span class="price-value text-5xl font-bold text-slate-900 dark:text-white">${{advanced.annual() | number}}</span>
+                  <span class="text-slate-500 dark:text-slate-400">/yr</span>
+                </div>
+              }
+            </div>
+            <a routerLink="/book-a-call" class="w-full block text-center bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-colors duration-300">Get Started</a>
+            <p class="text-center mt-4 text-xs text-slate-500 dark:text-slate-400">+$500 one-time onboarding fee</p>
+            <ul class="mt-6 space-y-3 text-sm">
+                @for(feature of advanced.features; track feature) {
+                  <li class="flex items-center text-slate-700 dark:text-slate-300"><svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>{{feature}}</li>
+                }
+            </ul>
+        </div>
+        <!-- Supreme Plan -->
+        <div class="bg-slate-800 text-white p-8 rounded-lg shadow-2xl" appAnimateOnScroll [style.transition-delay]="'100ms'">
+            <h3 class="text-3xl font-oswald uppercase tracking-wider">Supreme</h3>
+            <p class="mt-2 text-slate-400">For contractors ready to dominate their market with Google Ads.</p>
+            <div class="my-6 h-20">
+              @if(billingCycle() === 'monthly') {
+                <div>
+                  <span class="price-value text-5xl font-bold">${{supreme.monthly}}</span>
+                  <span class="text-slate-400">/mo</span>
+                </div>
+              } @else {
+                <div>
+                  <p class="text-slate-400 text-sm">Billed Annually</p>
+                  <span class="price-value text-5xl font-bold">${{supreme.annual() | number}}</span>
+                  <span class="text-slate-400">/yr</span>
+                </div>
+              }
+            </div>
+            <a routerLink="/book-a-call" class="w-full block text-center bg-slate-700 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-slate-600 transition-colors duration-300">Book a Demo</a>
+            <p class="text-center mt-4 text-xs text-slate-400">+$500 one-time onboarding fee</p>
+             <ul class="mt-6 space-y-3 text-sm">
+                @for(feature of supreme.features; track feature) {
+                  <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span [class.font-bold]="feature.includes('PLUS')">{{feature}}</span></li>
+                }
+            </ul>
+        </div>
+    </div>
+  </div>
+</div>

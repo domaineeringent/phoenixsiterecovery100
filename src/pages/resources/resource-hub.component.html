@@ -1,0 +1,205 @@
+<!-- 1. HERO -->
+<section class="bg-slate-900 text-white">
+  <div class="container mx-auto px-4 py-24 sm:py-32 text-center">
+    <h1 class="text-5xl md:text-7xl font-oswald font-bold" [innerHTML]="data.hero.title"></h1>
+    <p class="mt-6 text-lg text-slate-300 max-w-3xl mx-auto">{{ data.hero.subtitle }}</p>
+  </div>
+</section>
+
+<!-- 2. THE CORE PROBLEM -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div appAnimateOnScroll>
+                <img [src]="data.problem.imageUrl" alt="A contractor looking confused at a messy whiteboard of marketing ideas" class="rounded-lg shadow-xl w-full">
+            </div>
+            <div appAnimateOnScroll [style.transition-delay]="'100ms'">
+                <h2 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">{{data.problem.title}}</h2>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">{{ data.problem.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. OUR PHILOSOPHY -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">Our Growth Philosophy</h2>
+    <div class="mt-8 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+      @for(point of data.philosophy.points; track point; let i = $index) {
+        <div class="flex items-center" appAnimateOnScroll [style.transition-delay]="i * 100 + 'ms'">
+          <span class="text-5xl font-oswald text-amber-500">{{point}}</span>
+          @if (!last) {
+            <svg class="w-8 h-8 text-slate-300 dark:text-slate-600 hidden md:block ml-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 4. MEET YOUR MENTORS -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">Your <span class="text-amber-500 dark:text-amber-400">Mentors</span></h2>
+    <p class="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">Learn from experts who have actually been in the trenches and gotten real results for contractors.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 max-w-4xl mx-auto">
+      @for (mentor of data.mentors; track mentor.name) {
+        <div class="flex flex-col sm:flex-row items-center text-center sm:text-left gap-6" appAnimateOnScroll>
+          <img [src]="mentor.imageUrl" [alt]="mentor.name" class="w-32 h-32 rounded-full object-cover border-4 border-white dark:border-slate-700 shadow-lg flex-shrink-0">
+          <div>
+            <h3 class="text-xl font-bold text-slate-800 dark:text-white">{{ mentor.name }}</h3>
+            <p class="text-amber-500 dark:text-amber-400 text-sm font-semibold">{{ mentor.role }}</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">{{mentor.bio}}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 5. FEATURED PLAYBOOK -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+  <div class="container mx-auto px-4">
+    <a [routerLink]="['/resources', featuredPost.slug]" class="group grid lg:grid-cols-2 gap-12 items-center bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-2xl hover:shadow-amber-500/10 dark:hover:shadow-amber-400/10 transition-shadow duration-300">
+      <img [src]="featuredPost.imageUrl" [alt]="featuredPost.title" class="w-full h-96 object-cover">
+      <div class="p-8 md:p-12">
+        <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider">Featured Playbook</p>
+        <h2 class="text-3xl lg:text-4xl font-oswald mt-2 text-slate-900 dark:text-white group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors">{{ featuredPost.title }}</h2>
+        <p class="text-slate-600 dark:text-slate-400 mt-4">{{ featuredPost.subtitle }}</p>
+        <div class="mt-6">
+          <span class="inline-block text-slate-800 dark:text-white font-bold">Read the Playbook &rarr;</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- 6. THE GROWTH LIBRARY -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="text-center text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white mb-12">The Growth Library</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      @for (post of posts.slice(1); track post.slug) {
+        <a [routerLink]="['/resources', post.slug]" class="group bg-white dark:bg-slate-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex">
+          <div class="p-6 flex flex-col">
+            <div class="flex-grow">
+              <h2 class="text-xl font-bold font-oswald text-slate-900 dark:text-white group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors">{{ post.title }}</h2>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">{{ post.subtitle }}</p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+              <div class="flex items-center gap-2">
+                <img [src]="post.authorImage" [alt]="post.author" class="w-6 h-6 rounded-full">
+                <span>{{ post.author }}</span>
+              </div>
+              <span>{{ post.readTime }} min read</span>
+            </div>
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 7. FREE TOOL: AI WEBSITE GRADER -->
+<app-ai-website-grader></app-ai-website-grader>
+
+<!-- 8. FREE DOWNLOAD -->
+<section class="bg-slate-900 text-white py-20">
+    <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center bg-slate-800 p-8 md:p-12 rounded-lg">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-oswald uppercase tracking-wider">Take the <span class="text-amber-400">Playbook</span> With You</h2>
+                <p class="mt-4 text-slate-300">Get our most popular guide, "The 5 Biggest Marketing Mistakes Contractors Make," as a free downloadable PDF. Print it, share it with your team, and start fixing the leaks in your marketing today.</p>
+            </div>
+            <form class="space-y-4">
+                <div>
+                    <input type="email" placeholder="Enter your email address" class="block w-full bg-slate-700 border-slate-600 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500 text-white placeholder:text-slate-400">
+                </div>
+                <button type="submit" class="w-full bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-colors duration-300">
+                    Download The Free Guide
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- 9. CASE STUDY SNIPPET -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div appAnimateOnScroll>
+                <img [src]="data.caseStudy.imageUrl" alt="A successful contractor smiling" class="rounded-lg shadow-xl w-full">
+            </div>
+            <div appAnimateOnScroll [style.transition-delay]="'100ms'">
+                <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider">See The Playbook in Action</p>
+                <h2 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white mt-2">Meet John D. from JD Roofing</h2>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">{{ data.caseStudy.summary }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 10. THE KNOWLEDGE GAP -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-3xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">{{data.knowledgeGap.title}}</h2>
+        <p class="mt-6 text-slate-700 dark:text-slate-300 text-lg leading-relaxed">{{data.knowledgeGap.description}}</p>
+    </div>
+</section>
+
+<!-- 11. THE ULTIMATE SHORTCUT (CTA) -->
+<section class="bg-slate-900 text-white py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider">The Ultimate Shortcut to Growth</h2>
+    <p class="mt-4 max-w-2xl mx-auto text-slate-300">Want us to apply all this knowledge directly to your business? Book a free, no-obligation Blueprint Call. We'll build a custom growth plan for you in 20 minutes.</p>
+    <div class="mt-8">
+      <a routerLink="/book-a-call" class="inline-block bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-colors duration-300">
+        Book My Free Blueprint Call
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 12. ROI CALCULATOR -->
+<app-roi-calculator></app-roi-calculator>
+
+<!-- 13. TESTIMONIALS -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+         <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider text-center">From Education to Action</h2>
+         <div class="mt-12 space-y-8">
+            @for(testimonial of data.testimonials; track $index) {
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-lg italic border-l-4 border-amber-400 shadow-lg" appAnimateOnScroll>
+                    <blockquote class="text-slate-600 dark:text-slate-300">"{{testimonial.quote}}"</blockquote>
+                    <cite class="block mt-4 font-bold text-slate-800 dark:text-white not-italic">- {{testimonial.author}}</cite>
+                </div>
+            }
+         </div>
+    </div>
+</section>
+
+<!-- 14. FAQ -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 max-w-3xl">
+    <h2 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white text-center">Your Questions, Answered</h2>
+    <div class="mt-12 space-y-4">
+      @for(faq of data.faqs; track faq.q; let i = $index) {
+        <div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm overflow-hidden" appAnimateOnScroll>
+          <button (click)="toggleFaq(i)" class="w-full p-6 text-left flex justify-between items-center">
+            <span class="font-bold text-lg text-slate-800 dark:text-white">{{ faq.q }}</span>
+            <svg class="w-6 h-6 text-slate-500 transition-transform flex-shrink-0" [class.rotate-180]="openFaq() === i" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out overflow-hidden" [style.max-height]="openFaq() === i ? '200px' : '0'">
+            <div class="px-6 pb-6 text-slate-600 dark:text-slate-300">
+              <p>{{ faq.a }}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 15. FINAL CTA -->
+<app-cta-section></app-cta-section>

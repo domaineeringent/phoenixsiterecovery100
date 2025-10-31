@@ -1,0 +1,62 @@
+<div class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-white pt-24 pb-20">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl md:text-6xl font-oswald uppercase tracking-wider">Built for <span class="text-amber-500 dark:text-amber-400">Your Trade</span></h1>
+    <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300 text-lg">Our system is designed to meet the unique challenges of service-based contractors. If you work with your hands to get the job done, we're built for you.</p>
+  </div>
+</div>
+
+<div class="bg-slate-100 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <h2 class="text-3xl font-oswald uppercase text-slate-800 dark:text-white text-center tracking-wider">If your trade is on this list, we can help.</h2>
+    <div class="mt-12 columns-2 md:columns-3 lg:columns-4 gap-4 text-slate-700 dark:text-slate-300">
+      @for(trade of tradesList(); track trade) {
+        <div class="flex items-center p-2">
+          <svg class="w-4 h-4 text-amber-500 dark:text-amber-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+          <span>{{trade}}</span>
+        </div>
+      }
+    </div>
+  </div>
+</div>
+
+<!-- TRADE SPOTLIGHTS -->
+<div class="bg-slate-50 dark:bg-slate-900 py-20 text-slate-800 dark:text-white">
+  <div class="container mx-auto px-4 max-w-5xl space-y-12">
+    <h2 class="text-4xl font-oswald uppercase text-center tracking-wider">See How We Help Your <span class="text-amber-500 dark:text-amber-400">Trade</span></h2>
+    <!-- Spotlight: Roofing -->
+    <div class="bg-white dark:bg-slate-800 p-8 rounded-lg grid md:grid-cols-3 gap-8 items-center shadow-lg">
+      <div class="md:col-span-1 text-center">
+        <h3 class="text-3xl font-oswald uppercase text-amber-500 dark:text-amber-400">Roofers</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm">Generate high-ticket leads and showcase your projects with a professional website and 5-star reviews.</p>
+      </div>
+      <div class="md:col-span-2 italic border-t-2 md:border-t-0 md:border-l-2 border-slate-200 dark:border-slate-700 pt-6 md:pt-0 md:pl-6">
+        <blockquote class="text-slate-600 dark:text-slate-300">"We went from 12 reviews to over 80 in our first year with Stone Systems. We're now the top-rated roofer in our city on Google Maps, and the leads show it."</blockquote>
+        <cite class="block mt-4 font-bold text-slate-800 dark:text-white not-italic">- John D., JD Roofing</cite>
+      </div>
+    </div>
+    <!-- Spotlight: Plumbing -->
+     <div class="bg-white dark:bg-slate-800 p-8 rounded-lg grid md:grid-cols-3 gap-8 items-center shadow-lg">
+      <div class="md:col-span-1 text-center">
+        <h3 class="text-3xl font-oswald uppercase text-amber-500 dark:text-amber-400">Plumbers</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm">Capture every emergency call with Missed Call Text Back and instantly communicate with customers via text.</p>
+      </div>
+      <div class="md:col-span-2 italic border-t-2 md:border-t-0 md:border-l-2 border-slate-200 dark:border-slate-700 pt-6 md:pt-0 md:pl-6">
+        <blockquote class="text-slate-600 dark:text-slate-300">"The Missed Call Text Back is worth the price alone. I can't tell you how many emergency jobs I've landed because my system texted them back while I was on another job."</blockquote>
+        <cite class="block mt-4 font-bold text-slate-800 dark:text-white not-italic">- David C., Chen's Plumbing</cite>
+      </div>
+    </div>
+    <!-- Spotlight: Landscaping -->
+     <div class="bg-white dark:bg-slate-800 p-8 rounded-lg grid md:grid-cols-3 gap-8 items-center shadow-lg">
+      <div class="md:col-span-1 text-center">
+        <h3 class="text-3xl font-oswald uppercase text-amber-500 dark:text-amber-400">Landscapers</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm">Easily send quotes and photos through the All-in-One Inbox and use One-Click Campaigns for seasonal promotions.</p>
+      </div>
+      <div class="md:col-span-2 italic border-t-2 md:border-t-0 md:border-l-2 border-slate-200 dark:border-slate-700 pt-6 md:pt-0 md:pl-6">
+        <blockquote class="text-slate-600 dark:text-slate-300">"Being able to text my entire customer list about our fall cleanup special booked us solid for two weeks. It took me 5 minutes."</blockquote>
+        <cite class="block mt-4 font-bold text-slate-800 dark:text-white not-italic">- Carlos G., Garcia Landscaping</cite>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-cta-section></app-cta-section>

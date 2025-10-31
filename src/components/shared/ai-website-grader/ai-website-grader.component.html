@@ -1,0 +1,151 @@
+<section class="bg-slate-50 dark:bg-slate-950 py-20">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden ring-1 ring-black/5 dark:ring-white/10">
+
+      @switch (state()) {
+        @case ('form') {
+          <div class="p-8 md:p-12">
+            <div class="text-center">
+              <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">Is Your Website <span class="text-amber-500 dark:text-amber-400">Leaking Leads?</span></h2>
+              <p class="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">Get a free, instant AI-powered analysis of your website. See how you stack up against the competition and find your biggest opportunities for growth.</p>
+            </div>
+            <form [formGroup]="analysisForm" (ngSubmit)="getAnalysis()" class="mt-10 max-w-xl mx-auto space-y-4">
+              <div>
+                <label for="url" class="block text-sm font-medium text-slate-600 dark:text-slate-400">Your Website URL</label>
+                <input id="url" formControlName="url" type="text" placeholder="https://mycontractorsite.com" class="mt-1 block w-full bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500 text-slate-900 dark:text-white placeholder:text-slate-500">
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                 <div>
+                  <label for="trade" class="block text-sm font-medium text-slate-600 dark:text-slate-400">Your Trade</label>
+                  <input id="trade" formControlName="trade" type="text" placeholder="e.g., Roofing, Plumbing" class="mt-1 block w-full bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500 text-slate-900 dark:text-white placeholder:text-slate-500">
+                </div>
+                 <div>
+                  <label for="city" class="block text-sm font-medium text-slate-600 dark:text-slate-400">Your City</label>
+                  <input id="city" formControlName="city" type="text" placeholder="e.g., Denver, CO" class="mt-1 block w-full bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500 text-slate-900 dark:text-white placeholder:text-slate-500">
+                </div>
+              </div>
+              <div class="pt-4">
+                <button type="submit" [disabled]="analysisForm.invalid" class="w-full bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-all duration-300 transform hover:scale-105 disabled:bg-slate-300 dark:disabled:bg-slate-700 disabled:text-slate-500 disabled:cursor-not-allowed disabled:scale-100">
+                  Get Your Free Analysis
+                </button>
+              </div>
+            </form>
+          </div>
+        }
+        @case ('loading') {
+          <div class="p-8 md:p-12 text-center h-96 flex flex-col items-center justify-center">
+             <div class="w-16 h-16 border-4 border-dashed border-amber-400 rounded-full animate-spin"></div>
+             <p class="mt-6 text-xl text-slate-600 dark:text-slate-300 transition-opacity duration-500">{{ currentMessage() }}</p>
+          </div>
+        }
+        @case ('results') {
+          @if(analysisResult(); as result) {
+            <div class="p-8 md:p-12">
+              <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">Your Website <span class="text-amber-500 dark:text-amber-400">Report Card</span></h2>
+              </div>
+              <div class="mt-10 grid md:grid-cols-3 gap-8 items-center bg-slate-100 dark:bg-slate-800 p-8 rounded-lg">
+                <div class="md:col-span-1 text-center">
+                    <p class="text-sm uppercase font-bold text-slate-500 dark:text-slate-400 tracking-wider">Overall Score</p>
+                    <p class="font-oswald text-8xl" [class]="getScoreColor(result.overallScore)">{{ result.overallScore }}<span class="text-5xl text-slate-400 dark:text-slate-500">/100</span></p>
+                </div>
+                <div class="md:col-span-2">
+                    <p class="text-slate-600 dark:text-slate-300 italic">{{ result.summary }}</p>
+                </div>
+              </div>
+              <div class="mt-10 grid md:grid-cols-3 gap-8">
+                <!-- Lead Capture -->
+                <div>
+                  <h3 class="font-oswald text-xl uppercase text-amber-500 dark:text-amber-400 tracking-wider">Lead Capture</h3>
+                  <ul class="mt-4 space-y-3">
+                    @for(item of getChecklistByCategory('Lead Capture'); track item.text) {
+                      <li>
+                        <div class="flex items-start">
+                          @if(item.pass) {
+                            <svg class="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                          } @else {
+                            <svg class="w-5 h-5 text-red-400 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                          }
+                          <div>
+                            <p class="text-slate-800 dark:text-slate-200 font-semibold">{{ item.text }}</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">{{ item.commentary }}</p>
+                          </div>
+                        </div>
+                      </li>
+                    }
+                  </ul>
+                </div>
+                 <!-- Trust & Authority -->
+                <div>
+                  <h3 class="font-oswald text-xl uppercase text-amber-500 dark:text-amber-400 tracking-wider">Trust & Authority</h3>
+                   <ul class="mt-4 space-y-3">
+                    @for(item of getChecklistByCategory('Trust & Authority'); track item.text) {
+                      <li>
+                        <div class="flex items-start">
+                          @if(item.pass) {
+                            <svg class="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                          } @else {
+                            <svg class="w-5 h-5 text-red-400 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                          }
+                          <div>
+                            <p class="text-slate-800 dark:text-slate-200 font-semibold">{{ item.text }}</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">{{ item.commentary }}</p>
+                          </div>
+                        </div>
+                      </li>
+                    }
+                  </ul>
+                </div>
+                 <!-- Mobile Experience -->
+                <div>
+                  <h3 class="font-oswald text-xl uppercase text-amber-500 dark:text-amber-400 tracking-wider">Mobile Experience</h3>
+                   <ul class="mt-4 space-y-3">
+                    @for(item of getChecklistByCategory('Mobile Experience'); track item.text) {
+                      <li>
+                        <div class="flex items-start">
+                          @if(item.pass) {
+                            <svg class="w-5 h-5 text-green-400 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                          } @else {
+                            <svg class="w-5 h-5 text-red-400 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                          }
+                          <div>
+                            <p class="text-slate-800 dark:text-slate-200 font-semibold">{{ item.text }}</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">{{ item.commentary }}</p>
+                          </div>
+                        </div>
+                      </li>
+                    }
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-12 text-center border-t border-slate-200 dark:border-slate-800 pt-8">
+                <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Your website is leaving money on the table.</h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-xl mx-auto">A Stone Systems website is engineered to score 100/100. Let's build a website that works as hard as you do.</p>
+                <div class="mt-6 flex items-center justify-center gap-4">
+                  <a routerLink="/book-a-call" class="bg-amber-400 text-slate-900 font-bold uppercase text-sm px-8 py-3 rounded-md hover:bg-amber-500 transition-all duration-300 transform hover:scale-105">
+                    Book a Call
+                  </a>
+                   <button (click)="reset()" class="bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-white font-bold uppercase text-sm px-8 py-3 rounded-md hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+                    Analyze Another Site
+                  </button>
+                </div>
+              </div>
+            </div>
+          }
+        }
+        @case('error') {
+          <div class="p-8 md:p-12 text-center h-96 flex flex-col items-center justify-center">
+             <svg class="w-16 h-16 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+             <h3 class="mt-4 text-2xl font-bold text-slate-800 dark:text-white">Analysis Failed</h3>
+             <p class="mt-2 text-slate-500 dark:text-slate-400">{{ errorMessage() }}</p>
+             <button (click)="reset()" class="mt-6 bg-amber-400 text-slate-900 font-bold uppercase text-sm px-8 py-3 rounded-md hover:bg-amber-500 transition-colors">
+               Try Again
+             </button>
+          </div>
+        }
+      }
+
+    </div>
+  </div>
+</section>

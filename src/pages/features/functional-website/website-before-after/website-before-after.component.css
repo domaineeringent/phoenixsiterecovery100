@@ -1,0 +1,23 @@
+.transformation-container {
+  height: 200vh; /* Provides scrollable area to drive the animation */
+}
+
+/* Define the custom property for smooth animation */
+@property --slider-pos {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+
+.after-slider {
+  clip-path: inset(0 0 0 var(--slider-pos));
+  animation: slide-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: 25%;
+  animation-range-end: 75%;
+}
+
+@keyframes slide-in {
+  from { --slider-pos: 100%; }
+  to { --slider-pos: 0%; }
+}

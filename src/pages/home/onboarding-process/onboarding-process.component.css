@@ -1,0 +1,29 @@
+.progress-line {
+    height: 0;
+    animation: draw-line linear forwards;
+    animation-timeline: view();
+    /* Starts drawing when the container top hits the bottom of the viewport */
+    animation-range-start: entry 0%;
+    /* Finishes drawing when the container bottom hits the top of the viewport */
+    animation-range-end: exit 100%;
+}
+
+@keyframes draw-line {
+    to { height: 100%; }
+}
+
+.process-step {
+    opacity: 0.2;
+    transform: translateX(-20px);
+    animation: fade-in-step linear forwards;
+    animation-timeline: view();
+    animation-range-start: entry 25%;
+    animation-range-end: entry 50%;
+}
+
+@keyframes fade-in-step {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

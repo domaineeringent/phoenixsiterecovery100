@@ -1,0 +1,16 @@
+<div class="flex flex-col min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+  @if (loading()) {
+    <app-loading-bar></app-loading-bar>
+  }
+  <app-header></app-header>
+  
+  <main class="flex-grow">
+    <router-outlet></router-outlet>
+  </main>
+  
+  <app-footer></app-footer>
+  
+  <app-live-chat-widget></app-live-chat-widget>
+  <app-social-proof></app-social-proof>
+  <app-exit-intent-modal></app-exit-intent-modal>
+</div>

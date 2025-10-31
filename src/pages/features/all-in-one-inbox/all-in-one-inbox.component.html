@@ -1,0 +1,240 @@
+<!-- 1. HERO -->
+<section class="bg-slate-900 text-white">
+  <div class="container mx-auto px-4 py-24 sm:py-32">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl md:text-7xl font-oswald font-bold" [innerHTML]="hero.title"></h1>
+        <p class="mt-6 text-lg text-slate-300 max-w-lg">{{ hero.subtitle }}</p>
+        <div class="mt-10">
+          <a routerLink="/book-a-call" class="inline-block bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-all duration-300 transform hover:scale-105">
+            Book My Free Demo
+          </a>
+           <p class="text-xs text-slate-400 mt-2">See how it works in 20 minutes.</p>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <img [src]="hero.imageUrl" alt="A unified inbox on a laptop and phone screen" class="rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROBLEM AGITATION -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider" [innerHTML]="problem.title"></h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">{{ problem.description }}</p>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
+            @for(point of problem.points; track point.text) {
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-lg text-center shadow-lg" appAnimateOnScroll>
+                    <div class="w-16 h-16 mx-auto bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" [attr.d]="point.icon"></path></svg>
+                    </div>
+                    <p class="mt-4 font-semibold text-slate-700 dark:text-slate-200">{{ point.text }}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 3. QUANTIFIED PAIN -->
+<section class="bg-slate-950 text-white py-20">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+        <h2 class="text-4xl font-oswald uppercase tracking-wider" [innerHTML]="quantifiedPain.title"></h2>
+        <p class="mt-4 text-slate-400" [innerHTML]="quantifiedPain.description"></p>
+        <div class="mt-8 bg-slate-800/50 border border-slate-700 p-8 rounded-lg" appAnimateOnScroll>
+            <p class="text-slate-300 text-lg" [innerHTML]="quantifiedPain.calculation.premise"></p>
+            <p class="text-7xl font-oswald font-bold text-red-500 my-4">{{ quantifiedPain.calculation.value }}</p>
+            <p class="text-slate-300 text-lg">{{ quantifiedPain.calculation.conclusion }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. INVALIDATE ALTERNATIVES -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">Your Current "System" is Broken</h2>
+        <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">You've tried to make it work, but these "solutions" are just band-aids on a bigger problem, and they're holding your business back.</p>
+        <div class="mt-12 grid md:grid-cols-3 gap-8">
+            @for(solution of failedSolutions; track solution.title; let i = $index) {
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-lg border-t-4 border-red-500" appAnimateOnScroll [style.transition-delay]="i * 100 + 'ms'">
+                    <h3 class="font-bold text-xl text-slate-800 dark:text-white">{{solution.title}}</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">{{solution.description}}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 5. THE PIVOT -->
+<div class="bg-slate-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-oswald uppercase tracking-wider">The Chaos isn't Your Fault. The Tools are Broken.</h2>
+    </div>
+</div>
+
+<!-- 6. THE SOLUTION REVEAL -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 max-w-5xl text-center">
+    <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">One Inbox. Every Conversation. Zero Missed Leads.</h2>
+    <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">We built the Command Center to be the single source of truth for all your customer interactions. See everything, respond instantly, and win more jobs.</p>
+    <div class="mt-12" appAnimateOnScroll>
+        <img src="https://picsum.photos/seed/inbox-dashboard/1200/800" alt="Dashboard showing messages from multiple channels" class="rounded-lg shadow-2xl">
+    </div>
+  </div>
+</section>
+
+<!-- 7. HOW IT WORKS -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      @for(step of howItWorks; track step.title; let i = $index) {
+        <div appAnimateOnScroll [style.transition-delay]="i * 100 + 'ms'">
+          <div class="w-20 h-20 mx-auto bg-amber-400 text-slate-900 rounded-full flex items-center justify-center">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" [attr.d]="step.icon"></path></svg>
+          </div>
+          <h3 class="mt-6 font-bold text-xl text-slate-800 dark:text-white uppercase tracking-wider">{{step.title}}</h3>
+          <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm">{{step.description}}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 8. FEATURE STACK (SUPERPOWERS) -->
+<section class="bg-white dark:bg-slate-950 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider text-center">Your Inbox Superpowers</h2>
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-8">
+            @for(power of inboxSuperpowers; track power.name) {
+                <div class="bg-slate-50 dark:bg-slate-900 p-6 rounded-lg" appAnimateOnScroll>
+                    <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" [attr.d]="power.icon"></path></svg>
+                    <h3 class="mt-4 font-bold text-slate-800 dark:text-white">{{power.name}}</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">{{power.description}}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 9. FUTURE PACING -->
+<div class="bg-slate-900 text-white py-20">
+    <div class="container mx-auto px-4 max-w-3xl text-center">
+        <h2 class="text-4xl font-oswald uppercase tracking-wider">Imagine This...</h2>
+        <p class="mt-6 text-slate-300 text-lg leading-relaxed">You're on a roof. A new lead fills out the form on your website. You get a notification, tap a pre-saved reply to ask for photos of the project, and get the conversation started—all without climbing down the ladder. Your competitor hasn't even called them back yet. <span class="font-bold text-white">That's control.</span></p>
+    </div>
+</div>
+
+<!-- 10. CASE STUDY -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <div class="grid md:grid-cols-3 gap-8 items-center bg-white dark:bg-slate-900 p-8 rounded-lg shadow-2xl">
+            <div class="md:col-span-2">
+                <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider">Case Study: Smith Electric</p>
+                <h3 class="text-4xl font-oswald mt-2 text-slate-800 dark:text-white">From Chaos to <span class="text-green-500">30% Growth</span></h3>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">{{caseStudy.summary}}</p>
+            </div>
+            <div class="text-center">
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500">Before</p>
+                    <p class="text-4xl font-oswald text-red-500">{{caseStudy.before.value}}</p>
+                    <p class="font-semibold text-slate-600 dark:text-slate-300">{{caseStudy.before.label}}</p>
+                </div>
+                 <div>
+                    <p class="text-sm text-slate-500">After</p>
+                    <p class="text-4xl font-oswald text-green-500">{{caseStudy.after.value}}</p>
+                    <p class="font-semibold text-slate-600 dark:text-slate-300">{{caseStudy.after.label}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 11. TESTIMONIAL WALL -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+         <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider text-center">The Command Center in Action</h2>
+         <div class="mt-12 space-y-8">
+            @for(testimonial of testimonials; track $index) {
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-lg italic border-l-4 border-amber-400 shadow-lg" appAnimateOnScroll>
+                    <blockquote class="text-slate-600 dark:text-slate-300">"{{testimonial.quote}}"</blockquote>
+                    <cite class="block mt-4 font-bold text-slate-800 dark:text-white not-italic">- {{testimonial.author}}</cite>
+                </div>
+            }
+         </div>
+    </div>
+</section>
+
+<!-- 12. VS. CHART -->
+<div class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 max-w-3xl">
+    <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider text-center">Stop Paying for Chaos</h2>
+     <div class="mt-8 bg-white dark:bg-slate-900 rounded-xl shadow-2xl overflow-hidden" appAnimateOnScroll>
+      <div class="grid grid-cols-3 divide-x divide-slate-200 dark:divide-slate-700">
+        <div class="p-4 font-bold text-slate-800 dark:text-white">Feature</div>
+        <div class="p-4 font-bold text-slate-800 dark:text-white text-center">"The Patchwork"</div>
+        <div class="p-4 font-bold text-slate-800 dark:text-white text-center">Phoenix Recovery</div>
+      </div>
+      @for(row of comparisonData; track row.feature) {
+        <div class="grid grid-cols-3 divide-x divide-slate-200 dark:divide-slate-700 border-t border-slate-200 dark:border-slate-700">
+            <div class="p-4 font-semibold text-slate-800 dark:text-white">{{row.feature}}</div>
+            <div class="p-4 text-center text-red-500">{{row.oldWay}}</div>
+            <div class="p-4 text-center text-green-500">{{row.phoenixWay}}</div>
+        </div>
+      }
+    </div>
+  </div>
+</div>
+
+<!-- 13. GUARANTEE -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The "Never Miss a Lead" <span class="text-amber-500">Guarantee</span></h2>
+        <div class="mt-8 bg-white dark:bg-slate-800 p-8 rounded-lg border-2 border-dashed border-amber-400" appAnimateOnScroll>
+            <p class="text-slate-600 dark:text-slate-300 text-lg">We guarantee you will capture more leads and respond faster in your first 30 days. If you don't feel more in control of your customer communication, <span class="font-bold text-slate-800 dark:text-white">we will work with you for free until you do.</span> We're that confident.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 14. INVESTMENT (PRICING) -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-lg text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">All This Power Is Included</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">The All-In-One Inbox isn't an expensive add-on. It's a core part of the Phoenix Recovery platform, included in our most popular plan.</p>
+        <div class="mt-8 bg-white dark:bg-slate-900 p-8 rounded-lg border-2 border-amber-400 shadow-2xl relative" appAnimateOnScroll>
+             <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-900 text-sm font-bold uppercase tracking-wider px-4 py-1 rounded-full">Most Popular</div>
+            <h3 class="text-3xl font-oswald uppercase text-slate-800 dark:text-white tracking-wider">Advanced</h3>
+            <div class="my-6">
+              <span class="text-5xl font-bold text-slate-900 dark:text-white">$297</span>
+              <span class="text-slate-500 dark:text-slate-400">/mo</span>
+            </div>
+            <a routerLink="/pricing" class="text-amber-500 dark:text-amber-400 font-semibold hover:underline">
+              See All Plan Features &rarr;
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 15. FAQ -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+  <div class="container mx-auto px-4 max-w-3xl">
+    <h2 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white text-center">Inbox FAQs</h2>
+    <div class="mt-12 space-y-4">
+      @for(faq of faqs; track faq.q; let i = $index) {
+        <div class="bg-white dark:bg-slate-800 rounded-lg shadow-sm overflow-hidden" appAnimateOnScroll>
+          <button (click)="toggleFaq(i)" class="w-full p-6 text-left flex justify-between items-center">
+            <span class="font-bold text-lg text-slate-800 dark:text-white">{{ faq.q }}</span>
+            <svg class="w-6 h-6 text-slate-500 transition-transform flex-shrink-0" [class.rotate-180]="openFaq() === i" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out overflow-hidden" [style.max-height]="openFaq() === i ? '200px' : '0'">
+            <div class="px-6 pb-6 text-slate-600 dark:text-slate-300">
+              <p>{{ faq.a }}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<app-cta-section></app-cta-section>

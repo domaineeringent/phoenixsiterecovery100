@@ -1,0 +1,265 @@
+<!-- 1. HERO -->
+<section class="bg-slate-900 text-white">
+  <div class="container mx-auto px-4 py-24 sm:py-32">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl md:text-7xl font-oswald font-bold" [innerHTML]="hero.title"></h1>
+        <p class="mt-6 text-lg text-slate-300 max-w-lg">{{ hero.subtitle }}</p>
+        <div class="mt-10">
+          <a routerLink="/book-a-call" class="inline-block bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-all duration-300 transform hover:scale-105">
+            Get Your Free SEO Blueprint
+          </a>
+           <p class="text-xs text-slate-400 mt-2">Book a Free, No-Pressure Strategy Call</p>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <img [src]="hero.imageUrl" alt="A map showing a business ranking #1 in local search results" class="rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROBLEM AGITATION -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider" [innerHTML]="problem.title"></h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">{{ problem.description }}</p>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
+            @for(point of problem.points; track point.text) {
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-lg text-center shadow-lg" appAnimateOnScroll>
+                    <div class="w-16 h-16 mx-auto bg-red-100 dark:bg-red-900/50 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" [attr.d]="point.icon"></path></svg>
+                    </div>
+                    <p class="mt-4 font-semibold text-slate-700 dark:text-slate-200">{{ point.text }}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 3. QUANTIFIED PAIN -->
+<section class="bg-slate-950 text-white py-20">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+        <h2 class="text-4xl font-oswald uppercase tracking-wider" [innerHTML]="quantifiedPain.title"></h2>
+        <p class="mt-4 text-slate-400" [innerHTML]="quantifiedPain.description"></p>
+        <div class="mt-8 bg-slate-800/50 border border-slate-700 p-8 rounded-lg" appAnimateOnScroll>
+            <p class="text-slate-300 text-lg" [innerHTML]="quantifiedPain.calculation.premise"></p>
+            <p class="text-7xl font-oswald font-bold text-red-500 my-4">{{ quantifiedPain.calculation.value }}</p>
+            <p class="text-slate-300 text-lg">{{ quantifiedPain.calculation.conclusion }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. INVALIDATE ALTERNATIVES -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The SEO "Solutions" That Burn Your Money</h2>
+        <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">If you've tried to improve your rankings before, you've probably been burned by one of these empty promises. Real SEO isn't about secret tricks; it's about real work.</p>
+        <div class="mt-12 grid md:grid-cols-3 gap-8">
+            @for(solution of failedSolutions; track solution.title; let i = $index) {
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-lg border-t-4 border-red-500" appAnimateOnScroll [style.transition-delay]="i * 100 + 'ms'">
+                    <h3 class="font-bold text-xl text-slate-800 dark:text-white">{{solution.title}}</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">{{solution.description}}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 5. THE PIVOT -->
+<div class="bg-slate-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-oswald uppercase tracking-wider">Ranking on Google Isn't Magic. It's a Blueprint.</h2>
+    </div>
+</div>
+
+<!-- 6. THE SOLUTION REVEAL -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 max-w-5xl text-center">
+    <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The "Map Pack Domination" Blueprint</h2>
+    <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">We ignore the fluff and focus on the three pillars that Google actually cares about. By systematically building your authority across these areas, we make you the obvious choice for Google to rank #1.</p>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+      @for(pillar of blueprintPillars; track pillar.name; let i = $index) {
+        <div class="bg-white dark:bg-slate-900 p-8 rounded-lg shadow-lg" appAnimateOnScroll [style.transition-delay]="i * 100 + 'ms'">
+          <span class="font-oswald text-5xl text-amber-500/30 dark:text-amber-400/20">0{{i + 1}}</span>
+          <h3 class="text-2xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white mt-2">{{pillar.name}}</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-3">{{pillar.description}}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 7. DEEP DIVE: PILLAR 1 (GMB) -->
+<section class="bg-white dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-sm font-bold text-amber-500 uppercase tracking-wider">Pillar 1</p>
+                <h3 class="text-3xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white mt-2">{{gmbDeepDive.title}}</h3>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">{{gmbDeepDive.description}}</p>
+                <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+                    @for(feature of gmbDeepDive.features; track feature) {
+                        <div class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-slate-700 dark:text-slate-200">{{feature}}</span></div>
+                    }
+                </div>
+            </div>
+            <img [src]="gmbDeepDive.imageUrl" alt="Optimized Google Business Profile" class="rounded-lg shadow-xl" appAnimateOnScroll>
+        </div>
+    </div>
+</section>
+
+<!-- 8. DEEP DIVE: PILLAR 2 (WEBSITE) -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <img [src]="websiteDeepDive.imageUrl" alt="Website optimized for local SEO" class="rounded-lg shadow-xl md:order-2" appAnimateOnScroll>
+            <div class="md:order-1">
+                <p class="text-sm font-bold text-amber-500 uppercase tracking-wider">Pillar 2</p>
+                <h3 class="text-3xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white mt-2">{{websiteDeepDive.title}}</h3>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">{{websiteDeepDive.description}}</p>
+                 <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+                    @for(feature of websiteDeepDive.features; track feature) {
+                        <div class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-slate-700 dark:text-slate-200">{{feature}}</span></div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 9. DEEP DIVE: PILLAR 3 (CITATIONS & REVIEWS) -->
+<section class="bg-white dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-sm font-bold text-amber-500 uppercase tracking-wider">Pillar 3</p>
+                <h3 class="text-3xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white mt-2">{{citationsDeepDive.title}}</h3>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">{{citationsDeepDive.description}}</p>
+                 <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+                    @for(feature of citationsDeepDive.features; track feature) {
+                        <div class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-slate-700 dark:text-slate-200">{{feature}}</span></div>
+                    }
+                </div>
+            </div>
+            <img [src]="citationsDeepDive.imageUrl" alt="Logos of online directories and review sites" class="rounded-lg shadow-xl" appAnimateOnScroll>
+        </div>
+    </div>
+</section>
+
+<!-- 10. FUTURE PACING -->
+<div class="bg-slate-900 text-white py-20">
+    <div class="container mx-auto px-4 max-w-3xl text-center">
+        <h2 class="text-4xl font-oswald uppercase tracking-wider">Imagine This...</h2>
+        <p class="mt-6 text-slate-300 text-lg leading-relaxed">Your phone rings. It's a new customer. You ask them how they found you. They say, <span class="font-bold text-white">"You were the first one I saw on Google."</span> This happens every week. Your schedule is full, you're booking higher-ticket jobs, and you're no longer wasting money on ads that don't work. That's what it feels like to dominate your local market.</p>
+    </div>
+</div>
+
+<!-- 11. CASE STUDY -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <div class="grid md:grid-cols-3 gap-8 items-center bg-white dark:bg-slate-900 p-8 rounded-lg shadow-2xl">
+            <div class="md:col-span-2">
+                <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider">Case Study: Rodriguez Painting</p>
+                <h3 class="text-4xl font-oswald mt-2 text-slate-800 dark:text-white">From Invisible to <span class="text-green-500">Inevitable</span></h3>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">{{caseStudy.summary}}</p>
+            </div>
+            <div class="text-center">
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500">Before</p>
+                    <p class="text-4xl font-oswald text-red-500">{{caseStudy.before.value}}</p>
+                    <p class="font-semibold text-slate-600 dark:text-slate-300 text-sm">{{caseStudy.before.label}}</p>
+                </div>
+                 <div>
+                    <p class="text-sm text-slate-500">After</p>
+                    <p class="text-4xl font-oswald text-green-500">{{caseStudy.after.value}}</p>
+                    <p class="font-semibold text-slate-600 dark:text-slate-300 text-sm">{{caseStudy.after.label}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 12. TESTIMONIAL WALL -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+         <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider text-center">Don't Take Our Word For It</h2>
+         <div class="mt-12 space-y-8">
+            @for(testimonial of testimonials; track $index) {
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-lg italic border-l-4 border-amber-400 shadow-lg" appAnimateOnScroll>
+                    <blockquote class="text-slate-600 dark:text-slate-300">"{{testimonial.quote}}"</blockquote>
+                    <cite class="block mt-4 font-bold text-slate-800 dark:text-white not-italic">- {{testimonial.author}}</cite>
+                </div>
+            }
+         </div>
+    </div>
+</section>
+
+<!-- 13. WHY IT WORKS (THE ALGORITHM) -->
+<div class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">Why This Works: Speaking Google's Language</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">Google's goal is to show the most relevant, trustworthy result to its users. Our entire process is designed to prove to Google that YOU are that result. It boils down to three simple things:</p>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            @for(item of algorithmExplained; track item.name) {
+                <div class="text-center" appAnimateOnScroll>
+                    <h3 class="text-3xl font-oswald text-amber-500">{{item.name}}</h3>
+                    <p class="mt-2 text-slate-700 dark:text-slate-300">{{item.text}}</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- 14. GUARANTEE -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The "Page One Visibility" <span class="text-amber-500">Guarantee</span></h2>
+        <div class="mt-8 bg-white dark:bg-slate-800 p-8 rounded-lg border-2 border-dashed border-amber-400" appAnimateOnScroll>
+            <p class="text-slate-600 dark:text-slate-300 text-lg">We are so confident in our process that we guarantee it. Within 90 days of starting our Local SEO service, <span class="font-bold text-slate-800 dark:text-white">we guarantee a measurable improvement in your average Google Maps ranking</span> for your primary keywords. If not, we work for free until we do.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 15. INVESTMENT (PRICING) -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-lg text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The Ultimate Marketing Investment</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">Stop burning money on ads and start building a long-term asset. Our proactive Local SEO management is the engine of our Supreme plan, designed for contractors ready to dominate.</p>
+        <div class="mt-8 bg-slate-800 text-white p-8 rounded-lg shadow-2xl" appAnimateOnScroll>
+            <h3 class="text-3xl font-oswald uppercase tracking-wider">Supreme</h3>
+            <p class="mt-2 text-slate-400">For contractors ready to dominate their market with Google Ads & SEO.</p>
+            <div class="my-6">
+              <span class="text-5xl font-bold">$750</span>
+              <span class="text-slate-400">/mo</span>
+            </div>
+             <a routerLink="/pricing" class="text-amber-400 font-semibold hover:underline">
+              See All Plan Features &rarr;
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 16. FAQ -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+  <div class="container mx-auto px-4 max-w-3xl">
+    <h2 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white text-center">Local SEO FAQs</h2>
+    <div class="mt-12 space-y-4">
+      @for(faq of faqs; track faq.q; let i = $index) {
+        <div class="bg-white dark:bg-slate-800 rounded-lg shadow-sm overflow-hidden" appAnimateOnScroll>
+          <button (click)="toggleFaq(i)" class="w-full p-6 text-left flex justify-between items-center">
+            <span class="font-bold text-lg text-slate-800 dark:text-white">{{ faq.q }}</span>
+            <svg class="w-6 h-6 text-slate-500 transition-transform flex-shrink-0" [class.rotate-180]="openFaq() === i" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out overflow-hidden" [style.max-height]="openFaq() === i ? '200px' : '0'">
+            <div class="px-6 pb-6 text-slate-600 dark:text-slate-300">
+              <p>{{ faq.a }}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<app-cta-section></app-cta-section>

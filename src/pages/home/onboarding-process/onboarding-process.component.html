@@ -1,0 +1,26 @@
+<section class="bg-slate-50 dark:bg-slate-950 py-20 md:py-32">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">"White Glove" Onboarding in <span class="text-amber-500">7 Days</span></h2>
+    <p class="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">You don't have time to learn a new system. Our team does all the heavy lifting to get you set up for success from day one.</p>
+  </div>
+  <div class="container mx-auto px-4 mt-16 max-w-2xl">
+    <div class="relative">
+      <!-- The vertical line that will be "drawn" on scroll -->
+      <div class="absolute left-12 top-0 w-1 bg-slate-200 dark:bg-slate-700 h-full">
+        <div class="progress-line w-full bg-amber-400"></div>
+      </div>
+      
+      <div class="space-y-24">
+        @for(step of onboardingProcess; track step.number) {
+          <div class="process-step relative pl-24">
+            <div class="absolute top-0 left-0 w-24 h-24 rounded-full bg-white dark:bg-slate-800 border-4 border-amber-400 flex items-center justify-center font-oswald text-4xl text-amber-500 dark:text-amber-400">{{ step.number }}</div>
+            <div class="text-left">
+              <h3 class="font-bold text-xl text-slate-800 dark:text-white uppercase tracking-wider">{{ step.title }}</h3>
+              <p class="mt-2 text-slate-600 dark:text-slate-400">{{ step.description }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

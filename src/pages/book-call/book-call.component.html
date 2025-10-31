@@ -1,0 +1,238 @@
+<!-- 1. HERO -->
+<section class="bg-slate-900 text-white">
+  <div class="container mx-auto px-4 py-24 sm:py-32 text-center">
+    <h1 class="text-5xl md:text-7xl font-oswald font-bold" [innerHTML]="data.hero.title"></h1>
+    <p class="mt-6 text-lg text-slate-300 max-w-3xl mx-auto">{{ data.hero.subtitle }}</p>
+    <div class="mt-10">
+      <a href="#book-call" class="inline-block bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-all duration-300 transform hover:scale-105">
+        Book My Free Blueprint
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. THE CROSSROADS -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 max-w-4xl text-center">
+    <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">{{data.crossroads.title}}</h2>
+    <p class="mt-4 text-slate-600 dark:text-slate-300">{{data.crossroads.description}}</p>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white dark:bg-slate-900 p-8 rounded-lg border-t-4 border-red-500" appAnimateOnScroll>
+        <svg class="w-10 h-10 text-red-500 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" [attr.d]="data.crossroads.path1.icon"></path></svg>
+        <h3 class="mt-4 text-2xl font-oswald text-slate-800 dark:text-white">{{data.crossroads.path1.title}}</h3>
+        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">{{data.crossroads.path1.description}}</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 p-8 rounded-lg border-t-4 border-green-500" appAnimateOnScroll [style.transition-delay]="'100ms'">
+        <svg class="w-10 h-10 text-green-500 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" [attr.d]="data.crossroads.path2.icon"></path></svg>
+        <h3 class="mt-4 text-2xl font-oswald text-slate-800 dark:text-white">{{data.crossroads.path2.title}}</h3>
+        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">{{data.crossroads.path2.description}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. WHAT THE CALL IS -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+  <div class="container mx-auto px-4 max-w-5xl text-center">
+    <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">{{data.whatCallIs.title}}</h2>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      @for(point of data.whatCallIs.points; track point.title; let i = $index) {
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg" appAnimateOnScroll [style.transition-delay]="i * 100 + 'ms'">
+          <h3 class="text-2xl font-oswald uppercase tracking-wider text-amber-500">{{point.title}}</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-3">{{point.text}}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 4. WHAT THIS CALL IS NOT -->
+<section class="bg-slate-950 text-white py-20">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+        <h2 class="text-4xl font-oswald uppercase tracking-wider" [innerHTML]="data.whatCallIsNot.title"></h2>
+        <div class="mt-8 space-y-4 max-w-lg mx-auto">
+            @for(point of data.whatCallIsNot.points; track point) {
+                <div class="flex items-center text-left bg-slate-800 p-4 rounded-lg">
+                    <svg class="w-8 h-8 text-green-500 mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <p class="text-lg text-slate-300">{{point}}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 5. WHO THIS CALL IS FOR -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-3xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider text-center">{{data.whoFor.title}}</h2>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-3xl mx-auto">
+            @for(point of data.whoFor.points; track point) {
+                <div class="flex items-center p-2">
+                    <svg class="w-5 h-5 text-amber-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p class="text-slate-700 dark:text-slate-300">{{point}}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 6. MEET YOUR GUIDE -->
+<section class="bg-white dark:bg-slate-900 py-20 text-slate-800 dark:text-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="grid md:grid-cols-3 gap-12 items-center">
+            <div class="md:col-span-1">
+                <img [src]="data.guide.imageUrl" [alt]="data.guide.name" class="rounded-full shadow-xl w-48 h-48 mx-auto object-cover border-4 border-amber-400">
+            </div>
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-oswald uppercase tracking-wider">Meet Your Guide</h2>
+                <p class="mt-4 text-slate-600 dark:text-slate-300 italic">"{{ data.guide.bio }}"</p>
+                <p class="mt-4 font-bold text-slate-800 dark:text-white">{{data.guide.name}}, <span class="text-amber-500 dark:text-amber-400">{{data.guide.title}}</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7. THE AGENDA -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 max-w-4xl text-center">
+    <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">{{data.agenda.title}}</h2>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      @for(step of data.agenda.steps; track step.time; let i = $index) {
+        <div class="text-center" appAnimateOnScroll [style.transition-delay]="i * 100 + 'ms'">
+          <p class="text-2xl font-bold text-amber-500 font-oswald">{{step.time}}</p>
+          <p class="text-slate-700 dark:text-slate-300 max-w-xs mx-auto">{{step.text}}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 8. GUARANTEE -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">{{data.guarantee.title}}</h2>
+        <div class="mt-8 bg-white dark:bg-slate-800 p-8 rounded-lg border-2 border-dashed border-amber-400" appAnimateOnScroll>
+            <p class="text-slate-600 dark:text-slate-300 text-lg" [innerHTML]="data.guarantee.description"></p>
+        </div>
+    </div>
+</section>
+
+<!-- 9. BOOKING WIDGET -->
+<section class="bg-white dark:bg-slate-900 py-20" id="book-call">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div class="text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">{{data.booking.title}}</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">{{data.booking.subtitle}}</p>
+    </div>
+    <div class="mt-8 bg-white dark:bg-slate-900 rounded-lg shadow-2xl overflow-hidden">
+      <div class="min-h-[700px]">
+         <iframe 
+            src="https://calendly.com/stonesystems/20-minute-demo" 
+            width="100%" 
+            height="700" 
+            frameborder="0"
+            class="dark:bg-slate-900"
+            >
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. WHAT HAPPENS NEXT -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">{{data.whatHappensNext.title}}</h2>
+  </div>
+  <div class="container mx-auto px-4 mt-16 max-w-5xl">
+    <div class="grid md:grid-cols-3 gap-8 md:gap-4 relative">
+        <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 -translate-y-1/2">
+            <svg width="100%" height="100%" viewBox="0 0 100 1" preserveAspectRatio="none"><path d="M0,0.5 C25,0.5 25,0.5 50,0.5 S75,0.5 100,0.5" stroke="#cbd5e1" class="dark:stroke-slate-700" stroke-width="2" fill="none" stroke-dasharray="8 8"></path></svg>
+        </div>
+        @for(step of data.whatHappensNext.steps; track step.number) {
+            <div class="relative text-center z-10 p-4" appAnimateOnScroll>
+                <div class="w-24 h-24 mx-auto rounded-full bg-white dark:bg-slate-900 border-4 border-amber-400 flex items-center justify-center font-oswald text-4xl text-amber-500 dark:text-amber-400">{{ step.number }}</div>
+                <h3 class="mt-6 font-bold text-xl text-slate-800 dark:text-white uppercase tracking-wider">{{ step.title }}</h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm">{{ step.description }}</p>
+            </div>
+        }
+    </div>
+  </div>
+</section>
+
+<!-- 11. TESTIMONIALS -->
+<section class="bg-white dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+         <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider text-center">"The Most Valuable 20 Minutes..."</h2>
+         <div class="mt-12 space-y-8">
+            @for(testimonial of data.testimonials; track $index) {
+                <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-lg italic border-l-4 border-amber-400 shadow-lg" appAnimateOnScroll>
+                    <blockquote class="text-slate-600 dark:text-slate-300">"{{testimonial.quote}}"</blockquote>
+                    <cite class="block mt-4 font-bold text-slate-800 dark:text-white not-italic">- {{testimonial.author}}</cite>
+                </div>
+            }
+         </div>
+    </div>
+</section>
+
+<!-- 12. COST OF DELAY -->
+<section class="bg-slate-900 text-white py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald uppercase tracking-wider">{{data.costOfDelay.title}}</h2>
+        <p class="mt-4 text-slate-300 text-lg">{{data.costOfDelay.text}}</p>
+        <div class="mt-8 bg-red-500/10 p-6 rounded-lg">
+            <p class="text-4xl font-bold text-red-500">{{data.costOfDelay.stat}}</p>
+            <p class="text-slate-400">{{data.costOfDelay.subtext}}</p>
+        </div>
+    </div>
+</section>
+
+<!-- 13. FAQ -->
+<section class="bg-white dark:bg-slate-900 py-20">
+  <div class="container mx-auto px-4 max-w-3xl">
+    <h2 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white text-center">Your Pre-Call Questions, Answered</h2>
+    <div class="mt-12 space-y-4">
+      @for(faq of data.faqs; track faq.q; let i = $index) {
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg shadow-sm overflow-hidden" appAnimateOnScroll>
+          <button (click)="toggleFaq(i)" class="w-full p-6 text-left flex justify-between items-center">
+            <span class="font-bold text-lg text-slate-800 dark:text-white">{{ faq.q }}</span>
+            <svg class="w-6 h-6 text-slate-500 transition-transform flex-shrink-0" [class.rotate-180]="openFaq() === i" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out overflow-hidden" [style.max-height]="openFaq() === i ? '200px' : '0'">
+            <div class="px-6 pb-6 text-slate-600 dark:text-slate-300">
+              <p>{{ faq.a }}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 14. ARE WE A FIT? -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">{{data.areWeAFit.title}}</h2>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-lg">
+                <h3 class="font-bold text-green-500 text-xl">{{data.areWeAFit.fit.title}}</h3>
+                <ul class="mt-4 space-y-2 text-left">
+                    @for(point of data.areWeAFit.fit.points; track point) {
+                        <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="text-slate-700 dark:text-slate-300">{{point}}</span></li>
+                    }
+                </ul>
+            </div>
+             <div class="bg-white dark:bg-slate-900 p-8 rounded-lg">
+                <h3 class="font-bold text-red-500 text-xl">{{data.areWeAFit.notFit.title}}</h3>
+                <ul class="mt-4 space-y-2 text-left">
+                     @for(point of data.areWeAFit.notFit.points; track point) {
+                        <li class="flex items-start"><svg class="w-5 h-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg><span class="text-slate-700 dark:text-slate-300">{{point}}</span></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 15. FINAL CTA -->
+<app-cta-section></app-cta-section>

@@ -1,0 +1,65 @@
+.anatomy-container {
+    height: 300vh; /* Provides the scrollable area to drive all animations */
+}
+
+/* --- TEXT ANIMATIONS --- */
+.pillar-text {
+    opacity: 0;
+    animation: fade-in-out linear forwards;
+    animation-timeline: view();
+}
+
+/* Stagger the text animations to match the layer reveals */
+.pillar-text:nth-child(1) {
+    animation-range-start: 5%;
+    animation-range-end: 35%;
+}
+.pillar-text:nth-child(2) {
+    animation-range-start: 35%;
+    animation-range-end: 65%;
+}
+.pillar-text:nth-child(3) {
+    animation-range-start: 65%;
+    animation-range-end: 95%;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; transform: translateY(20px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+
+/* --- LAYER ANIMATIONS --- */
+.layer {
+    @apply absolute inset-0;
+    opacity: 0;
+    transform: scale(0.98);
+    animation: fade-in-layer ease-out forwards;
+    animation-timeline: view();
+}
+
+.layer-1 { /* Wireframe */
+    animation-range-start: 5%;
+    animation-range-end: 30%;
+}
+.layer-2 { /* Design */
+    animation-range-start: 35%;
+    animation-range-end: 60%;
+}
+.layer-3 { /* CTAs */
+    animation-range-start: 65%;
+    animation-range-end: 90%;
+}
+
+@keyframes fade-in-layer {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,73 @@
+<section class="bg-slate-50 dark:bg-slate-950 py-20 text-white">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="text-slate-800 dark:text-white">
+        <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider">Stop Leaving <span class="text-amber-500 dark:text-amber-400">Money on the Table</span></h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">Use this calculator to estimate how much revenue you're losing to missed calls and disorganized follow-up. See the real financial impact Phoenix Recovery could have on your business in just one month.</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 p-8 rounded-lg shadow-2xl">
+        <form [formGroup]="calculatorForm">
+          <!-- Average Job Value -->
+          <div class="mb-6">
+            <div class="flex justify-between items-center">
+              <label for="avgJobValue" class="font-semibold text-slate-800 dark:text-white">Average Job Value</label>
+              <span class="text-xl font-bold text-slate-900 dark:text-white">${{ formValues().avgJobValue | number }}</span>
+            </div>
+            <input id="avgJobValue" formControlName="avgJobValue" type="range" min="500" max="15000" step="100" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer range-thumb">
+          </div>
+          <!-- Close Rate -->
+          <div class="mb-6">
+            <div class="flex justify-between items-center">
+              <label for="closeRate" class="font-semibold text-slate-800 dark:text-white">Lead Close Rate</label>
+              <span class="text-xl font-bold text-slate-900 dark:text-white">{{ formValues().closeRate }}%</span>
+            </div>
+            <input id="closeRate" formControlName="closeRate" type="range" min="10" max="75" step="1" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer range-thumb">
+          </div>
+          <!-- Missed Calls Per Week -->
+           <div class="mb-6">
+            <div class="flex justify-between items-center">
+              <label for="missedCalls" class="font-semibold text-slate-800 dark:text-white">Missed Calls Per Week</label>
+              <span class="text-xl font-bold text-slate-900 dark:text-white">{{ formValues().missedCalls }}</span>
+            </div>
+            <input id="missedCalls" formControlName="missedCalls" type="range" min="1" max="50" step="1" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer range-thumb">
+          </div>
+        </form>
+        <div class="mt-8 pt-8 border-t border-slate-200 dark:border-slate-700 text-center">
+          <p class="text-slate-600 dark:text-slate-400">With Phoenix Recovery, you could potentially gain...</p>
+          <div class="mt-4 grid grid-cols-2 gap-4">
+            <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+              <p class="text-3xl font-bold text-amber-500 dark:text-amber-400">{{ projectedNewJobs() }}</p>
+              <p class="text-sm font-semibold text-slate-700 dark:text-slate-300">New Jobs Per Month</p>
+            </div>
+            <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+              <p class="text-3xl font-bold text-amber-500 dark:text-amber-400">${{ monthlyRoi() | number }}</p>
+              <p class="text-sm font-semibold text-slate-700 dark:text-slate-300">In Additional Revenue</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.range-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #f59e0b; /* amber-500 */
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.range-thumb::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #f59e0b;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+</style>

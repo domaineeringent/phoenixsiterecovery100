@@ -1,0 +1,44 @@
+@if (post(); as p) {
+  <div class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-white">
+    <!-- HERO -->
+    <div class="pt-24 pb-12">
+      <div class="container mx-auto px-4 max-w-3xl text-center">
+        <div class="flex items-center justify-center gap-2">
+          @for(tag of p.tags; track tag) {
+            <span class="text-sm font-bold uppercase tracking-wider text-amber-500 dark:text-amber-400">{{ tag }}</span>
+          }
+        </div>
+        <h1 class="text-4xl md:text-5xl font-oswald mt-4">{{ p.title }}</h1>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">{{ p.subtitle }}</p>
+        <div class="mt-6 flex items-center justify-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+          <div class="flex items-center gap-2">
+            <!-- Ideal Image: A professional headshot of the blog post's author. -->
+            <img [src]="p.authorImage" [alt]="p.author" class="w-8 h-8 rounded-full">
+            <span>By {{ p.author }}</span>
+          </div>
+          <span>&bull;</span>
+          <span>{{ p.publishDate | date:'longDate' }}</span>
+          <span>&bull;</span>
+          <span>{{ p.readTime }} min read</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED IMAGE -->
+    <div class="container mx-auto px-4 max-w-5xl">
+      <!-- Ideal Image: A high-quality, relevant image that serves as the hero visual for the blog post topic. -->
+      <img [src]="p.imageUrl" [alt]="p.title" class="w-full h-auto max-h-[500px] object-cover rounded-lg shadow-2xl">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="py-20">
+      <div class="container mx-auto px-4 max-w-3xl">
+        <div class="prose prose-lg dark:prose-invert max-w-none prose-h3:font-oswald prose-h3:text-amber-500 dark:prose-h3:text-amber-400" [innerHTML]="p.content">
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-cta-section></app-cta-section>
+} @else {
+  <!-- Loading state can go here -->
+}

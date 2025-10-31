@@ -1,0 +1,54 @@
+<div class="before-after-container bg-slate-100 dark:bg-slate-900 py-20 md:py-32 overflow-hidden">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white text-center uppercase tracking-wider">From Ghost Town to <span class="text-amber-500">Boom Town</span></h2>
+        
+        <div class="mt-12 transformation-container">
+            <div class="sticky top-0 h-screen flex items-center justify-center">
+                <div class="w-full max-w-5xl">
+                    <div class="grid md:grid-cols-2 gap-8 text-center mb-8">
+                        <div>
+                            <p class="font-bold text-red-500 text-3xl font-oswald">BEFORE</p>
+                        </div>
+                        <div>
+                             <p class="font-bold text-green-500 text-3xl font-oswald">AFTER</p>
+                        </div>
+                    </div>
+                    <div class="relative w-full aspect-video bg-white dark:bg-slate-800 rounded-xl shadow-2xl overflow-hidden">
+                        
+                        <!-- BEFORE State (Bottom Layer) -->
+                        <div class="absolute inset-0">
+                             <img [src]="caseStudy.before.imageUrl" alt="Before" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- AFTER State (Top Layer with clip-path) -->
+                        <div class="absolute inset-0 after-slider">
+                             <img [src]="caseStudy.after.imageUrl" alt="After" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                     <div class="grid md:grid-cols-2 gap-8 text-center mt-8">
+                        <div class="grid grid-cols-2 gap-4">
+                             @for(stat of caseStudy.before.stats; track stat.label) {
+                                <div>
+                                    <p class="text-3xl font-bold text-slate-800 dark:text-white">
+                                        <span [appCountUp]="stat.value">{{stat.value}}</span>{{stat.suffix}}
+                                    </p>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">{{stat.label}}</p>
+                                </div>
+                            }
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            @for(stat of caseStudy.after.stats; track stat.label) {
+                                <div>
+                                    <p class="text-3xl font-bold text-slate-800 dark:text-white">
+                                        <span [appCountUp]="stat.value">{{stat.value}}</span>{{stat.suffix}}
+                                    </p>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">{{stat.label}}</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,224 @@
+<!-- 1. HERO -->
+<section class="bg-slate-900 text-white">
+  <div class="container mx-auto px-4 py-24 sm:py-32">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl md:text-7xl font-oswald font-bold" [innerHTML]="data.hero.title"></h1>
+        <p class="mt-6 text-lg text-slate-300 max-w-lg">{{ data.hero.subtitle }}</p>
+        <div class="mt-10">
+          <a routerLink="/book-a-call" class="inline-block bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-all duration-300 transform hover:scale-105">
+            Get Your Unfair Advantage
+          </a>
+           <p class="text-xs text-slate-400 mt-2">Book a Free Strategy Call</p>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <img [src]="data.hero.imageUrl" alt="A contractor standing in front of a wall of powerful technology logos." class="rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROBLEM AGITATION -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider" [innerHTML]="data.problem.title"></h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">{{ data.problem.description }}</p>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
+            @for(point of data.problem.points; track point.text) {
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-lg text-center shadow-lg" appAnimateOnScroll>
+                    <div class="w-16 h-16 mx-auto bg-red-100 dark:bg-red-900/50 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" [attr.d]="point.icon"></path></svg>
+                    </div>
+                    <p class="mt-4 font-semibold text-slate-700 dark:text-slate-200">{{ point.text }}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 3. QUANTIFIED PAIN -->
+<section class="bg-slate-950 text-white py-20">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+        <h2 class="text-4xl font-oswald uppercase tracking-wider" [innerHTML]="data.quantifiedPain.title"></h2>
+        <p class="mt-4 text-slate-400" [innerHTML]="data.quantifiedPain.description"></p>
+        <div class="mt-8 bg-slate-800/50 border border-slate-700 p-8 rounded-lg" appAnimateOnScroll>
+            <p class="text-slate-300 text-lg" [innerHTML]="data.quantifiedPain.calculation.premise"></p>
+            <p class="text-7xl font-oswald font-bold text-red-500 my-4">{{ data.quantifiedPain.calculation.value }}</p>
+            <p class="text-slate-300 text-lg">{{ data.quantifiedPain.calculation.conclusion }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. INVALIDATE ALTERNATIVES -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The "Solutions" That Keep You Trapped in Tech Hell</h2>
+        <div class="mt-12 grid md:grid-cols-3 gap-8">
+            @for(solution of data.failedSolutions; track solution.title; let i = $index) {
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-lg border-t-4 border-red-500" appAnimateOnScroll [style.transition-delay]="i * 100 + 'ms'">
+                    <h3 class="font-bold text-xl text-slate-800 dark:text-white">{{solution.title}}</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">{{solution.description}}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 5. THE PIVOT -->
+<div class="bg-slate-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-oswald uppercase tracking-wider">Stop Being an IT Manager. Start Being a Business Owner.</h2>
+    </div>
+</div>
+
+<!-- 6. THE SOLUTION REVEAL -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 max-w-5xl text-center">
+    <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">{{data.theReveal.title}}</h2>
+    <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">{{data.theReveal.description}}</p>
+    <div class="mt-12" appAnimateOnScroll>
+        <img [src]="data.theReveal.imageUrl" alt="Diagram showing multiple partner logos funneling into the single Phoenix Recovery platform." class="rounded-lg shadow-2xl">
+    </div>
+  </div>
+</section>
+
+<!-- 7. THE ARSENAL SHOWCASE -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-center text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white mb-12">Your Assembled Arsenal</h2>
+        <div class="space-y-12">
+            @for(category of data.arsenal; track category.category) {
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg" appAnimateOnScroll>
+                    <h3 class="text-3xl font-oswald uppercase tracking-wider text-amber-500 dark:text-amber-400">{{category.category}}</h3>
+                    <p class="mt-2 text-slate-600 dark:text-slate-300">{{category.description}}</p>
+                    <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                        @for(partner of category.partners; track partner.name) {
+                            <div>
+                                <img [src]="partner.logoUrl" [alt]="partner.name + ' Logo'" class="h-8 w-auto grayscale opacity-70">
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">{{partner.benefit}}</p>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 8. THE INTEGRATION MAGIC -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="md:order-2">
+                <h3 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white" [innerHTML]="data.integrationMagic.title"></h3>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">{{data.integrationMagic.description}}</p>
+            </div>
+            <div class="md:order-1" appAnimateOnScroll>
+                <img [src]="data.integrationMagic.imageUrl" alt="Diagram showing partner logos connecting through the central Phoenix Recovery hub." class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 9. FUTURE PACING -->
+<div class="bg-slate-900 text-white py-20">
+    <div class="container mx-auto px-4 max-w-4xl grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="text-4xl font-oswald uppercase tracking-wider">{{data.futurePacing.title}}</h2>
+            <p class="mt-6 text-slate-300 text-lg leading-relaxed">{{data.futurePacing.description}}</p>
+        </div>
+        <img [src]="data.futurePacing.imageUrl" alt="A contractor confidently looking towards the future." class="rounded-lg shadow-2xl" appAnimateOnScroll>
+    </div>
+</div>
+
+<!-- 10. CASE STUDY -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <div class="bg-white dark:bg-slate-900 p-8 rounded-lg shadow-2xl">
+            <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider text-center">Case Study: Chillfactor HVAC</p>
+            <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-center">{{data.caseStudy.summary}}</p>
+            <div class="mt-8 grid grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <div class="bg-red-500/10 p-6 rounded-lg text-center">
+                    <h4 class="font-bold text-red-500 text-xl">{{data.caseStudy.before.title}}</h4>
+                    <div class="mt-4 grid grid-cols-3 gap-2">
+                        <div><p class="text-2xl font-bold text-slate-800 dark:text-white">{{data.caseStudy.before.cost}}</p><p class="text-xs text-slate-500">Cost</p></div>
+                        <div><p class="text-2xl font-bold text-slate-800 dark:text-white">{{data.caseStudy.before.apps}}</p><p class="text-xs text-slate-500">Apps</p></div>
+                        <div><p class="text-2xl font-bold text-slate-800 dark:text-white">{{data.caseStudy.before.time}}</p><p class="text-xs text-slate-500">Admin Time</p></div>
+                    </div>
+                </div>
+                <div class="bg-green-500/10 p-6 rounded-lg text-center">
+                    <h4 class="font-bold text-green-500 text-xl">{{data.caseStudy.after.title}}</h4>
+                    <div class="mt-4 grid grid-cols-3 gap-2">
+                        <div><p class="text-2xl font-bold text-slate-800 dark:text-white">{{data.caseStudy.after.cost}}</p><p class="text-xs text-slate-500">Cost</p></div>
+                        <div><p class="text-2xl font-bold text-slate-800 dark:text-white">{{data.caseStudy.after.apps}}</p><p class="text-xs text-slate-500">Apps</p></div>
+                        <div><p class="text-2xl font-bold text-slate-800 dark:text-white">{{data.caseStudy.after.time}}</p><p class="text-xs text-slate-500">Admin Time</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 11. TESTIMONIAL WALL -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+         <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider text-center">Focus on Your Craft. We'll Handle the Tech.</h2>
+         <div class="mt-12 space-y-8">
+            @for(testimonial of data.testimonials; track $index) {
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-lg italic border-l-4 border-amber-400 shadow-lg" appAnimateOnScroll>
+                    <blockquote class="text-slate-600 dark:text-slate-300">"{{testimonial.quote}}"</blockquote>
+                    <cite class="block mt-4 font-bold text-slate-800 dark:text-white not-italic">- {{testimonial.author}}</cite>
+                </div>
+            }
+         </div>
+    </div>
+</section>
+
+<!-- 12. R&D DEPARTMENT BENEFIT -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">{{data.rdBenefit.title}}</h3>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">{{data.rdBenefit.description}}</p>
+            </div>
+            <img [src]="data.rdBenefit.imageUrl" alt="A team in a lab innovating on new technology." class="rounded-lg shadow-xl" appAnimateOnScroll>
+        </div>
+    </div>
+</section>
+
+<!-- 13. GUARANTEE -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider" [innerHTML]="data.guarantee.title"></h2>
+        <div class="mt-8 bg-white dark:bg-slate-800 p-8 rounded-lg border-2 border-dashed border-amber-400" appAnimateOnScroll>
+            <p class="text-slate-600 dark:text-slate-300 text-lg" [innerHTML]="data.guarantee.description"></p>
+        </div>
+    </div>
+</section>
+
+<!-- 14. FAQ -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 max-w-3xl">
+    <h2 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white text-center">Your Questions, Answered</h2>
+    <div class="mt-12 space-y-4">
+      @for(faq of data.faqs; track faq.q; let i = $index) {
+        <div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm overflow-hidden" appAnimateOnScroll>
+          <button (click)="toggleFaq(i)" class="w-full p-6 text-left flex justify-between items-center">
+            <span class="font-bold text-lg text-slate-800 dark:text-white">{{ faq.q }}</span>
+            <svg class="w-6 h-6 text-slate-500 transition-transform flex-shrink-0" [class.rotate-180]="openFaq() === i" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out overflow-hidden" [style.max-height]="openFaq() === i ? '200px' : '0'">
+            <div class="px-6 pb-6 text-slate-600 dark:text-slate-300">
+              <p>{{ faq.a }}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 15. FINAL CTA -->
+<app-cta-section></app-cta-section>

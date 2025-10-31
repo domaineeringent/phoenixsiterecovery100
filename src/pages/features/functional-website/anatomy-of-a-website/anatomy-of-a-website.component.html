@@ -1,0 +1,32 @@
+<div class="anatomy-container bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-white">
+  <div class="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <!-- Left Column: Text Content -->
+      <div class="space-y-8">
+        @for(pillar of blueprintPillars; track pillar.name) {
+          <div class="pillar-text">
+            <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider">{{pillar.name}}</p>
+            <h3 class="text-3xl font-oswald mt-1">{{pillar.title}}</h3>
+            <p class="text-slate-600 dark:text-slate-300 mt-2">{{pillar.description}}</p>
+          </div>
+        }
+      </div>
+
+      <!-- Right Column: Animated Graphic -->
+      <div class="relative w-full aspect-[4/3] rounded-lg bg-white dark:bg-slate-800 shadow-2xl overflow-hidden">
+        <!-- Layer 1: Wireframe (Foundation) -->
+        <div class="layer layer-1">
+          <img src="https://picsum.photos/seed/wireframe/800/600" alt="Website wireframe" class="w-full h-full object-cover">
+        </div>
+        <!-- Layer 2: Design (Framing) -->
+        <div class="layer layer-2">
+           <img src="https://picsum.photos/seed/design/800/600" alt="Website design" class="w-full h-full object-cover">
+        </div>
+        <!-- Layer 3: CTAs (Finish) -->
+        <div class="layer layer-3">
+           <img src="https://picsum.photos/seed/ctas/800/600" alt="Website with calls to action" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

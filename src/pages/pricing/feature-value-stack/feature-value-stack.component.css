@@ -1,0 +1,57 @@
+.stack-block {
+    @apply p-4 rounded-lg text-white text-center transition-all duration-500;
+}
+
+.cost-block {
+    @apply bg-red-500;
+    height: 80px; /* Set initial height */
+    transform-origin: bottom;
+    animation: squish-cost linear forwards;
+    animation-timeline: view();
+    animation-range-start: 70%; 
+    animation-range-end: 85%;
+}
+
+@keyframes squish-cost {
+  to {
+    transform: scaleY(0.8);
+  }
+}
+
+.value-block {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: stack-in ease-out forwards;
+    animation-timeline: view();
+}
+
+/* Stagger the animations */
+.value-block:nth-of-type(2) { animation-range-start: 10%; animation-range-end: 25%; }
+.value-block:nth-of-type(3) { animation-range-start: 30%; animation-range-end: 45%; }
+.value-block:nth-of-type(4) { animation-range-start: 50%; animation-range-end: 65%; }
+.value-block:nth-of-type(5) { animation-range-start: 70%; animation-range-end: 85%; }
+
+
+@keyframes stack-in {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.roi-counter {
+    @apply absolute -top-32 left-1/2 -translate-x-1/2 text-center;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fade-in-roi ease-out forwards;
+    animation-timeline: view();
+    animation-range-start: 90%;
+    animation-range-end: 100%;
+}
+
+@keyframes fade-in-roi {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

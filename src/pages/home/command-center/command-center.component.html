@@ -1,0 +1,40 @@
+<div class="command-center-container bg-slate-50 dark:bg-slate-800">
+    <div class="sticky top-0 h-screen flex flex-col items-center justify-center overflow-hidden">
+        
+        <!-- PIVOT TEXT -->
+        <div class="pivot-text text-center">
+            <h2 class="text-3xl font-oswald uppercase tracking-wider text-slate-900 dark:text-white">There is a better way.</h2>
+        </div>
+
+        <!-- REVEAL SECTION -->
+        <div class="reveal-content absolute inset-0 flex flex-col items-center justify-center">
+            <div class="text-center">
+                <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The All-In-One Command Center</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">We replaced the expensive, confusing "patchwork" of separate tools with one simple, powerful, and affordable platform built for the trades.</p>
+            </div>
+            
+            <div class="relative mt-8">
+                <!-- Central Image -->
+                <img src="https://picsum.photos/seed/dashboard-center/400/300" alt="Command Center Dashboard" class="dashboard-center z-10 rounded-lg shadow-2xl">
+                
+                <!-- Pillar 1 -->
+                <div class="pillar pillar-1">
+                    <h3 class="font-bold text-slate-800 dark:text-white">{{platformPillars[0].name}}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">{{platformPillars[0].description}}</p>
+                </div>
+                
+                <!-- Pillar 2 -->
+                <div class="pillar pillar-2">
+                    <h3 class="font-bold text-slate-800 dark:text-white">{{platformPillars[1].name}}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">{{platformPillars[1].description}}</p>
+                </div>
+                
+                <!-- Pillar 3 -->
+                <div class="pillar pillar-3">
+                    <h3 class="font-bold text-slate-800 dark:text-white">{{platformPillars[2].name}}</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">{{platformPillars[2].description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

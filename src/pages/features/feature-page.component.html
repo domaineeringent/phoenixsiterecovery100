@@ -1,0 +1,163 @@
+<!-- This is a generic template for all feature pages. -->
+<!-- The component using this template must provide a `data` object. -->
+
+<!-- 1. HERO SECTION -->
+<div class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-white">
+  <div class="container mx-auto px-4 py-24 sm:py-32">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider">{{ data.hero.subtitle }}</p>
+        <h1 class="text-5xl md:text-7xl font-oswald uppercase tracking-wider mt-2" [innerHTML]="data.hero.title"></h1>
+        <p class="mt-6 text-lg text-slate-600 dark:text-slate-300 max-w-lg">{{ data.hero.description }}</p>
+        <div class="mt-10">
+          <a routerLink="/book-a-call" class="inline-block bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-all duration-300 transform hover:scale-105">
+            See It In Action
+          </a>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <!-- Ideal Image: A high-quality, conceptual image or product screenshot representing the specific feature. -->
+        <img [src]="data.hero.imageUrl" alt="Feature illustration" class="rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. PROBLEM SECTION -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20 md:py-32">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="text-center lg:text-left">
+        <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white" [innerHTML]="data.problem.title"></h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-xl mx-auto lg:mx-0">{{ data.problem.description }}</p>
+      </div>
+      <div class="space-y-6">
+        @for(point of data.problem.painPoints; track point.text) {
+          <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex items-center">
+            <!-- Ideal Image: An icon or simple illustration representing the pain point. -->
+            <img [src]="point.imageUrl" alt="Pain point icon" class="w-12 h-12 rounded-full object-cover mr-6 flex-shrink-0">
+            <p class="font-semibold text-slate-700 dark:text-slate-200">{{ point.text }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SOLUTION SECTION -->
+<section class="bg-slate-50 dark:bg-slate-950 py-20 md:py-32">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white" [innerHTML]="data.solution.title"></h2>
+            <p class="mt-4 text-slate-600 dark:text-slate-300">{{ data.solution.description }}</p>
+        </div>
+        <div class="mt-16 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            @for(benefit of data.solution.benefits; track benefit.title) {
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-lg shadow-lg border-t-4 border-amber-400">
+                    <h3 class="font-bold text-xl text-slate-800 dark:text-white">{{ benefit.title }}</h3>
+                    <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm">{{ benefit.description }}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 4. HOW IT WORKS -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20 md:py-32">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">{{ data.howItWorks.title }}</h2>
+  </div>
+  <div class="container mx-auto px-4 mt-16 max-w-5xl">
+    <div class="grid md:grid-cols-3 gap-8 md:gap-4 relative">
+      <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 -translate-y-1/2">
+        <svg width="100%" height="100%" viewBox="0 0 100 1" preserveAspectRatio="none"><path d="M0,0.5 C25,0.5 25,0.5 50,0.5 S75,0.5 100,0.5" stroke="#cbd5e1" class="dark:stroke-slate-700" stroke-width="2" fill="none" stroke-dasharray="8 8"></path></svg>
+      </div>
+      @for(step of data.howItWorks.steps; track step.number) {
+        <div class="relative text-center z-10 p-4">
+          <div class="w-24 h-24 mx-auto rounded-full bg-white dark:bg-slate-800 border-4 border-amber-400 flex items-center justify-center font-oswald text-4xl text-amber-500 dark:text-amber-400">{{ step.number }}</div>
+          <h3 class="mt-6 font-bold text-xl text-slate-800 dark:text-white uppercase tracking-wider">{{ step.title }}</h3>
+          <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm">{{ step.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 5. FEATURE DEEP DIVE -->
+<section class="bg-slate-50 dark:bg-slate-950 py-20 md:py-32">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <h2 class="text-4xl md:text-5xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white text-center">{{ data.featureDeepDive.title }}</h2>
+    <div class="mt-16 space-y-16">
+      @for(feature of data.featureDeepDive.features; track feature.title; let i = $index) {
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div [class.md:order-2]="i % 2 !== 0">
+            <!-- Ideal Image: A product screenshot or graphic that visually explains this specific sub-feature. -->
+            <img [src]="feature.imageUrl" [alt]="feature.title" class="rounded-lg shadow-xl">
+          </div>
+          <div>
+            <h3 class="text-3xl font-bold text-slate-800 dark:text-white">{{ feature.title }}</h3>
+            <p class="mt-4 text-slate-600 dark:text-slate-300">{{ feature.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- 6. STATISTIC & SCENARIO -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20 md:py-32">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- STAT -->
+      <div class="bg-amber-400 text-slate-900 p-12 rounded-lg text-center flex flex-col justify-center">
+        <p class="text-8xl font-oswald">{{ data.statistic.value }}</p>
+        <p class="mt-2 text-xl font-semibold max-w-sm mx-auto">{{ data.statistic.text }}</p>
+      </div>
+      <!-- SCENARIO -->
+      <div class="bg-white dark:bg-slate-800 p-8 rounded-lg flex items-center gap-8">
+        <!-- Ideal Image: A friendly, approachable headshot of a contractor. -->
+        <img [src]="data.scenario.imageUrl" [alt]="data.scenario.title" class="w-32 h-32 rounded-full object-cover flex-shrink-0 hidden sm:block">
+        <div>
+          <h3 class="font-oswald text-2xl uppercase tracking-wider text-slate-800 dark:text-white">{{ data.scenario.title }}</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-300 italic">"{{ data.scenario.story }}"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TESTIMONIAL & FAQ -->
+<section class="bg-slate-50 dark:bg-slate-950 py-20 md:py-32">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <div class="grid lg:grid-cols-5 gap-12">
+      <div class="lg:col-span-2">
+        <div class="bg-white dark:bg-slate-900 p-8 rounded-lg shadow-xl h-full">
+          <svg class="w-12 h-12 text-slate-200 dark:text-slate-700" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM2 10a8 8 0 1116 0 8 8 0 01-16 0zm5-2a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1zm1 5a1 1 0 100 2h6a1 1 0 100-2H8z" clip-rule="evenodd" transform="rotate(90 10 10) scale(-1, 1)" /></svg>
+          <blockquote class="mt-4 text-xl font-semibold text-slate-700 dark:text-slate-200 italic">"{{ data.testimonial.quote }}"</blockquote>
+          <cite class="block mt-4 font-bold text-amber-500 dark:text-amber-400 not-italic uppercase tracking-wider">{{ data.testimonial.author }}</cite>
+        </div>
+      </div>
+      <div class="lg:col-span-3">
+        <h2 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">{{ data.faq.title }}</h2>
+        <div class="mt-8 space-y-4">
+          @for(faq of data.faq.questions; track faq.q; let i = $index) {
+            <div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm overflow-hidden">
+              <button (click)="toggleFaq(i)" class="w-full p-6 text-left flex justify-between items-center">
+                <span class="font-bold text-slate-800 dark:text-white">{{ faq.q }}</span>
+                <svg class="w-5 h-5 text-slate-500 transition-transform" [class.rotate-180]="openFaq() === i" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div class="transition-all duration-300 ease-in-out overflow-hidden" [style.max-height]="openFaq() === i ? '200px' : '0'">
+                <div class="px-6 pb-6 text-slate-600 dark:text-slate-300 text-sm">
+                  <p>{{ faq.a }}</p>
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FINAL CTA -->
+<app-cta-section></app-cta-section>

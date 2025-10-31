@@ -1,0 +1,179 @@
+<!-- 1. HERO -->
+<section class="bg-slate-900 text-white">
+  <div class="container mx-auto px-4 py-24 sm:py-32">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl md:text-7xl font-oswald font-bold" [innerHTML]="hero.title"></h1>
+        <p class="mt-6 text-lg text-slate-300 max-w-lg">{{ hero.subtitle }}</p>
+        <div class="mt-10">
+          <a routerLink="/book-a-call" class="inline-block bg-amber-400 text-slate-900 font-bold uppercase text-base px-10 py-4 rounded-md hover:bg-amber-500 transition-all duration-300 transform hover:scale-105">
+            Build My Digital Job Site
+          </a>
+           <p class="text-xs text-slate-400 mt-2">Book a Free Blueprint Call</p>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <img [src]="hero.imageUrl" alt="High-performance contractor website on a laptop" class="rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROBLEM AGITATION -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider" [innerHTML]="problem.title"></h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">{{ problem.description }}</p>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
+            @for(point of problem.points; track point.text) {
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-lg text-center shadow-lg" appAnimateOnScroll>
+                    <div class="w-16 h-16 mx-auto bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" [attr.d]="point.icon"></path></svg>
+                    </div>
+                    <p class="mt-4 font-semibold text-slate-700 dark:text-slate-200">{{ point.text }}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 3. QUANTIFIED PAIN -->
+<section class="bg-slate-950 text-white py-20">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+        <h2 class="text-4xl font-oswald uppercase tracking-wider" [innerHTML]="quantifiedPain.title"></h2>
+        <p class="mt-4 text-slate-400" [innerHTML]="quantifiedPain.description"></p>
+        <div class="mt-8 bg-slate-800/50 border border-slate-700 p-8 rounded-lg" appAnimateOnScroll>
+            <p class="text-slate-300 text-lg" [innerHTML]="quantifiedPain.calculation.premise"></p>
+            <p class="text-7xl font-oswald font-bold text-red-500 my-4">{{ quantifiedPain.calculation.value }}</p>
+            <p class="text-slate-300 text-lg">{{ quantifiedPain.calculation.conclusion }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. INVALIDATE ALTERNATIVES -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The Rogues' Gallery of Bad Websites</h2>
+        <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">You've tried one of these "solutions." They all lead to the same dead end: a website that costs you time and money but doesn't bring in jobs.</p>
+        <div class="mt-12 grid md:grid-cols-3 gap-8">
+            @for(solution of failedSolutions; track solution.title; let i = $index) {
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-lg border-t-4 border-red-500" appAnimateOnScroll [style.transition-delay]="i * 100 + 'ms'">
+                    <h3 class="font-bold text-xl text-slate-800 dark:text-white">{{solution.title}}</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">{{solution.description}}</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- 5. THE PIVOT -->
+<div class="bg-slate-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-oswald uppercase tracking-wider">Stop Buying Websites. Start Investing in Assets.</h2>
+    </div>
+</div>
+
+<!-- 6. THE BLUEPRINT (INTERACTIVE) -->
+<app-anatomy-of-a-website></app-anatomy-of-a-website>
+
+
+<!-- 7. DEEP DIVE: FOUNDATION -->
+<section class="bg-white dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider">Pillar 01: The Foundation</p>
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider mt-2">Built for Google & Mobile</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">If customers can't find you, you don't exist. We build every site with a search engine and mobile-first approach. This means clean code, fast load times, and a flawless experience on the phone—all the things Google loves to see.</p>
+    </div>
+</section>
+
+<!-- 8. DEEP DIVE: FRAMING -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider">Pillar 02: The Framing</p>
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider mt-2">Built for Action</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">A visitor who doesn't take action is a wasted opportunity. We "frame" your site with conversion in mind, using prominent click-to-call buttons, multi-step quote forms, and web chat that make it incredibly simple for a prospect to become a lead.</p>
+    </div>
+</section>
+
+<!-- 9. DEEP DIVE: FINISH -->
+<section class="bg-white dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+         <p class="font-bold text-amber-500 dark:text-amber-400 uppercase tracking-wider">Pillar 03: The Finish</p>
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider mt-2">Built for Trust</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Before a customer calls you, they have to trust you. We apply the "finish" using powerful trust signals. High-quality photo galleries showcase your work, and streaming 5-star reviews provide undeniable social proof that you're the right choice for the job.</p>
+    </div>
+</section>
+
+<!-- 10. BEFORE & AFTER SLIDER (INTERACTIVE) -->
+<app-website-before-after></app-website-before-after>
+
+<!-- 11. MOBILE SHOWCASE (INTERACTIVE) -->
+<app-mobile-showcase></app-mobile-showcase>
+
+<!-- 12. TESTIMONIAL WALL -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-5xl">
+         <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider text-center">It's Not Just a Website. It's Confidence.</h2>
+         <div class="mt-12 space-y-8">
+            @for(testimonial of testimonials; track $index) {
+                <div class="bg-white dark:bg-slate-900 p-8 rounded-lg italic border-l-4 border-amber-400 shadow-lg" appAnimateOnScroll>
+                    <blockquote class="text-slate-600 dark:text-slate-300">"{{testimonial.quote}}"</blockquote>
+                    <cite class="block mt-4 font-bold text-slate-800 dark:text-white not-italic">- {{testimonial.author}}</cite>
+                </div>
+            }
+         </div>
+    </div>
+</section>
+
+<!-- 13. GUARANTEE -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">Our "No-Leak" Website <span class="text-amber-500">Guarantee</span></h2>
+        <div class="mt-8 bg-white dark:bg-slate-800 p-8 rounded-lg border-2 border-dashed border-amber-400" appAnimateOnScroll>
+            <p class="text-slate-600 dark:text-slate-300 text-lg">We guarantee that your new website will be a lead-generating asset. Within the first 90 days, if your website isn't performing and capturing leads, <span class="font-bold text-slate-800 dark:text-white">our team will rebuild the entire homepage for free</span> based on the performance data. We're not happy until you're getting an ROI.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 14. PRICING -->
+<section class="bg-slate-50 dark:bg-slate-800 py-20">
+    <div class="container mx-auto px-4 max-w-lg text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">Your Most Profitable Investment</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">A high-performance website isn't a cost. It's an investment that pays for itself. Your new "Digital Job Site" is included in our most popular plan.</p>
+        <div class="mt-8 bg-white dark:bg-slate-900 p-8 rounded-lg border-2 border-amber-400 shadow-2xl relative" appAnimateOnScroll>
+             <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-900 text-sm font-bold uppercase tracking-wider px-4 py-1 rounded-full">Most Popular</div>
+            <h3 class="text-3xl font-oswald uppercase text-slate-800 dark:text-white tracking-wider">Advanced</h3>
+            <div class="my-6">
+              <span class="text-5xl font-bold text-slate-900 dark:text-white">$297</span>
+              <span class="text-slate-500 dark:text-slate-400">/mo</span>
+            </div>
+            <a routerLink="/pricing" class="text-amber-500 dark:text-amber-400 font-semibold hover:underline">
+              See All Plan Features &rarr;
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 15. FAQ -->
+<section class="bg-slate-100 dark:bg-slate-900 py-20">
+  <div class="container mx-auto px-4 max-w-3xl">
+    <h2 class="text-4xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white text-center">Your Questions, Answered</h2>
+    <div class="mt-12 space-y-4">
+      @for(faq of faqs; track faq.q; let i = $index) {
+        <div class="bg-white dark:bg-slate-800 rounded-lg shadow-sm overflow-hidden" appAnimateOnScroll>
+          <button (click)="toggleFaq(i)" class="w-full p-6 text-left flex justify-between items-center">
+            <span class="font-bold text-lg text-slate-800 dark:text-white">{{ faq.q }}</span>
+            <svg class="w-6 h-6 text-slate-500 transition-transform flex-shrink-0" [class.rotate-180]="openFaq() === i" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="transition-all duration-300 ease-in-out overflow-hidden" [style.max-height]="openFaq() === i ? '200px' : '0'">
+            <div class="px-6 pb-6 text-slate-600 dark:text-slate-300">
+              <p>{{ faq.a }}</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<app-cta-section></app-cta-section>

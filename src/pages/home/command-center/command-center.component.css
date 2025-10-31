@@ -1,0 +1,77 @@
+.command-center-container {
+    height: 300vh; /* Provides ample scroll area */
+}
+
+/* --- Animation Timelines --- */
+.pivot-text {
+    animation: fade-out-pivot linear forwards;
+    animation-timeline: view();
+    animation-range-start: 10%;
+    animation-range-end: 30%;
+}
+
+.reveal-content {
+    opacity: 0;
+    animation: fade-in-reveal linear forwards;
+    animation-timeline: view();
+    animation-range-start: 30%;
+    animation-range-end: 50%;
+}
+
+.dashboard-center {
+    animation: scale-in-center ease-out forwards;
+    animation-timeline: view();
+    animation-range-start: 35%;
+    animation-range-end: 55%;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.pillar {
+    @apply absolute w-56 p-4 bg-white dark:bg-slate-900 rounded-lg shadow-xl border border-slate-200 dark:border-slate-700;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fade-in-pillar ease-out forwards;
+    animation-timeline: view();
+}
+
+.pillar-1 {
+    top: -40px;
+    left: -250px;
+    animation-range-start: 45%;
+    animation-range-end: 60%;
+}
+.pillar-2 {
+    top: 50%;
+    transform: translateY(-50%) scale(0.9);
+    right: -280px;
+    animation-range-start: 50%;
+    animation-range-end: 65%;
+}
+.pillar-3 {
+    bottom: -40px;
+    left: -250px;
+    animation-range-start: 55%;
+    animation-range-end: 70%;
+}
+
+
+/* --- Keyframes --- */
+@keyframes fade-out-pivot {
+    to { opacity: 0; transform: scale(0.8); }
+}
+
+@keyframes fade-in-reveal {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes scale-in-center {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fade-in-pillar {
+    from { opacity: 0; transform: scale(0.9) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}

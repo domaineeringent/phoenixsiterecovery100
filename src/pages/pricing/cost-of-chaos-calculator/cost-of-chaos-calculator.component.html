@@ -1,0 +1,63 @@
+<div class="bg-slate-100 dark:bg-slate-900 py-20 overflow-hidden">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="text-center">
+            <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">The Real Cost of <span class="text-amber-500">Chaos</span></h2>
+            <p class="mt-4 max-w-3xl mx-auto text-slate-600 dark:text-slate-300">This isn't just about frustration. Your current "system" (or lack thereof) is actively costing you thousands. Adjust the sliders to see your number.</p>
+        </div>
+        <div class="mt-12 grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left: Sliders -->
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-xl">
+                <form [formGroup]="calculatorForm">
+                    <!-- Average Job Value -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center">
+                            <label for="avgJobValue" class="font-semibold text-slate-800 dark:text-white">Average Job Value</label>
+                            <span class="text-xl font-bold text-slate-900 dark:text-white">${{ formValues().avgJobValue | number }}</span>
+                        </div>
+                        <input id="avgJobValue" formControlName="avgJobValue" type="range" min="500" max="15000" step="100" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer range-thumb">
+                    </div>
+                    <!-- Missed Calls Per Week -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center">
+                            <label for="missedCalls" class="font-semibold text-slate-800 dark:text-white">Missed Calls Per Week</label>
+                            <span class="text-xl font-bold text-slate-900 dark:text-white">{{ formValues().missedCalls }}</span>
+                        </div>
+                        <input id="missedCalls" formControlName="missedCalls" type="range" min="1" max="50" step="1" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer range-thumb">
+                    </div>
+                    <!-- Wasted Admin Hours -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center">
+                            <label for="wastedHours" class="font-semibold text-slate-800 dark:text-white">Wasted Admin Hours Per Week</label>
+                            <span class="text-xl font-bold text-slate-900 dark:text-white">{{ formValues().wastedHours }}</span>
+                        </div>
+                        <input id="wastedHours" formControlName="wastedHours" type="range" min="1" max="20" step="1" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer range-thumb">
+                    </div>
+                </form>
+            </div>
+            <!-- Right: Visualization -->
+            <div class="text-center">
+                <p class="text-slate-600 dark:text-slate-400">You're losing an estimated</p>
+                <p class="text-7xl font-oswald font-bold text-red-500 my-2">
+                   $<span [appCountUp]="totalLostRevenue()" [duration]="500">0</span>
+                </p>
+                <p class="text-lg text-slate-700 dark:text-slate-300">per month in lost revenue & time.</p>
+                
+                <div class="relative w-48 h-48 mx-auto mt-4">
+                    <!-- Leaking Bucket SVG -->
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <!-- Water -->
+                        <path class="water" [attr.transform]="'translate(0, ' + waterLevel() + ')'" d="M 0 20 C 20 10, 40 30, 60 20 S 80 10, 100 20 V 100 H 0 Z" />
+                        <!-- Bucket -->
+                        <path d="M 10 10 L 20 90 H 80 L 90 10 H 10 Z M 22 88 L 78 88 L 88 12 H 12 L 22 88 Z" fill="currentColor" class="text-slate-300 dark:text-slate-600"/>
+                        <!-- Leaks -->
+                        <g class="leaks" [style.opacity]="waterLevel() > 10 ? 1 : 0">
+                            <circle class="leak" cx="30" cy="92" r="1.5" />
+                            <circle class="leak" cx="50" cy="92" r="1.5" />
+                            <circle class="leak" cx="70" cy="92" r="1.5" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<section class="mobile-showcase-container bg-white dark:bg-slate-950 py-20 md:py-32 overflow-hidden">
+    <div class="container mx-auto px-4 max-w-5xl text-center">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white uppercase tracking-wider">Looks Perfect <span class="text-amber-500">Everywhere</span></h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">With over 70% of traffic coming from mobile, your site has to be flawless on every screen.</p>
+    </div>
+    <div class="showcase-animation-area mt-12 h-[150vh]">
+        <div class="sticky top-0 h-screen flex justify-center items-center">
+            <div class="relative w-full h-full max-w-5xl">
+                <img [src]="devices.desktop" alt="Desktop view" class="device device-desktop">
+                <img [src]="devices.tablet" alt="Tablet view" class="device device-tablet">
+                <img [src]="devices.mobile" alt="Mobile view" class="device device-mobile">
+            </div>
+        </div>
+    </div>
+</section>

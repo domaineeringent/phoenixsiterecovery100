@@ -1,0 +1,57 @@
+<div class="bg-slate-50 dark:bg-slate-800 py-20 md:py-32 overflow-hidden">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl font-oswald text-slate-800 dark:text-white text-center uppercase tracking-wider">From Chaos to Control: <span class="text-amber-500">A Real-World Example</span></h2>
+        
+        <div class="mt-12 transformation-container">
+            <div class="sticky top-0 h-screen flex items-center justify-center">
+                <div class="relative w-full max-w-5xl bg-white dark:bg-slate-900 rounded-xl shadow-2xl overflow-hidden">
+                    
+                    <!-- BEFORE State (Bottom Layer) -->
+                    <div class="grid md:grid-cols-2">
+                        <div class="p-8">
+                            <h3 class="text-3xl font-oswald text-red-500">BEFORE</h3>
+                            <img [src]="caseStudy.before.imageUrl" alt="Before" class="mt-4 rounded-lg shadow-md aspect-video object-cover">
+                            <div class="mt-4 grid grid-cols-3 gap-4 text-center">
+                                @for(stat of caseStudy.before.stats; track stat.label) {
+                                    <div>
+                                        <p class="text-3xl font-bold text-slate-800 dark:text-white">
+                                            <span [appCountUp]="stat.value">{{stat.value}}</span>{{stat.suffix}}
+                                        </p>
+                                        <p class="text-xs text-slate-500 dark:text-slate-400">{{stat.label}}</p>
+                                    </div>
+                                }
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-300 mt-4 italic">{{caseStudy.before.summary}}</p>
+                        </div>
+                        <div class="p-8 bg-slate-100 dark:bg-slate-800/50">
+                            <!-- Placeholder for alignment -->
+                        </div>
+                    </div>
+
+                    <!-- AFTER State (Top Layer with clip-path) -->
+                    <div class="absolute inset-0 grid md:grid-cols-2 after-slider">
+                        <div class="p-8">
+                             <!-- Placeholder for alignment -->
+                        </div>
+                        <div class="p-8 bg-slate-100 dark:bg-slate-800/50">
+                            <h3 class="text-3xl font-oswald text-green-500">AFTER</h3>
+                            <img [src]="caseStudy.after.imageUrl" alt="After" class="mt-4 rounded-lg shadow-md aspect-video object-cover">
+                            <div class="mt-4 grid grid-cols-3 gap-4 text-center">
+                                @for(stat of caseStudy.after.stats; track stat.label) {
+                                    <div>
+                                        <p class="text-3xl font-bold text-slate-800 dark:text-white">
+                                            <span [appCountUp]="stat.value">{{stat.value}}</span>{{stat.suffix}}
+                                        </p>
+                                        <p class="text-xs text-slate-500 dark:text-slate-400">{{stat.label}}</p>
+                                    </div>
+                                }
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-300 mt-4 italic">{{caseStudy.after.summary}}</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
