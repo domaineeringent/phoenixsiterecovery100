@@ -66,14 +66,14 @@ export class LocalSeoComponent {
   websiteDeepDive = {
     title: 'Your Website: The Authority Hub',
     description: 'Your website is the central hub that validates your expertise to Google. We ensure it\'s technically sound and content-rich.',
-    imageUrl: '/chimera_assets/chimera_116_chimera_116.webp',
+    imageUrl: 'https://picsum.photos/seed/website-seo/800/600',
     features: ['Local Keyword Targeting', 'Service & City Page Creation', 'Schema Markup Implementation', 'Mobile Speed Optimization']
   };
 
   citationsDeepDive = {
     title: 'Citations & Reviews: The Trust Signals',
     description: 'Consistency and reputation across the web are huge trust signals for Google. We build and manage them for you.',
-    imageUrl: '/chimera_assets/premium_photo-1744345196350-c55cd2b28cab_ixlib_rb-4_1_chimera_117.webp',
+    imageUrl: 'https://picsum.photos/seed/citations-reviews/800/600',
     features: ['NAP Consistency Audit & Cleanup', 'High-Authority Directory Submissions', 'Review Velocity Monitoring', 'Automated Review Streaming to Website']
   };
 

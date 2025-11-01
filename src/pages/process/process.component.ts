@@ -22,7 +22,7 @@ export class ProcessComponent {
     hero: {
       title: `Most "Solutions" Take 3 Months to Launch.<br> We Launch Yours in <span class="text-amber-400">7 Days.</span>`,
       subtitle: `Stop waiting. Our "White Glove" Onboarding Process is a rapid-deployment system that takes you from consultation to a fully-operational marketing and sales machine in one business week.`,
-      imageUrl: '/chimera_assets/premium_photo-1726797661357-f7897f35f865_ixlib_rb-4_1_chimera_83.webp'
+      imageUrl: 'https://picsum.photos/seed/process-hero/800/600'
     },
     problem: {
       title: `Welcome to "Onboarding Hell"`,
@@ -66,7 +66,7 @@ export class ProcessComponent {
       day6_7: {
         title: "Days 6-7: Launch & Training",
         description: "We don't hand you a 100-page manual. We give you the keys. We launch your new website and system, and then conduct a hyper-efficient 25-minute training session. Our platform is so intuitive, that's all you'll need to feel like a pro and start running your business with more control than ever before.",
-        imageUrl: "/chimera_assets/premium_photo-1682310058947-b9d7dc7702c7_ixlib_rb-4_1_chimera_86.webp"
+        imageUrl: "https://picsum.photos/seed/launch-train/800/600"
       }
     },
     caseStudy: {

@@ -29,7 +29,7 @@ export class OneClickMarketingComponent {
       painPoints: [
         { imageUrl: 'https://picsum.photos/seed/forgotten/100/100', text: 'Past customers forget about you.' },
         { imageUrl: 'https://picsum.photos/seed/tooslow/100/100', text: 'Manually texting/emailing is too slow.' },
-        { imageUrl: '/chimera_assets/chimera_137_chimera_137.webp', text: 'Losing out on easy repeat business.' },
+        { imageUrl: 'https://picsum.photos/seed/repeatbiz/100/100', text: 'Losing out on easy repeat business.' },
       ]
     },
     solution: {
@@ -52,8 +52,8 @@ export class OneClickMarketingComponent {
     featureDeepDive: {
       title: 'Smart & Simple Campaigning',
       features: [
-        { title: 'Proven Templates', description: 'Don\'t worry about what to say. We provide a set of high-converting message templates written specifically for contractors.', imageUrl: '/chimera_assets/premium_photo-1726840832490-c5e188a900f4_ixlib_rb-4_1_chimera_138.webp' },
-        { title: 'Personalization Tags', description: 'Automatically insert the customer\'s first name into each text message, making your mass campaigns feel like personal, one-to-one conversations.', imageUrl: '/chimera_assets/premium_photo-1727363543991-1d32daacfbd7_ixlib_rb-4_1_chimera_139.webp' },
+        { title: 'Proven Templates', description: 'Don\'t worry about what to say. We provide a set of high-converting message templates written specifically for contractors.', imageUrl: 'https://picsum.photos/seed/marketfeature1/800/600' },
+        { title: 'Personalization Tags', description: 'Automatically insert the customer\'s first name into each text message, making your mass campaigns feel like personal, one-to-one conversations.', imageUrl: 'https://picsum.photos/seed/marketfeature2/800/600' },
         { title: 'Scheduling', description: 'Plan your campaigns in advance. Write your message today and schedule it to be sent next week, next month, or whenever you want.', imageUrl: 'https://picsum.photos/seed/marketfeature3/800/600' },
       ]
     },
@@ -63,7 +63,7 @@ export class OneClickMarketingComponent {
     },
     scenario: {
       title: 'Meet Kevin, The Pressure Washer',
-      imageUrl: '/chimera_assets/chimera_141_chimera_141.webp',
+      imageUrl: 'https://picsum.photos/seed/contractor8/500/500',
       story: 'Kevin\'s business is slow in the fall. He uploaded his list of 300 customers from the spring and sent a "Fall Gutter Cleaning" special with one click. Within an hour, his inbox had 40 replies. He booked 15 jobs that week from a single text campaign that took him 5 minutes to set up.'
     },
     testimonial: {

@@ -28,7 +28,7 @@ export class TestimonialsComponent {
   hero = {
     title: `Don't Just Take Our Word For It. <br><span class="text-amber-400">See The Results.</span>`,
     subtitle: `We measure our success by one metric: our clients' success. Explore the real-world stories and measurable growth of contractors who traded chaos for control.`,
-    imageUrl: '/chimera_assets/premium_photo-1661407712516-207bacca35b6_ixlib_rb-4_1_chimera_23.webp'
+    imageUrl: '../../../chimera_assets/chimera_23_chimera_23.webp'
   };
 
   resultsDashboard = [
@@ -42,14 +42,14 @@ export class TestimonialsComponent {
 
   authorityLogos = {
     seenOn: [
-      { name: 'Forbes', imageUrl: '/chimera_assets/chimera_24_chimera_24.webp' },
-      { name: 'Inc. 5000', imageUrl: '/chimera_assets/premium_photo-1752230054438-53a8e7493f55_ixlib_rb-4_1_chimera_25.webp' },
-      { name: 'Builder Magazine', imageUrl: '/chimera_assets/premium_photo-1752230474246-95d49be14a23_ixlib_rb-4_1_chimera_26.webp' }
+      { name: 'Forbes', imageUrl: '../../../chimera_assets/premium_photo-1744896315509-51c90bce7ac9_ixlib_rb-4_1_chimera_24.webp' },
+      { name: 'Inc. 5000', imageUrl: '../../../chimera_assets/premium_photo-1752230054438-53a8e7493f55_ixlib_rb-4_1_chimera_25.webp' },
+      { name: 'Builder Magazine', imageUrl: '../../../chimera_assets/premium_photo-1752230054438-53a8e7493f55_ixlib_rb-4_1_chimera_26.webp' }
     ],
     tech: [
-      { name: 'Google', imageUrl: '/chimera_assets/premium_photo-1681400110107-d995a9a196e2_ixlib_rb-4_1_chimera_27.webp' },
-      { name: 'Twilio', imageUrl: '/chimera_assets/chimera_28_chimera_28.webp' },
-      { name: 'Stripe', imageUrl: '/chimera_assets/premium_photo-1668902224245-0f09f90a7a15_ixlib_rb-4_1_chimera_29.webp' }
+      { name: 'Google', imageUrl: '../../../chimera_assets/premium_photo-1681400110107-d995a9a196e2_ixlib_rb-4_1_chimera_27.webp' },
+      { name: 'Twilio', imageUrl: '../../../chimera_assets/premium_photo-1677675634231-70bbe246db1f_ixlib_rb-4_1_chimera_28.webp' },
+      { name: 'Stripe', imageUrl: '../../../chimera_assets/premium_photo-1681400110107-d995a9a196e2_ixlib_rb-4_1_chimera_29.webp' }
     ]
   };
 
@@ -58,20 +58,20 @@ export class TestimonialsComponent {
   featuredStory = {
     name: 'John Doe, JD Roofing',
     title: 'From Burnt-Out Roofer to 7-Figure Business Owner',
-    videoThumbnailUrl: '/chimera_assets/premium_photo-1682928136677-260d9971adb4_ixlib_rb-4_1_chimera_30.webp',
+    videoThumbnailUrl: '../../../chimera_assets/premium_photo-1682617326551-4749611516f6_ixlib_rb-4_1_chimera_30.webp',
     summary: 'John was working 70-hour weeks, missing calls, and losing jobs to faster competitors. In 6 months with Phoenix Recovery, he automated his lead follow-up, built a 5-star reputation, and doubled his revenue—all while working 20 fewer hours a week.'
   };
 
   beforeAfterGallery = [
     { 
       name: 'JD Roofing',
-      before: { imageUrl: '/chimera_assets/chimera_31_chimera_31.webp', stats: [{ value: '2-3', label: 'Leads/Week' }, { value: '12', label: 'Reviews' }] },
-      after: { imageUrl: '/chimera_assets/premium_photo-1664301167194-455b2ea6f8e7_ixlib_rb-4_1_chimera_32.webp', stats: [{ value: '15-20', label: 'Leads/Week' }, { value: '87', label: 'Reviews' }] }
+      before: { imageUrl: 'https://picsum.photos/seed/jdbefore/800/600', stats: [{ value: '2-3', label: 'Leads/Week' }, { value: '12', label: 'Reviews' }] },
+      after: { imageUrl: '../../../chimera_assets/premium_photo-1682309743711-a8f84f47fef6_ixlib_rb-4_1_chimera_32.webp', stats: [{ value: '15-20', label: 'Leads/Week' }, { value: '87', label: 'Reviews' }] }
     },
     { 
       name: 'Smith Electric',
-      before: { imageUrl: '/chimera_assets/premium_photo-1682309689730-1d2f757cd49d_ixlib_rb-4_1_chimera_33.webp', stats: [{ value: '48hr', label: 'Response Time' }, { value: 'Manual', label: 'Follow-up' }] },
-      after: { imageUrl: '/chimera_assets/chimera_34_chimera_34.webp', stats: [{ value: '< 5min', label: 'Response Time' }, { value: 'Automated', label: 'Follow-up' }] }
+      before: { imageUrl: '../../../chimera_assets/chimera_33_chimera_33.webp', stats: [{ value: '48hr', label: 'Response Time' }, { value: 'Manual', label: 'Follow-up' }] },
+      after: { imageUrl: '../../../chimera_assets/premium_photo-1726079247228-993af4c05db8_ixlib_rb-4_1_chimera_34.webp', stats: [{ value: '< 5min', label: 'Response Time' }, { value: 'Automated', label: 'Follow-up' }] }
     }
   ];
 
@@ -118,7 +118,7 @@ export class TestimonialsComponent {
   founder = {
     name: 'Alex Riley',
     title: 'Founder & CEO',
-    imageUrl: '/chimera_assets/chimera_35_chimera_35.webp',
+    imageUrl: '../../../chimera_assets/chimera_35_chimera_35.webp',
     message: `We're obsessed with our clients' success because I've lived the alternative. I watched my family's contracting business struggle with the same problems you face. Every testimonial on this page isn't just a number to us; it's the fulfillment of our mission to give contractors their time, their freedom, and their control back.`
   };
   
@@ -131,14 +131,14 @@ export class TestimonialsComponent {
 
   // Logic for the "Wall of Fame"
   allTestimonials = signal<Testimonial[]>([
-    { name: 'John Doe', company: 'JD Roofing', trade: 'Roofing', videoThumbnailUrl: '/chimera_assets/premium_photo-1679168116777-4f62f41cbb6d_ixlib_rb-4_1_chimera_36.webp' },
-    { name: 'Mike Smith', company: 'Smith Electric', trade: 'Electrical', videoThumbnailUrl: '/chimera_assets/premium_photo-1682086494778-a03e240fd089_ixlib_rb-4_1_chimera_37.webp' },
-    { name: 'Carlos Garcia', company: 'Garcia Landscaping', trade: 'Landscaping', videoThumbnailUrl: '/chimera_assets/premium_photo-1747908374283-a320c13de4d2_ixlib_rb-4_1_chimera_38.webp' },
-    { name: 'David Chen', company: 'Chen\'s Plumbing', trade: 'Plumbing', videoThumbnailUrl: '/chimera_assets/premium_photo-1723651413630-0802b171b3ed_ixlib_rb-4_1_chimera_39.webp' },
+    { name: 'John Doe', company: 'JD Roofing', trade: 'Roofing', videoThumbnailUrl: '../../../chimera_assets/premium_photo-1677323396133-658caa7549af_ixlib_rb-4_1_chimera_36.webp' },
+    { name: 'Mike Smith', company: 'Smith Electric', trade: 'Electrical', videoThumbnailUrl: '../../../chimera_assets/premium_photo-1678766819153-b3f7307c5127_ixlib_rb-4_1_chimera_37.webp' },
+    { name: 'Carlos Garcia', company: 'Garcia Landscaping', trade: 'Landscaping', videoThumbnailUrl: '../../../chimera_assets/chimera_38_chimera_38.webp' },
+    { name: 'David Chen', company: 'Chen\'s Plumbing', trade: 'Plumbing', videoThumbnailUrl: '../../../chimera_assets/premium_photo-1750594941118-145ef7a1791d_ixlib_rb-4_1_chimera_39.webp' },
     { name: 'Sarah Jenkins', company: 'Jenkins Remodeling', trade: 'Remodeling', videoThumbnailUrl: 'https://picsum.photos/seed/jenkinsreno/600/400' },
-    { name: 'Tom Wilson', company: 'Wilson HVAC', trade: 'HVAC', videoThumbnailUrl: '/chimera_assets/premium_photo-1661270485523-5fbf42d9dbeb_ixlib_rb-4_1_chimera_41.webp' },
-    { name: 'Maria Rodriguez', company: 'Rodriguez Painting', trade: 'Painting', videoThumbnailUrl: '/chimera_assets/chimera_42_chimera_42.webp' },
-    { name: 'Chris Lee', company: 'Lee Concrete', trade: 'Concrete', videoThumbnailUrl: '/chimera_assets/chimera_43_chimera_43.webp' },
+    { name: 'Tom Wilson', company: 'Wilson HVAC', trade: 'HVAC', videoThumbnailUrl: 'https://picsum.photos/seed/wilsonhvac/600/400' },
+    { name: 'Maria Rodriguez', company: 'Rodriguez Painting', trade: 'Painting', videoThumbnailUrl: 'https://picsum.photos/seed/rodriguezpaint/600/400' },
+    { name: 'Chris Lee', company: 'Lee Concrete', trade: 'Concrete', videoThumbnailUrl: 'https://picsum.photos/seed/leeconcrete/600/400' },
   ]);
 
   trades = computed(() => ['All', ...new Set(this.allTestimonials().map(t => t.trade))]);

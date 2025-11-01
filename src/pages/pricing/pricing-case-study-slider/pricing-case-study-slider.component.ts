@@ -15,7 +15,7 @@ export class PricingCaseStudySliderComponent {
     name: 'JD Roofing',
     trade: 'Dallas, TX',
     before: {
-        imageUrl: '/chimera_assets/chimera_172_chimera_172.webp',
+        imageUrl: 'https://picsum.photos/seed/jdbefore/800/600',
         stats: [
             { value: 3, label: 'Leads / Week' },
             { value: 12, label: 'Total Google Reviews' },
@@ -24,7 +24,7 @@ export class PricingCaseStudySliderComponent {
         summary: 'John was a great roofer, but his marketing was a mess. His website was 10 years old, he missed half his calls, and was drowning in paperwork every night.'
     },
     after: {
-        imageUrl: '/chimera_assets/chimera_173_chimera_173.webp',
+        imageUrl: 'https://picsum.photos/seed/jdafter/800/600',
         stats: [
             { value: 20, label: 'Leads / Week' },
             { value: 87, label: 'Total Google Reviews' },

@@ -32,21 +32,21 @@ export class HomeComponent {
     title: `The Operating System for America's Most <span class="text-amber-400">Successful Contractors</span>`,
     subtitle: `We provide the platform, process, and partnership that turns great contractors into dominant business owners. Stop fighting chaos. Start building an empire.`,
     avatars: [
-      '/chimera_assets/chimera_5_chimera_5.webp',
-      '/chimera_assets/chimera_6_chimera_6.webp',
-      '/chimera_assets/premium_photo-1739376350669-0cd7355b5daf_ixlib_rb-4_1_chimera_7.webp',
-      '/chimera_assets/premium_photo-1679415150838-a85a1bbb233b_ixlib_rb-4_1_chimera_8.webp',
-      '/chimera_assets/chimera_9_chimera_9.webp'
+      '../../../chimera_assets/premium_photo-1755096806828-bf180f9fab88_ixlib_rb-4_1_chimera_5.webp',
+      '../../../chimera_assets/chimera_6_chimera_6.webp',
+      '../../../chimera_assets/premium_photo-1755096806828-bf180f9fab88_ixlib_rb-4_1_chimera_7.webp',
+      '../../../chimera_assets/chimera_8_chimera_8.webp',
+      '../../../chimera_assets/chimera_9_chimera_9.webp'
     ],
   };
 
   authorityLogos = [
-    { name: 'Forbes', imageUrl: '/chimera_assets/chimera_10_chimera_10.webp' },
-    { name: 'Inc. 5000', imageUrl: '/chimera_assets/premium_photo-1752231227830-20cee47c4663_ixlib_rb-4_1_chimera_11.webp' },
-    { name: 'Builder Magazine', imageUrl: '/chimera_assets/chimera_12_chimera_12.webp' },
-    { name: 'Roofing Contractor', imageUrl: '/chimera_assets/premium_photo-1716849112185-8eebc527a713_ixlib_rb-4_1_chimera_13.webp' },
-    { name: 'This Old House', imageUrl: '/chimera_assets/premium_photo-1669077046750-bef49171b059_ixlib_rb-4_1_chimera_14.webp' },
-    { name: 'HGTV', imageUrl: '/chimera_assets/chimera_15_chimera_15.webp' }
+    { name: 'Forbes', imageUrl: 'https://picsum.photos/seed/forbes/200/50' },
+    { name: 'Inc. 5000', imageUrl: 'https://picsum.photos/seed/inc5000/200/50' },
+    { name: 'Builder Magazine', imageUrl: '../../../chimera_assets/premium_photo-1752230054438-53a8e7493f55_ixlib_rb-4_1_chimera_12.webp' },
+    { name: 'Roofing Contractor', imageUrl: '../../../chimera_assets/premium_photo-1716849112185-8eebc527a713_ixlib_rb-4_1_chimera_13.webp' },
+    { name: 'This Old House', imageUrl: 'https://picsum.photos/seed/oldhouse/200/50' },
+    { name: 'HGTV', imageUrl: '../../../chimera_assets/chimera_15_chimera_15.webp' }
   ];
 
   problemAgitation = [
@@ -67,9 +67,9 @@ export class HomeComponent {
   ];
   
   videoTestimonials = [
-    { name: 'John Doe', company: 'JD Roofing', videoThumbnailUrl: '/chimera_assets/chimera_16_chimera_16.webp' },
-    { name: 'Mike Smith', company: 'Smith Electric', videoThumbnailUrl: '/chimera_assets/chimera_17_chimera_17.webp' },
-    { name: 'Carlos Garcia', company: 'Garcia Landscaping', videoThumbnailUrl: '/chimera_assets/chimera_18_chimera_18.webp' },
+    { name: 'John Doe', company: 'JD Roofing', videoThumbnailUrl: 'https://picsum.photos/seed/jdroofing/600/400' },
+    { name: 'Mike Smith', company: 'Smith Electric', videoThumbnailUrl: 'https://picsum.photos/seed/smithelectric/600/400' },
+    { name: 'Carlos Garcia', company: 'Garcia Landscaping', videoThumbnailUrl: 'https://picsum.photos/seed/garcialand/600/400' },
   ];
   
   writtenReviews = [
@@ -80,7 +80,7 @@ export class HomeComponent {
   founder = {
     name: 'Alex Riley',
     title: 'Founder & CEO',
-    imageUrl: '/chimera_assets/chimera_19_chimera_19.webp',
+    imageUrl: '../../../chimera_assets/chimera_19_chimera_19.webp',
     story: `Alex grew up in a family of contractors. He saw firsthand the long hours and the stress of running a business after their outdated website was hacked, shutting down their main source of leads. After a decade in tech, Alex founded Phoenix Recovery with a single mission: to give contractors the bulletproof technology and systems they deserve, so they can win back their time and dominate their market.`
   };
 

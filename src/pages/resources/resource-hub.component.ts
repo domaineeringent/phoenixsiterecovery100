@@ -40,20 +40,20 @@ export class ResourceHubComponent {
     problem: {
       title: `Drowning in Bad Advice?`,
       description: `You're bombarded by "gurus" and marketing agencies selling you the latest shiny object. Most have never swung a hammer or run a real contracting business. It's time to tune out the noise and tune into proven strategies that actually work for the trades.`,
-      imageUrl: '/chimera_assets/chimera_153_chimera_153.webp'
+      imageUrl: 'https://picsum.photos/seed/bad-advice/800/600'
     },
     philosophy: {
       title: 'Our Guiding Philosophy',
       points: ['Systemize', 'Automate', 'Dominate']
     },
     mentors: [
-      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: '/chimera_assets/chimera_154_chimera_154.webp', bio: 'Grew up in a contractor family. Obsessed with building systems that give contractors their time back.' },
+      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'https://picsum.photos/seed/alex/500/500', bio: 'Grew up in a contractor family. Obsessed with building systems that give contractors their time back.' },
       { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: 'https://picsum.photos/seed/samantha/500/500', bio: 'A master of local SEO and digital marketing. She turns contractors into the go-to choice in their local market.' },
     ],
     caseStudy: {
       name: 'JD Roofing',
       summary: `John D. applied the principles in our "5 Marketing Mistakes" playbook. He fixed his website, automated his review requests, and started capturing missed calls. The result? A 40% increase in revenue in 6 months and he finally took his first family vacation in 5 years.`,
-      imageUrl: '/chimera_assets/premium_photo-1733317328038-4aa0269ac803_ixlib_rb-4_1_chimera_156.webp'
+      imageUrl: 'https://picsum.photos/seed/jd-success/800/600'
     },
     knowledgeGap: {
         title: `The "Knowing vs. Doing" Gap`,

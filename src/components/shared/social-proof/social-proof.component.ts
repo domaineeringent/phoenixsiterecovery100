@@ -17,10 +17,10 @@ interface Notification {
 })
 export class SocialProofComponent implements OnInit, OnDestroy {
   notifications: Notification[] = [
-    { trade: 'Roofer', city: 'Dallas, TX', action: 'analyzed their website', imageUrl: '/chimera_assets/chimera_145_chimera_145.webp' },
-    { trade: 'Plumber', city: 'Miami, FL', action: 'booked a demo', imageUrl: '/chimera_assets/chimera_146_chimera_146.webp' },
-    { trade: 'Landscaper', city: 'Denver, CO', action: 'got a 5-star review', imageUrl: '/chimera_assets/premium_photo-1738942794892-10d23c2ee439_ixlib_rb-4_1_chimera_147.webp' },
-    { trade: 'Electrician', city: 'Phoenix, AZ', action: 'analyzed their website', imageUrl: '/chimera_assets/premium_photo-1682086495376-ac5e9c345abd_ixlib_rb-4_1_chimera_148.webp' }
+    { trade: 'Roofer', city: 'Dallas, TX', action: 'analyzed their website', imageUrl: 'https://picsum.photos/seed/analyze/100/100' },
+    { trade: 'Plumber', city: 'Miami, FL', action: 'booked a demo', imageUrl: 'https://picsum.photos/seed/demo/100/100' },
+    { trade: 'Landscaper', city: 'Denver, CO', action: 'got a 5-star review', imageUrl: 'https://picsum.photos/seed/review/100/100' },
+    { trade: 'Electrician', city: 'Phoenix, AZ', action: 'analyzed their website', imageUrl: 'https://picsum.photos/seed/analyze2/100/100' }
   ];
 
   currentNotification = signal<Notification | null>(null);

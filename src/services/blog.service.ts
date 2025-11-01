@@ -23,11 +23,11 @@ export class BlogService {
       title: 'The 5 Biggest Marketing Mistakes Contractors Make (And How to Fix Them)',
       subtitle: 'Stop burning money on marketing that doesn\'t work. Here are the most common pitfalls we see contractors fall into and how you can avoid them to get a better ROI.',
       author: 'Alex Riley',
-      authorImage: '/chimera_assets/chimera_149_chimera_149.webp',
+      authorImage: 'https://picsum.photos/seed/alex/100/100',
       publishDate: '2024-07-15',
       readTime: 6,
       tags: ['Marketing', 'Lead Generation'],
-      imageUrl: '/chimera_assets/chimera_150_chimera_150.webp',
+      imageUrl: 'https://picsum.photos/seed/blog1/1200/800',
       content: `
         <p class="mb-4">It's a tough world out there for contractors. You're not just a craftsman; you're a salesperson, a manager, and a marketer. It's easy to make mistakes when you're juggling so much. Here are the top 5 we see:</p>
         <h3 class="text-2xl font-bold mt-6 mb-2 font-oswald">1. Not Answering Your Phone</h3>
@@ -43,11 +43,11 @@ export class BlogService {
         title: 'How to Dominate Google Maps for Local Leads',
         subtitle: 'Ranking in the Google "Map Pack" is the holy grail for local service businesses. We\'ll break down the three most important factors to get your business visible.',
         author: 'Samantha Chen',
-        authorImage: '/chimera_assets/premium_photo-1677368597077-009727e906db_ixlib_rb-4_1_chimera_151.webp',
+        authorImage: 'https://picsum.photos/seed/samantha/100/100',
         publishDate: '2024-07-10',
         readTime: 5,
         tags: ['SEO', 'Google'],
-        imageUrl: '/chimera_assets/chimera_152_chimera_152.webp',
+        imageUrl: 'https://picsum.photos/seed/blog2/1200/800',
         content: `
           <p class="mb-4">When a homeowner has a leaky pipe, they don't browse the web for fun. They search "plumber near me" and call one of the first three businesses they see. Getting into that Google Map Pack is a game-changer. Here's how to do it.</p>
           <h3 class="text-2xl font-bold mt-6 mb-2 font-oswald">1. Optimize Your Google Business Profile</h3>

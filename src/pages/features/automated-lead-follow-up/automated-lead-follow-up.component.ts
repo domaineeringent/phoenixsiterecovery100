@@ -52,7 +52,7 @@ export class AutomatedLeadFollowUpComponent {
     featureDeepDive: {
       title: 'Intelligent Automation',
       features: [
-        { title: 'Customizable Campaigns', description: 'We work with you to write the follow-up messages, making sure they match your brand voice. You control the timing and content of every text.', imageUrl: '/chimera_assets/premium_photo-1733266868412-cfc2ac17b497_ixlib_rb-4_1_chimera_122.webp' },
+        { title: 'Customizable Campaigns', description: 'We work with you to write the follow-up messages, making sure they match your brand voice. You control the timing and content of every text.', imageUrl: 'https://picsum.photos/seed/autofeature1/800/600' },
         { title: 'Smart Stop', description: 'The moment a lead responds to any message in the sequence, the automated campaign for them stops instantly. This ensures you can take over with a natural, human conversation.', imageUrl: 'https://picsum.photos/seed/autofeature2/800/600' },
         { title: 'Reactivation Campaigns', description: 'Use the same automation power to re-engage old leads that went cold. A simple "Hey, are you still looking for help with [service]?" can bring dead leads back to life.', imageUrl: 'https://picsum.photos/seed/autofeature3/800/600' },
       ]
