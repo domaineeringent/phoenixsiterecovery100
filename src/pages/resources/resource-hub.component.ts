@@ -47,7 +47,7 @@ export class ResourceHubComponent {
       points: ['Systemize', 'Automate', 'Dominate']
     },
     mentors: [
-      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'https://picsum.photos/seed/alex/500/500', bio: 'Grew up in a contractor family. Obsessed with building systems that give contractors their time back.' },
+      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'chimera_assets/chimera_154_chimera_154.webp', bio: 'Grew up in a contractor family. Obsessed with building systems that give contractors their time back.' },
       { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: 'https://picsum.photos/seed/samantha/500/500', bio: 'A master of local SEO and digital marketing. She turns contractors into the go-to choice in their local market.' },
     ],
     caseStudy: {

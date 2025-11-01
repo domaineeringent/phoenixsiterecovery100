@@ -33,8 +33,8 @@ export class HomeComponent {
     subtitle: `We provide the platform, process, and partnership that turns great contractors into dominant business owners. Stop fighting chaos. Start building an empire.`,
     avatars: [
       'https://picsum.photos/seed/p1/100/100',
-      'https://picsum.photos/seed/p2/100/100',
-      'https://picsum.photos/seed/p3/100/100',
+      'chimera_assets/chimera_6_chimera_6.webp',
+      'chimera_assets/chimera_7_chimera_7.webp',
       'https://picsum.photos/seed/p4/100/100',
       'https://picsum.photos/seed/p5/100/100'
     ],
@@ -42,10 +42,10 @@ export class HomeComponent {
 
   authorityLogos = [
     { name: 'Forbes', imageUrl: 'https://picsum.photos/seed/forbes/200/50' },
-    { name: 'Inc. 5000', imageUrl: 'https://picsum.photos/seed/inc5000/200/50' },
-    { name: 'Builder Magazine', imageUrl: 'https://picsum.photos/seed/builder/200/50' },
-    { name: 'Roofing Contractor', imageUrl: 'https://picsum.photos/seed/roofermag/200/50' },
-    { name: 'This Old House', imageUrl: 'https://picsum.photos/seed/oldhouse/200/50' },
+    { name: 'Inc. 5000', imageUrl: 'chimera_assets/chimera_11_chimera_11.webp' },
+    { name: 'Builder Magazine', imageUrl: 'chimera_assets/chimera_12_chimera_12.webp' },
+    { name: 'Roofing Contractor', imageUrl: 'chimera_assets/chimera_13_chimera_13.webp' },
+    { name: 'This Old House', imageUrl: 'chimera_assets/chimera_14_chimera_14.webp' },
     { name: 'HGTV', imageUrl: 'https://picsum.photos/seed/hgtv/200/50' }
   ];
 
@@ -67,9 +67,9 @@ export class HomeComponent {
   ];
   
   videoTestimonials = [
-    { name: 'John Doe', company: 'JD Roofing', videoThumbnailUrl: 'https://picsum.photos/seed/jdroofing/600/400' },
+    { name: 'John Doe', company: 'JD Roofing', videoThumbnailUrl: 'chimera_assets/chimera_16_chimera_16.webp' },
     { name: 'Mike Smith', company: 'Smith Electric', videoThumbnailUrl: 'https://picsum.photos/seed/smithelectric/600/400' },
-    { name: 'Carlos Garcia', company: 'Garcia Landscaping', videoThumbnailUrl: 'https://picsum.photos/seed/garcialand/600/400' },
+    { name: 'Carlos Garcia', company: 'Garcia Landscaping', videoThumbnailUrl: 'chimera_assets/chimera_18_chimera_18.webp' },
   ];
   
   writtenReviews = [
@@ -80,7 +80,7 @@ export class HomeComponent {
   founder = {
     name: 'Alex Riley',
     title: 'Founder & CEO',
-    imageUrl: 'https://picsum.photos/seed/alex/500/500',
+    imageUrl: 'chimera_assets/chimera_19_chimera_19.webp',
     story: `Alex grew up in a family of contractors. He saw firsthand the long hours and the stress of running a business after their outdated website was hacked, shutting down their main source of leads. After a decade in tech, Alex founded Phoenix Recovery with a single mission: to give contractors the bulletproof technology and systems they deserve, so they can win back their time and dominate their market.`
   };
 

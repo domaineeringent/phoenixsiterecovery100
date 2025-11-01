@@ -13,6 +13,6 @@ export class MobileShowcaseComponent {
   devices = {
     desktop: 'https://picsum.photos/seed/desktop-view/1024/768',
     tablet: 'https://picsum.photos/seed/tablet-view/768/1024',
-    mobile: 'https://picsum.photos/seed/mobile-view/400/800',
+    mobile: 'chimera_assets/chimera_171_chimera_171.webp',
   };
 }

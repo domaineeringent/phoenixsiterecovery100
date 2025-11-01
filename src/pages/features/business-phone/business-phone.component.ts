@@ -21,14 +21,14 @@ export class BusinessPhoneComponent {
       subtitle: 'A Professional Line',
       title: 'Business <span class="text-amber-400">Phone</span>',
       description: 'Separate your personal and business calls. Get a dedicated local business phone number that works on your existing cell phone, complete with call tracking and recording.',
-      imageUrl: 'https://picsum.photos/seed/businessphone/800/600',
+      imageUrl: 'chimera_assets/chimera_126_chimera_126.webp',
     },
     problem: {
       title: 'Is Your Personal Cell Phone Your Business Line?',
       description: 'Using your personal number for business looks unprofessional, makes it impossible to disconnect, and gives you no data on where your calls are coming from. It mixes business with family.',
       painPoints: [
-        { imageUrl: 'https://picsum.photos/seed/callhours/100/100', text: 'Customers calling at all hours.' },
-        { imageUrl: 'https://picsum.photos/seed/onemanshow/100/100', text: 'Looking like a one-man show.' },
+        { imageUrl: 'chimera_assets/chimera_127_chimera_127.webp', text: 'Customers calling at all hours.' },
+        { imageUrl: 'chimera_assets/chimera_128_chimera_128.webp', text: 'Looking like a one-man show.' },
         { imageUrl: 'https://picsum.photos/seed/notracking/100/100', text: 'No tracking of call performance.' },
       ]
     },
@@ -52,7 +52,7 @@ export class BusinessPhoneComponent {
     featureDeepDive: {
       title: 'Big Business Phone Features',
       features: [
-        { title: 'Call Recording', description: 'Automatically record all incoming and outgoing calls for quality assurance, training, and dispute resolution. Never again wonder "What did that customer say?"', imageUrl: 'https://picsum.photos/seed/phonefeature1/800/600' },
+        { title: 'Call Recording', description: 'Automatically record all incoming and outgoing calls for quality assurance, training, and dispute resolution. Never again wonder "What did that customer say?"', imageUrl: 'chimera_assets/chimera_130_chimera_130.webp' },
         { title: 'Marketing Analytics', description: 'See exactly how many calls your marketing is generating. Track call volume, duration, and answer rates to understand your ROI.', imageUrl: 'https://picsum.photos/seed/phonefeature2/800/600' },
         { title: 'Mobile App Calling', description: 'Make outbound calls using your business number directly from our mobile app, so your personal cell number always stays private.', imageUrl: 'https://picsum.photos/seed/phonefeature3/800/600' },
       ]

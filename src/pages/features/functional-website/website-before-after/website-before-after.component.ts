@@ -14,14 +14,14 @@ export class WebsiteBeforeAfterComponent {
   caseStudy = {
     name: 'Precision Plumbing Co.',
     before: {
-        imageUrl: 'https://picsum.photos/seed/before-plumbing/800/600',
+        imageUrl: 'chimera_assets/chimera_167_chimera_167.webp',
         stats: [
             { value: 2, label: 'Leads / Month' },
             { value: 15, suffix: '%', label: 'Mobile Conversion' },
         ]
     },
     after: {
-        imageUrl: 'https://picsum.photos/seed/after-plumbing/800/600',
+        imageUrl: 'chimera_assets/chimera_168_chimera_168.webp',
         stats: [
             { value: 30, suffix: '+', label: 'Leads / Month' },
             { value: 85, suffix: '%', label: 'Mobile Conversion' },

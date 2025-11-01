@@ -18,8 +18,8 @@ interface Notification {
 export class SocialProofComponent implements OnInit, OnDestroy {
   notifications: Notification[] = [
     { trade: 'Roofer', city: 'Dallas, TX', action: 'analyzed their website', imageUrl: 'https://picsum.photos/seed/analyze/100/100' },
-    { trade: 'Plumber', city: 'Miami, FL', action: 'booked a demo', imageUrl: 'https://picsum.photos/seed/demo/100/100' },
-    { trade: 'Landscaper', city: 'Denver, CO', action: 'got a 5-star review', imageUrl: 'https://picsum.photos/seed/review/100/100' },
+    { trade: 'Plumber', city: 'Miami, FL', action: 'booked a demo', imageUrl: 'chimera_assets/chimera_146_chimera_146.webp' },
+    { trade: 'Landscaper', city: 'Denver, CO', action: 'got a 5-star review', imageUrl: 'chimera_assets/chimera_147_chimera_147.webp' },
     { trade: 'Electrician', city: 'Phoenix, AZ', action: 'analyzed their website', imageUrl: 'https://picsum.photos/seed/analyze2/100/100' }
   ];
 

@@ -43,13 +43,13 @@ export class TestimonialsComponent {
   authorityLogos = {
     seenOn: [
       { name: 'Forbes', imageUrl: 'https://picsum.photos/seed/forbes/200/50' },
-      { name: 'Inc. 5000', imageUrl: 'https://picsum.photos/seed/inc5000/200/50' },
-      { name: 'Builder Magazine', imageUrl: 'https://picsum.photos/seed/builder/200/50' }
+      { name: 'Inc. 5000', imageUrl: 'chimera_assets/chimera_25_chimera_25.webp' },
+      { name: 'Builder Magazine', imageUrl: 'chimera_assets/chimera_26_chimera_26.webp' }
     ],
     tech: [
-      { name: 'Google', imageUrl: 'https://picsum.photos/seed/google/200/50' },
-      { name: 'Twilio', imageUrl: 'https://picsum.photos/seed/twilio/200/50' },
-      { name: 'Stripe', imageUrl: 'https://picsum.photos/seed/stripe/200/50' }
+      { name: 'Google', imageUrl: 'chimera_assets/chimera_27_chimera_27.webp' },
+      { name: 'Twilio', imageUrl: 'chimera_assets/chimera_28_chimera_28.webp' },
+      { name: 'Stripe', imageUrl: 'chimera_assets/chimera_29_chimera_29.webp' }
     ]
   };
 
@@ -66,12 +66,12 @@ export class TestimonialsComponent {
     { 
       name: 'JD Roofing',
       before: { imageUrl: 'https://picsum.photos/seed/jdbefore/800/600', stats: [{ value: '2-3', label: 'Leads/Week' }, { value: '12', label: 'Reviews' }] },
-      after: { imageUrl: 'https://picsum.photos/seed/jdafter/800/600', stats: [{ value: '15-20', label: 'Leads/Week' }, { value: '87', label: 'Reviews' }] }
+      after: { imageUrl: 'chimera_assets/chimera_32_chimera_32.webp', stats: [{ value: '15-20', label: 'Leads/Week' }, { value: '87', label: 'Reviews' }] }
     },
     { 
       name: 'Smith Electric',
       before: { imageUrl: 'https://picsum.photos/seed/smithbefore/800/600', stats: [{ value: '48hr', label: 'Response Time' }, { value: 'Manual', label: 'Follow-up' }] },
-      after: { imageUrl: 'https://picsum.photos/seed/smithafter/800/600', stats: [{ value: '< 5min', label: 'Response Time' }, { value: 'Automated', label: 'Follow-up' }] }
+      after: { imageUrl: 'chimera_assets/chimera_34_chimera_34.webp', stats: [{ value: '< 5min', label: 'Response Time' }, { value: 'Automated', label: 'Follow-up' }] }
     }
   ];
 
@@ -131,13 +131,13 @@ export class TestimonialsComponent {
 
   // Logic for the "Wall of Fame"
   allTestimonials = signal<Testimonial[]>([
-    { name: 'John Doe', company: 'JD Roofing', trade: 'Roofing', videoThumbnailUrl: 'https://picsum.photos/seed/jdroofing/600/400' },
-    { name: 'Mike Smith', company: 'Smith Electric', trade: 'Electrical', videoThumbnailUrl: 'https://picsum.photos/seed/smithelectric/600/400' },
-    { name: 'Carlos Garcia', company: 'Garcia Landscaping', trade: 'Landscaping', videoThumbnailUrl: 'https://picsum.photos/seed/garcialand/600/400' },
-    { name: 'David Chen', company: 'Chen\'s Plumbing', trade: 'Plumbing', videoThumbnailUrl: 'https://picsum.photos/seed/chenplumb/600/400' },
-    { name: 'Sarah Jenkins', company: 'Jenkins Remodeling', trade: 'Remodeling', videoThumbnailUrl: 'https://picsum.photos/seed/jenkinsreno/600/400' },
+    { name: 'John Doe', company: 'JD Roofing', trade: 'Roofing', videoThumbnailUrl: 'chimera_assets/chimera_36_chimera_36.webp' },
+    { name: 'Mike Smith', company: 'Smith Electric', trade: 'Electrical', videoThumbnailUrl: 'chimera_assets/chimera_37_chimera_37.webp' },
+    { name: 'Carlos Garcia', company: 'Garcia Landscaping', trade: 'Landscaping', videoThumbnailUrl: 'chimera_assets/chimera_38_chimera_38.webp' },
+    { name: 'David Chen', company: 'Chen\'s Plumbing', trade: 'Plumbing', videoThumbnailUrl: 'chimera_assets/chimera_39_chimera_39.webp' },
+    { name: 'Sarah Jenkins', company: 'Jenkins Remodeling', trade: 'Remodeling', videoThumbnailUrl: 'chimera_assets/chimera_40_chimera_40.webp' },
     { name: 'Tom Wilson', company: 'Wilson HVAC', trade: 'HVAC', videoThumbnailUrl: 'https://picsum.photos/seed/wilsonhvac/600/400' },
-    { name: 'Maria Rodriguez', company: 'Rodriguez Painting', trade: 'Painting', videoThumbnailUrl: 'https://picsum.photos/seed/rodriguezpaint/600/400' },
+    { name: 'Maria Rodriguez', company: 'Rodriguez Painting', trade: 'Painting', videoThumbnailUrl: 'chimera_assets/chimera_42_chimera_42.webp' },
     { name: 'Chris Lee', company: 'Lee Concrete', trade: 'Concrete', videoThumbnailUrl: 'https://picsum.photos/seed/leeconcrete/600/400' },
   ]);
 

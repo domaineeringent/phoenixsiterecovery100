@@ -53,9 +53,9 @@ export class CareersComponent {
       title: `The Enemy We Fight is <span class="text-red-500">Chaos</span>`,
       description: `The average contractor works 60+ hours a week, fighting a losing battle against paperwork, missed calls, and a patchwork of clunky software. They're masters of their trade, but prisoners of their business. This chaos costs them time, money, and moments with their families. We exist to end this.`,
       images: [
-        'https://picsum.photos/seed/stressed1/600/400',
+        'chimera_assets/chimera_87_chimera_87.webp',
         'https://picsum.photos/seed/stressed2/600/400',
-        'https://picsum.photos/seed/stressed3/600/400'
+        'chimera_assets/chimera_89_chimera_89.webp'
       ]
     },
     battleCry: {
@@ -75,9 +75,9 @@ export class CareersComponent {
       }
     },
     theCrew: [
-      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'https://picsum.photos/seed/alex/500/500', bio: 'The Architect. Ensures every tool we build solves a real contractor problem.', why: 'I saw my family struggle. I build so others don\'t have to.' },
-      { name: 'Jessica Miller', role: 'Head of Client Success', imageUrl: 'https://picsum.photos/seed/jessica/500/500', bio: 'Your Partner. Makes sure your phone never stops ringing with new leads.', why: 'The moment a client says "we just had our best month ever" is why I\'m here.' },
-      { name: 'Ben Carter', role: 'Lead Developer', imageUrl: 'https://picsum.photos/seed/ben/500/500', bio: 'The Builder. Crafts the simple, powerful tools that save you 10+ hours a week.', why: 'I love building elegant solutions to complex, real-world problems. This is a builder\'s paradise.' },
+      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'chimera_assets/chimera_90_chimera_90.webp', bio: 'The Architect. Ensures every tool we build solves a real contractor problem.', why: 'I saw my family struggle. I build so others don\'t have to.' },
+      { name: 'Jessica Miller', role: 'Head of Client Success', imageUrl: 'chimera_assets/chimera_91_chimera_91.webp', bio: 'Your Partner. Makes sure your phone never stops ringing with new leads.', why: 'The moment a client says "we just had our best month ever" is why I\'m here.' },
+      { name: 'Ben Carter', role: 'Lead Developer', imageUrl: 'chimera_assets/chimera_92_chimera_92.webp', bio: 'The Builder. Crafts the simple, powerful tools that save you 10+ hours a week.', why: 'I love building elegant solutions to complex, real-world problems. This is a builder\'s paradise.' },
       { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: 'https://picsum.photos/seed/samantha/500/500', bio: 'The Megaphone. Tells the world why you\'re the best contractor for the job.', why: 'I get to tell the stories of hardworking people and help them win. It\'s the most fulfilling marketing job there is.' },
     ],
     codeWeLiveBy: [
@@ -117,8 +117,8 @@ export class CareersComponent {
       ]
     },
     testimonials: [
-        { quote: "The best part of working here is seeing our clients succeed. When a contractor tells us they were able to hire a new employee because of the leads we helped them generate, that's the best feeling.", author: 'Jessica Miller, Head of Client Success', imageUrl: 'https://picsum.photos/seed/jessica/500/500' },
-        { quote: "We have a culture of 'builders'. We're always looking for ways to improve the product and make it even more valuable for our clients. It's a challenging and rewarding environment.", author: 'Ben Carter, Lead Developer', imageUrl: 'https://picsum.photos/seed/ben/500/500' }
+        { quote: "The best part of working here is seeing our clients succeed. When a contractor tells us they were able to hire a new employee because of the leads we helped them generate, that's the best feeling.", author: 'Jessica Miller, Head of Client Success', imageUrl: 'chimera_assets/chimera_91_chimera_91.webp' },
+        { quote: "We have a culture of 'builders'. We're always looking for ways to improve the product and make it even more valuable for our clients. It's a challenging and rewarding environment.", author: 'Ben Carter, Lead Developer', imageUrl: 'chimera_assets/chimera_92_chimera_92.webp' }
     ],
     idealCandidate: {
       title: 'Are You a Builder?',

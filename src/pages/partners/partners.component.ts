@@ -22,7 +22,7 @@ export class PartnersComponent {
     hero: {
       title: `You're Losing a Tech Arms Race You Didn't Know You Were In.`,
       subtitle: `Your competitors are leveraging world-class technology to get faster, smarter, and more efficient. We've assembled the arsenal you need to fight back and win—all in one simple platform.`,
-      imageUrl: 'https://picsum.photos/seed/partners-hero/800/600'
+      imageUrl: 'chimera_assets/chimera_95_chimera_95.webp'
     },
     problem: {
       title: `The "Tech Tax" is Crippling Your Business`,
@@ -57,8 +57,8 @@ export class PartnersComponent {
         category: 'Communication Powerhouse', 
         description: 'Ensuring every call, text, and email is delivered instantly and reliably.',
         partners: [
-          { name: 'Twilio', logoUrl: 'https://picsum.photos/seed/twilio/200/50', benefit: 'For bulletproof SMS & voice reliability.' },
-          { name: 'Mailgun', logoUrl: 'https://picsum.photos/seed/mailgun/200/50', benefit: 'For best-in-class email deliverability.' },
+          { name: 'Twilio', logoUrl: 'chimera_assets/chimera_97_chimera_97.webp', benefit: 'For bulletproof SMS & voice reliability.' },
+          { name: 'Mailgun', logoUrl: 'chimera_assets/chimera_98_chimera_98.webp', benefit: 'For best-in-class email deliverability.' },
         ]
       },
       { 
@@ -66,7 +66,7 @@ export class PartnersComponent {
         description: 'Leveraging the same tools the big marketing agencies use to get you ranked.',
         partners: [
           { name: 'Google', logoUrl: 'https://picsum.photos/seed/google/200/50', benefit: 'The core of your local search presence.' },
-          { name: 'Ahrefs', logoUrl: 'https://picsum.photos/seed/ahrefs/200/50', benefit: 'For deep competitor and keyword analysis.' },
+          { name: 'Ahrefs', logoUrl: 'chimera_assets/chimera_100_chimera_100.webp', benefit: 'For deep competitor and keyword analysis.' },
         ]
       },
       { 
@@ -74,26 +74,26 @@ export class PartnersComponent {
         description: 'The brains behind your 24/7 automated sales and operations assistant.',
         partners: [
           { name: 'OpenAI', logoUrl: 'https://picsum.photos/seed/openai/200/50', benefit: 'Powering intelligent responses and summaries.' },
-          { name: 'Zapier', logoUrl: 'https://picsum.photos/seed/zapier/200/50', benefit: 'Connecting our platform to thousands of other tools.' },
+          { name: 'Zapier', logoUrl: 'chimera_assets/chimera_102_chimera_102.webp', benefit: 'Connecting our platform to thousands of other tools.' },
         ]
       },
       { 
         category: 'Payment & Security Fortress', 
         description: 'Providing you and your customers with secure, trustworthy payment processing.',
         partners: [
-          { name: 'Stripe', logoUrl: 'https://picsum.photos/seed/stripe/200/50', benefit: 'The gold standard for secure online payments.' },
+          { name: 'Stripe', logoUrl: 'chimera_assets/chimera_103_chimera_103.webp', benefit: 'The gold standard for secure online payments.' },
         ]
       },
     ],
     integrationMagic: {
       title: `The Magic isn't the Parts. It's How They Work <span class="text-amber-500">Together.</span>`,
       description: `Anyone can buy these tools. The Phoenix difference is how we've woven them into a single, intelligent system. When a lead comes from your Google Ad, it instantly triggers a Twilio text message, creates a contact in your CRM, and notifies you—all in less than a second. That's the power of true integration.`,
-      imageUrl: 'https://picsum.photos/seed/integration-magic/1000/700'
+      imageUrl: 'chimera_assets/chimera_104_chimera_104.webp'
     },
     futurePacing: {
         title: `Your Competitors are Playing Checkers. We Give You Chess.`,
         description: `While your competition is wrestling with their broken tech, you're focused on what you do best: delivering great work. Your system just works. It's your unfair advantage.`,
-        imageUrl: 'https://picsum.photos/seed/future-pacing-partners/800/600'
+        imageUrl: 'chimera_assets/chimera_105_chimera_105.webp'
     },
     caseStudy: {
       name: 'Chillfactor HVAC',
@@ -108,7 +108,7 @@ export class PartnersComponent {
     rdBenefit: {
         title: `We're Your Outsourced R&D Department`,
         description: `The tech world moves fast. A new, game-changing tool is launched every week. We are constantly testing, vetting, and integrating the next generation of technology into the Phoenix platform. You get the benefit of a Silicon Valley R&D team without the multi-million dollar price tag. Your tech stack will never be obsolete.`,
-        imageUrl: 'https://picsum.photos/seed/rd-department/800/600'
+        imageUrl: 'chimera_assets/chimera_106_chimera_106.webp'
     },
     guarantee: {
       title: `The "Future-Proof" Guarantee`,

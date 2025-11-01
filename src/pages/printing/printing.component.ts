@@ -21,7 +21,7 @@ export class PrintingComponent {
     hero: {
       title: `Your Business Card is a Dead End. <br> We Make It a Superhighway to <span class="text-amber-400">5-Star Reviews.</span>`,
       subtitle: `Stop handing out paper that gets thrown in the trash. We'll show you how to turn every physical touchpoint—cards, signs, even your truck—into an interactive tool that builds your reputation and generates leads.`,
-      imageUrl: 'https://picsum.photos/seed/printing-hero/800/600'
+      imageUrl: 'chimera_assets/chimera_107_chimera_107.webp'
     },
     problem: {
       title: `Your Printed Marketing is <span class="text-amber-500">Bleeding Money.</span>`,

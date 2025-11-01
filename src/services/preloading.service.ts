@@ -6,21 +6,21 @@ import { Injectable } from '@angular/core';
 export class PreloadingService {
   private heroImageUrls: string[] = [
     // Why Us pages
-    'https://picsum.photos/seed/difference-hero/800/600',
+    'chimera_assets/chimera_174_chimera_174.webp',
     'https://picsum.photos/seed/process-hero/800/600',
-    'https://picsum.photos/seed/testimonials-hero/800/600',
+    'chimera_assets/chimera_176_chimera_176.webp',
 
     // Company pages
-    'https://picsum.photos/seed/partners-hero/800/600',
+    'chimera_assets/chimera_177_chimera_177.webp',
 
     // Feature pages
-    'https://picsum.photos/seed/website-hero/800/600',
+    'chimera_assets/chimera_178_chimera_178.webp',
     'https://picsum.photos/seed/inbox-hero/800/600',
-    'https://picsum.photos/seed/review-hero/800/600',
-    'https://picsum.photos/seed/missedcall-hero/800/600',
-    'https://picsum.photos/seed/localseo-hero/800/600',
+    'chimera_assets/chimera_180_chimera_180.webp',
+    'chimera_assets/chimera_181_chimera_181.webp',
+    'chimera_assets/chimera_182_chimera_182.webp',
     'https://picsum.photos/seed/printing-hero/800/600',
-    'https://picsum.photos/seed/businessphone/800/600',
+    'chimera_assets/chimera_184_chimera_184.webp',
     'https://picsum.photos/seed/marketing/800/600',
     'https://picsum.photos/seed/leadfollowup/800/600'
   ];

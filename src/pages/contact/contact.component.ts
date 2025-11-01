@@ -51,7 +51,7 @@ export class ContactComponent {
     guide: {
       name: 'Alex Riley',
       title: 'Founder & Head of Strategy',
-      imageUrl: 'https://picsum.photos/seed/alex/500/500',
+      imageUrl: 'chimera_assets/chimera_142_chimera_142.webp',
       bio: `You'll be speaking directly with me. I grew up in a contractor family, and I founded Phoenix Recovery to solve the exact problems that kept my father up at night. I'm not a salesperson; I'm a problem-solver. My only goal is to see if we can help.`
     },
     agenda: {
@@ -102,7 +102,7 @@ export class ContactComponent {
     },
     map: {
         title: 'Serving Contractors Nationwide',
-        imageUrl: 'https://picsum.photos/seed/map/1024/600'
+        imageUrl: 'chimera_assets/chimera_143_chimera_143.webp'
     }
   };
 }

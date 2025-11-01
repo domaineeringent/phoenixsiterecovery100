@@ -61,11 +61,11 @@ export class PortfolioComponent {
       { name: 'Finish: Built for Trust', description: 'Professional copy, project galleries, and review streams build the confidence a customer needs to hire you.' }
     ],
     beforeAfter: [
-      { beforeUrl: 'https://picsum.photos/seed/before1/800/600', afterUrl: 'https://picsum.photos/seed/after1/800/600' },
-      { beforeUrl: 'https://picsum.photos/seed/before2/800/600', afterUrl: 'https://picsum.photos/seed/after2/800/600' },
+      { beforeUrl: 'chimera_assets/chimera_47_chimera_47.webp', afterUrl: 'https://picsum.photos/seed/after1/800/600' },
+      { beforeUrl: 'chimera_assets/chimera_49_chimera_49.webp', afterUrl: 'https://picsum.photos/seed/after2/800/600' },
     ],
     anatomy: {
-      imageUrl: 'https://picsum.photos/seed/anatomy/1200/900',
+      imageUrl: 'chimera_assets/chimera_51_chimera_51.webp',
       points: [
         { x: '15%', y: '10%', text: 'Click-to-Call Number' },
         { x: '80%', y: '15%', text: 'Get a Quote CTA' },
@@ -81,7 +81,7 @@ export class PortfolioComponent {
       summary: `Apex came to us with an outdated, slow website that wasn't mobile-friendly. After launching their new Phoenix "Digital Job Site", their online leads exploded. They now get a consistent flow of high-quality, exclusive leads directly from their website every single week.`
     },
     mobileShowcase: {
-      desktop: 'https://picsum.photos/seed/desktop-view/1024/768',
+      desktop: 'chimera_assets/chimera_52_chimera_52.webp',
       tablet: 'https://picsum.photos/seed/tablet-view/768/1024',
       mobile: 'https://picsum.photos/seed/mobile-view/400/800',
     },
@@ -98,12 +98,12 @@ export class PortfolioComponent {
   };
 
   allProjects = signal<Project[]>([
-    { name: 'Apex Roofing Solutions', trade: 'Roofing', imageUrl: 'https://picsum.photos/seed/apexroof/800/600', beforeUrl: 'https://picsum.photos/seed/before-apex/800/600', testimonial: '"The new site is night and day. Leads are finally coming in from Google."' },
-    { name: 'Precision Plumbing Co.', trade: 'Plumbing', imageUrl: 'https://picsum.photos/seed/precisionplumb/800/600', beforeUrl: 'https://picsum.photos/seed/before-precision/800/600', testimonial: '"Looks a thousand times more professional. Customers mention it on the phone."' },
-    { name: 'Evergreen Landscaping', trade: 'Landscaping', imageUrl: 'https://picsum.photos/seed/evergreen/800/600', beforeUrl: 'https://picsum.photos/seed/before-evergreen/800/600', testimonial: '"The gallery is perfect for showing off our work to new clients."' },
-    { name: 'Volt Electric Services', trade: 'Electrical', imageUrl: 'https://picsum.photos/seed/voltelectric/800/600', beforeUrl: 'https://picsum.photos/seed/before-volt/800/600', testimonial: '"Finally, a website that works on my phone! Looks great."' },
-    { name: 'Keystone Remodeling', trade: 'Remodeling', imageUrl: 'https://picsum.photos/seed/keystone/800/600', beforeUrl: 'https://picsum.photos/seed/before-keystone/800/600', testimonial: '"We look like the high-end builders we are now. Huge difference."' },
-    { name: 'Chillfactor HVAC', trade: 'HVAC', imageUrl: 'https://picsum.photos/seed/chillfactor/800/600', beforeUrl: 'https://picsum.photos/seed/before-chill/800/600', testimonial: '"The quote form is easy to use and brings in new installation leads."' },
+    { name: 'Apex Roofing Solutions', trade: 'Roofing', imageUrl: 'chimera_assets/chimera_55_chimera_55.webp', beforeUrl: 'chimera_assets/chimera_56_chimera_56.webp', testimonial: '"The new site is night and day. Leads are finally coming in from Google."' },
+    { name: 'Precision Plumbing Co.', trade: 'Plumbing', imageUrl: 'chimera_assets/chimera_57_chimera_57.webp', beforeUrl: 'https://picsum.photos/seed/before-precision/800/600', testimonial: '"Looks a thousand times more professional. Customers mention it on the phone."' },
+    { name: 'Evergreen Landscaping', trade: 'Landscaping', imageUrl: 'chimera_assets/chimera_59_chimera_59.webp', beforeUrl: 'https://picsum.photos/seed/before-evergreen/800/600', testimonial: '"The gallery is perfect for showing off our work to new clients."' },
+    { name: 'Volt Electric Services', trade: 'Electrical', imageUrl: 'https://picsum.photos/seed/voltelectric/800/600', beforeUrl: 'chimera_assets/chimera_62_chimera_62.webp', testimonial: '"Finally, a website that works on my phone! Looks great."' },
+    { name: 'Keystone Remodeling', trade: 'Remodeling', imageUrl: 'chimera_assets/chimera_63_chimera_63.webp', beforeUrl: 'chimera_assets/chimera_64_chimera_64.webp', testimonial: '"We look like the high-end builders we are now. Huge difference."' },
+    { name: 'Chillfactor HVAC', trade: 'HVAC', imageUrl: 'chimera_assets/chimera_65_chimera_65.webp', beforeUrl: 'chimera_assets/chimera_66_chimera_66.webp', testimonial: '"The quote form is easy to use and brings in new installation leads."' },
   ]);
 
   trades = computed(() => ['All', ...new Set(this.allProjects().map(p => p.trade))]);

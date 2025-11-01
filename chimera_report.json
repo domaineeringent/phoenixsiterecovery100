@@ -1,0 +1,1882 @@
+[
+  {
+    "filePath": "src/components/shared/cta-section/cta-section.component.html",
+    "originalReference": "https://picsum.photos/seed/robot/400/400",
+    "aiBrief": {
+      "searchTerm": "robot thumbs up",
+      "aiPrompt": "A modern, sleek robot mascot, possibly white and blue, giving a friendly thumbs-up gesture. Studio lighting, clean background, optimistic and approachable mood. Full body shot."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1739538279172-9bd4d900e60e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9ib3QlMjB0aHVtYnMlMjB1cHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_0_chimera_0.webp"
+  },
+  {
+    "filePath": "src/components/shared/testimonial-slider/testimonial-slider.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdroofing/600/400",
+    "aiBrief": {
+      "searchTerm": "business person portrait",
+      "aiPrompt": "A professional headshot of a middle-aged man, smiling slightly, set against a blurred, modern office background. Soft, professional lighting from the side."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1758518729058-b158e71c5a9b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJ1c2luZXNzJTIwcGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_1_chimera_1.webp"
+  },
+  {
+    "filePath": "src/components/shared/testimonial-slider/testimonial-slider.component.ts",
+    "originalReference": "https://picsum.photos/seed/smithelectric/600/400",
+    "aiBrief": {
+      "searchTerm": "electrician working portrait",
+      "aiPrompt": "A portrait of a male electrician in safety gear, perhaps holding a tool, looking confidently at the camera. Image should be framed like a video thumbnail, with dramatic but clear lighting emphasizing skill."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1509390373685-579356742d95?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGVsZWN0cmljaWFuJTIwd29ya2luZyUyMHBvcnRyYWl0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_2_chimera_2.webp"
+  },
+  {
+    "filePath": "src/components/shared/testimonial-slider/testimonial-slider.component.ts",
+    "originalReference": "https://picsum.photos/seed/garcialand/600/400",
+    "aiBrief": {
+      "searchTerm": "landscaping contractor portrait",
+      "aiPrompt": "A friendly, outdoors portrait of a Hispanic landscaping contractor standing near professional-grade gardening equipment. Bright daylight, natural setting, confident posture."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1678677942854-7627fea4f327?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZHNjYXBpbmclMjBjb250cmFjdG9yJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_3_chimera_3.webp"
+  },
+  {
+    "filePath": "src/components/shared/testimonial-slider/testimonial-slider.component.ts",
+    "originalReference": "https://picsum.photos/seed/chenplumb/600/400",
+    "aiBrief": {
+      "searchTerm": "plumber portrait professional",
+      "aiPrompt": "A close-up portrait of a man in a clean work uniform, possibly next to professional plumbing gear. The lighting should be warm and trustworthy, suggesting reliability."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661371855936-408032948914?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBsdW1iZXIlMjBwb3J0cmFpdCUyMHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_4_chimera_4.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/p1/100/100",
+    "aiBrief": {
+      "searchTerm": "team avatars profile",
+      "aiPrompt": "A collage or grouping of five diverse, small circular profile pictures (avatars) of successful-looking business professionals. Clean, bright background, focused on individual faces."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/p2/100/100",
+    "aiBrief": {
+      "searchTerm": "small team avatars",
+      "aiPrompt": "A horizontal row of three small, circular profile pictures featuring diverse individuals looking professional and engaged. Simple, light-colored backdrop."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1739376350794-0e74db438131?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c21hbGwlMjB0ZWFtJTIwYXZhdGFyc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_6_chimera_6.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/p3/100/100",
+    "aiBrief": {
+      "searchTerm": "diverse group avatars",
+      "aiPrompt": "A collection of four small, circular profile icons showing a mix of genders and ethnicities, suggesting a successful, growing team. Professional and polished look."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1739376350802-d42a4c8c0e74?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRpdmVyc2UlMjBncm91cCUyMGF2YXRhcnN8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_7_chimera_7.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/p4/100/100",
+    "aiBrief": {
+      "searchTerm": "professional team icons",
+      "aiPrompt": "A close cluster of four square or circular profile images representing diverse business leaders. Neutral, modern color palette, well-lit."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/p5/100/100",
+    "aiBrief": {
+      "searchTerm": "business authority logos",
+      "aiPrompt": "A clean, minimal presentation of several well-known business magazine logos arranged horizontally on a white or dark gray background, conveying prestige."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/forbes/200/50",
+    "aiBrief": {
+      "searchTerm": "Forbes Inc. logos",
+      "aiPrompt": "A graphic banner showing the logos for 'Forbes' and 'Inc. 5000' side-by-side, designed for a website header. Professional, high-resolution look with strong branding."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/inc5000/200/50",
+    "aiBrief": {
+      "searchTerm": "industry publication logos",
+      "aiPrompt": "A horizontal display of logos from various trade magazines (like building, roofing) placed together on a clean white surface. Focus on sharp, recognizable branding."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1752231227830-20cee47c4663?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kdXN0cnklMjBwdWJsaWNhdGlvbiUyMGxvZ29zfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_11_chimera_11.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/builder/200/50",
+    "aiBrief": {
+      "searchTerm": "trade magazine logos",
+      "aiPrompt": "A row of logos representing construction and home improvement publications. Soft, overhead lighting on a light surface, organized alignment."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1622817245531-a07976979cf5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYWRlJTIwbWFnYXppbmUlMjBsb2dvc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_12_chimera_12.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/roofermag/200/50",
+    "aiBrief": {
+      "searchTerm": "HGTV magazine logos",
+      "aiPrompt": "A graphic element displaying the logos for 'This Old House' and 'HGTV'. The image should feel bright and aspirational, suitable for a design or renovation context."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1669077046750-bef49171b059?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGd0diUyMG1hZ2F6aW5lJTIwbG9nb3N8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_13_chimera_13.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/oldhouse/200/50",
+    "aiBrief": {
+      "searchTerm": "media logos banner",
+      "aiPrompt": "A visually appealing banner showcasing several media logos, including HGTV. High contrast, professional design, implying widespread media coverage."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1700520223949-31b695c57079?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWElMjBsb2dvcyUyMGJhbm5lcnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_14_chimera_14.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/hgtv/200/50",
+    "aiBrief": {
+      "searchTerm": "testimonials hero image",
+      "aiPrompt": "A wide, cinematic photograph featuring a diverse group of happy small business owners gathered together, smiling and looking successful. Warm, golden hour lighting, conveying community and achievement."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdroofing/600/400",
+    "aiBrief": {
+      "searchTerm": "contractor video thumbnails",
+      "aiPrompt": "A grid or list representation of four video thumbnails, each featuring a different contractor (e.g., roofing, electric). Image quality should be crisp, professional marketing style."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1659353588156-60841623ae2d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29udHJhY3RvciUyMHZpZGVvJTIwdGh1bWJuYWlsc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_16_chimera_16.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/smithelectric/600/400",
+    "aiBrief": {
+      "searchTerm": "trade service video",
+      "aiPrompt": "Three distinct video thumbnails showing different tradespeople (electrician, landscaper). Each should have a clear title overlay area, suggesting a testimonial reel."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/garcialand/600/400",
+    "aiBrief": {
+      "searchTerm": "landscaping contractor testimonials",
+      "aiPrompt": "A collection of three clean video thumbnails showcasing different local service providers (roofing, electric, landscaping). Focus on high production quality for the thumbnail view."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661412696440-044ac49f9cf4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZHNjYXBpbmclMjBjb250cmFjdG9yJTIwdGVzdGltb25pYWxzfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_18_chimera_18.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.ts",
+    "originalReference": "https://picsum.photos/seed/alex/500/500",
+    "aiBrief": {
+      "searchTerm": "CEO founder portrait",
+      "aiPrompt": "A striking, authoritative portrait of a male founder and CEO, mid-40s, dressed in smart business casual attire. The background should be slightly out of focus, suggesting a successful corporate environment. Dramatic side lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1612190219911-286df0e14656?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2VvJTIwZm91bmRlciUyMHBvcnRyYWl0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_19_chimera_19.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.html",
+    "originalReference": "https://picsum.photos/seed/robot/400/600",
+    "aiBrief": {
+      "searchTerm": "robot hero image",
+      "aiPrompt": "A full-length shot of a stylized, advanced robot figure standing confidently in a large, modern industrial or high-tech setting. Strong directional lighting creating clear shadows, conveying capability and future technology."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1739538279172-9bd4d900e60e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9ib3QlMjBoZXJvJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_20_chimera_20.webp"
+  },
+  {
+    "filePath": "src/pages/home/home.component.html",
+    "originalReference": "https://picsum.photos/seed/map/1024/600",
+    "aiBrief": {
+      "searchTerm": "USA map growth",
+      "aiPrompt": "A high-resolution image of a detailed map of the United States, overlaid with glowing connection points or dots indicating nationwide service coverage. Dark blue or grayscale map with vibrant accent colors for the data points. Focus on connectivity."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/home/home.component.html",
+    "originalReference": "https://picsum.photos/seed/",
+    "aiBrief": {
+      "searchTerm": "review source logo",
+      "aiPrompt": "A small, rectangular image representing a review source logo (e.g., a generic icon for Yelp or Google). It should be highly recognizable and placed next to a text element. Bright, clean lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1668902219322-08c0b1f3c12b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmV2aWV3JTIwc291cmNlJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_22_chimera_22.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/testimonials-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "business growth hero",
+      "aiPrompt": "An inspiring, wide-angle photograph showing a thriving small business team celebrating success in a bright, clean workspace. The mood should be triumphant and forward-looking. Soft focus on the background elements."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/forbes/200/50",
+    "aiBrief": {
+      "searchTerm": "authority logos banner",
+      "aiPrompt": "A professional banner graphic featuring logos from prestigious business publications like Forbes and Inc. 5000. The logos should be perfectly aligned and illuminated against a dark, sophisticated background."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/inc5000/200/50",
+    "aiBrief": {
+      "searchTerm": "business logos minimal",
+      "aiPrompt": "A minimalist, abstract visual representation of successful business partnerships, using clean lines and simple shapes. The background should be a soft, muted gray. Focus on professional and trustworthy aesthetic."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1680626561454-20473be86256?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1c2luZXNzJTIwbG9nb3MlMjBtaW5pbWFsfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_25_chimera_25.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/builder/200/50",
+    "aiBrief": {
+      "searchTerm": "magazine masthead design",
+      "aiPrompt": "A highly stylized, modern masthead or banner design for a high-end business or tech magazine. Use a dark, sophisticated background with crisp white or metallic typography. Focus on strong, impactful graphic elements."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1695634621121-691d54259d37?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFnYXppbmUlMjBtYXN0aGVhZCUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_26_chimera_26.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/google/200/50",
+    "aiBrief": {
+      "searchTerm": "tech company logos",
+      "aiPrompt": "A montage of clean, recognizable technology brand logos (like Google, Twilio) arranged neatly on a white or light blue gradient background. The image should convey innovation and digital connectivity."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1681400110107-d995a9a196e2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVjaCUyMGNvbXBhbnklMjBsb2dvc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_27_chimera_27.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/twilio/200/50",
+    "aiBrief": {
+      "searchTerm": "payment processing logos",
+      "aiPrompt": "A close-up, slightly dramatic shot featuring logos or icons representing major financial technology companies (like Stripe, Twilio) glowing softly against a dark, digital grid background. Focus on security and transactional speed."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1600960568595-4c3f71ec9e67?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGF5bWVudCUyMHByb2Nlc3NpbmclMjBsb2dvc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_28_chimera_28.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/stripe/200/50",
+    "aiBrief": {
+      "searchTerm": "logo compilation design",
+      "aiPrompt": "A clean, professional layout displaying a collection of well-known fintech and tech company logos (like Stripe). The composition should be balanced, utilizing negative space, against a bright, corporate white setting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1649000808933-1f4aac7cad9a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nbyUyMGNvbXBpbGF0aW9uJTIwZGVzaWdufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_29_chimera_29.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdroofing/800/600",
+    "aiBrief": {
+      "searchTerm": "construction business success",
+      "aiPrompt": "A vibrant, cinematic photograph showing a successful, middle-aged roofer smiling confidently while standing on a newly finished, sunlit roof, overlooking a successful construction project. The mood is triumphant and professional."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdbefore/800/600",
+    "aiBrief": {
+      "searchTerm": "before after home improvement",
+      "aiPrompt": "A split diptych image showing a significant before-and-after transformation of a residential exterior, specifically roofing. The 'before' side is dull and worn; the 'after' side is bright, new, and perfectly executed under clear daylight."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdafter/800/600",
+    "aiBrief": {
+      "searchTerm": "home renovation growth stats",
+      "aiPrompt": "A split image comparison showing a before/after scene of a home exterior remodel. Overlay subtle, modern graphic elements indicating positive growth statistics (e.g., increasing review counts) near the 'after' image. Warm, inviting lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1617118602031-1edde7582212?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMHJlbm92YXRpb24lMjBncm93dGglMjBzdGF0c3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_32_chimera_32.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/smithbefore/800/600",
+    "aiBrief": {
+      "searchTerm": "electrical contractor before after",
+      "aiPrompt": "A compelling before-and-after visual of an electrical panel upgrade or service area. The 'before' shows old, messy wiring; the 'after' shows clean, organized, modern electrical work. Focus on sharp contrast and professional results."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/smithafter/800/600",
+    "aiBrief": {
+      "searchTerm": "business process automation",
+      "aiPrompt": "A conceptual image representing the shift from manual to automated processes in a service industry. One side shows messy paperwork; the other shows clean data flowing into a futuristic tablet interface. Cool, analytical lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1760952851538-17a59f691efe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVzaW5lc3MlMjBwcm9jZXNzJTIwYXV0b21hdGlvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_34_chimera_34.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/alex/500/500",
+    "aiBrief": {
+      "searchTerm": "CEO portrait modern",
+      "aiPrompt": "A professional headshot of a male founder/CEO in his late 30s, looking directly at the camera with a confident, engaging expression. He is in a bright, modern office setting with subtle hints of professional success in the background. Soft, flattering key light."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdroofing/600/400",
+    "aiBrief": {
+      "searchTerm": "tradesman video thumbnail",
+      "aiPrompt": "A dynamic video thumbnail showing a tradesman (like a roofer) in clean work gear looking intently off-camera while holding a tool. Use strong rim lighting to separate him from a slightly blurred, professional work site background."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1682928136677-260d9971adb4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dHJhZGVzbWFuJTIwdmlkZW8lMjB0aHVtYm5haWx8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_36_chimera_36.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/smithelectric/600/400",
+    "aiBrief": {
+      "searchTerm": "electrician work video",
+      "aiPrompt": "A high-quality action shot suitable for a video thumbnail, featuring an electrician working diligently on wiring or equipment. The composition should be focused on the hands and the task, using dramatic, well-lit contrasts on the industrial setting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1683141457896-367f0ad2ddcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGVsZWN0cmljaWFuJTIwd29yayUyMHZpZGVvfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_37_chimera_37.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/garcialand/600/400",
+    "aiBrief": {
+      "searchTerm": "landscaping service thumbnail",
+      "aiPrompt": "A vibrant, sunny video thumbnail featuring a landscaping professional interacting positively with a client next to a beautifully manicured lawn or garden. The image should convey quality service and curb appeal."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1747132587812-b9b1f9c4f145?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxhbmRzY2FwaW5nJTIwc2VydmljZSUyMHRodW1ibmFpbHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_38_chimera_38.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/chenplumb/600/400",
+    "aiBrief": {
+      "searchTerm": "plumbing repair video",
+      "aiPrompt": "A video thumbnail image showing a skilled plumber expertly repairing a pipe under a sink or in a utility room. Focus on the shiny chrome of the pipes and the plumber's concentrated expression. Use bright, clean lighting to suggest cleanliness."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1578081823156-301811c54835?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGx1bWJpbmclMjByZXBhaXIlMjB2aWRlb3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_39_chimera_39.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/jenkinsreno/600/400",
+    "aiBrief": {
+      "searchTerm": "remodeling contractor thumbnail",
+      "aiPrompt": "A dynamic video thumbnail featuring a remodeling contractor surveying a successful interior transformation, perhaps holding blueprints or a tablet. The background should show high-end, finished construction details. Warm, interior lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1681839936491-ac6260f47cc8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJlbW9kZWxpbmclMjBjb250cmFjdG9yJTIwdGh1bWJuYWlsfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_40_chimera_40.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/wilsonhvac/600/400",
+    "aiBrief": {
+      "searchTerm": "HVAC technician portrait",
+      "aiPrompt": "A professional, heroic portrait of an HVAC technician in uniform, confidently holding diagnostic equipment next to a clean, modern air conditioning unit outdoors on a bright day. Focus on technical skill and reliability."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/rodriguezpaint/600/400",
+    "aiBrief": {
+      "searchTerm": "painting services thumbnail",
+      "aiPrompt": "A vibrant video thumbnail showing a painter applying a smooth coat of rich color to a wall with precision. The focus should be on the clean texture of the new paint and the painter's focused effort. Use bright, even lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1688372199140-cade7ae820fe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFpbnRpbmclMjBzZXJ2aWNlcyUyMHRodW1ibmFpbHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_42_chimera_42.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.ts",
+    "originalReference": "https://picsum.photos/seed/leeconcrete/600/400",
+    "aiBrief": {
+      "searchTerm": "construction trade montage",
+      "aiPrompt": "A composite image or montage showcasing diverse skilled tradespeople (roofer, electrician, concrete worker) working together harmoniously on a large construction site under a clear blue sky. Emphasize teamwork and industry breadth."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.html",
+    "originalReference": "https://picsum.photos/seed/map/1024/600",
+    "aiBrief": {
+      "searchTerm": "USA business map",
+      "aiPrompt": "A high-angle, detailed map of the contiguous United States with numerous small, glowing digital markers or pins indicating strong business presence across various regions. The aesthetic should be modern, digital, and data-driven with a dark background."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1712254285267-8dfd7510c9de?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVzYSUyMGJ1c2luZXNzJTIwbWFwfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_44_chimera_44.webp"
+  },
+  {
+    "filePath": "src/pages/testimonials/testimonials.component.html",
+    "originalReference": "https://picsum.photos/seed/",
+    "aiBrief": {
+      "searchTerm": "online review icons",
+      "aiPrompt": "A close-up, clean composition featuring multiple small, circular icons representing various online review sources (like Google, Yelp) arranged neatly in a row or grid. The colors should be bright and official, set against a very light, airy background."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1738825664035-3fe0d3a954e6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b25saW5lJTIwcmV2aWV3JTIwaWNvbnN8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_45_chimera_45.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/portfolio-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "digital marketing success",
+      "aiPrompt": "A stunning, high-contrast hero image depicting a metaphorical digital success story. Show abstract data streams or glowing lines flowing upward towards a clear, successful outcome symbol, perhaps superimposed over a clean computer screen. Cinematic, cool lighting."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/before1/800/600",
+    "aiBrief": {
+      "searchTerm": "home repair transformation",
+      "aiPrompt": "A dramatic, compelling split image showing a 'before and after' of a home service impact, like exterior siding or paving. The 'before' is neglected; the 'after' is impeccable and professionally finished. Strong directional sunlight enhances the textural difference."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1726869777151-5f15071f2c77?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMHJlcGFpciUyMHRyYW5zZm9ybWF0aW9ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_47_chimera_47.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/after1/800/600",
+    "aiBrief": {
+      "searchTerm": "service industry before after",
+      "aiPrompt": "A professional diptych comparing a rundown service area (e.g., dirty commercial kitchen floor) 'before' with the same area sparkling clean and renovated 'after'. Use vivid, bright lighting for the 'after' side to emphasize the transformation achieved by the service."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/before2/800/600",
+    "aiBrief": {
+      "searchTerm": "home improvement comparison",
+      "aiPrompt": "A visually arresting side-by-side comparison photo focusing on a structural or aesthetic improvement, such as foundational repair or new landscaping. The 'before' side should appear slightly darker or less defined, while the 'after' side is sharp, detailed, and bathed in golden hour light."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1683141037836-e5a26067194d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMGltcHJvdmVtZW50JTIwY29tcGFyaXNvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_49_chimera_49.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/after2/800/600",
+    "aiBrief": {
+      "searchTerm": "Before after comparison",
+      "aiPrompt": "A split screen image showing two identical scenes side-by-side, labeled 'Before' and 'After'. The 'Before' side should look slightly dull or unfinished, and the 'After' side should be vibrant, clean, and professionally completed. Soft, even lighting throughout."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/anatomy/1200/900",
+    "aiBrief": {
+      "searchTerm": "Human anatomy diagram",
+      "aiPrompt": "A detailed, artistic medical illustration showing the internal structure of a human body part, perhaps overlaid with faint, glowing lines indicating anatomical points. Moody, dark background with focused, cool-toned light highlighting the structures. High contrast."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1702599099904-4f25f14b0471?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW4lMjBhbmF0b215JTIwZGlhZ3JhbXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_51_chimera_51.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/desktop-view/1024/768",
+    "aiBrief": {
+      "searchTerm": "Modern responsive website",
+      "aiPrompt": "A sleek, professional digital mockup displaying a website interface scaled perfectly across a desktop monitor, tablet, and smartphone screen, arranged in a cohesive cluster. Clean lines, minimal design, bright office lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1656267168358-9df4eaef7ad6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vZGVybiUyMHJlc3BvbnNpdmUlMjB3ZWJzaXRlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_52_chimera_52.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/tablet-view/768/1024",
+    "aiBrief": {
+      "searchTerm": "Device screen mockups",
+      "aiPrompt": "A composition of three electronic devices (desktop monitor, tablet, smartphone) arranged diagonally, all displaying the same vibrant, modern website interface. Focus on perfect screen clarity and alignment. Studio lighting setup."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/mobile-view/400/800",
+    "aiBrief": {
+      "searchTerm": "Mobile app design",
+      "aiPrompt": "A stack of three different phone screens showing a mobile application interface. The screens should feature different sections of the app (e.g., home, profile, settings). Emphasize vertical scrollability and mobile usability. Crisp, bright white background."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/apexroof/800/600",
+    "aiBrief": {
+      "searchTerm": "Roofing construction project",
+      "aiPrompt": "A dynamic image capturing the mid-stage of a high-quality roofing installation by a professional crew. Focus on clear shingles and safety equipment. Warm, sunny daylight, emphasizing texture and quality of work."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1632759145351-1d592919f522?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9vZmluZyUyMGNvbnN0cnVjdGlvbiUyMHByb2plY3R8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_55_chimera_55.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/before-apex/800/600",
+    "aiBrief": {
+      "searchTerm": "Roofing before after",
+      "aiPrompt": "A dramatic side-by-side comparison photograph focusing on a residential roof. The 'before' side shows old, weathered shingles, while the 'after' side displays brand new, perfectly aligned shingles. Harsh sunlight to emphasize contrast."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1678293088678-5eb08b9c283e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9vZmluZyUyMGJlZm9yZSUyMGFmdGVyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_56_chimera_56.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/precisionplumb/800/600",
+    "aiBrief": {
+      "searchTerm": "Plumbing work site",
+      "aiPrompt": "A close-up of modern plumbing infrastructure being installed, perhaps copper or PEX piping in a newly framed wall or basement. The image should convey precision and cleanliness. Bright, focused utility lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1650246363606-a2402ec42b08?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGx1bWJpbmclMjB3b3JrJTIwc2l0ZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_57_chimera_57.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/before-precision/800/600",
+    "aiBrief": {
+      "searchTerm": "Plumbing repair result",
+      "aiPrompt": "A split view showing rusted, old pipes on one side ('before') and gleaming, new, professional piping work on the other side ('after'). The 'after' side should be polished and well-lit. Macro photography focus on pipe connection."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/evergreen/800/600",
+    "aiBrief": {
+      "searchTerm": "Professional landscaping work",
+      "aiPrompt": "A beautiful, recently completed residential landscaping project featuring lush green lawns, neatly trimmed hedges, and stone pathways. Soft, golden hour lighting creating long shadows and depth."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1708527081889-76fda448dd31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2Zlc3Npb25hbCUyMGxhbmRzY2FwaW5nJTIwd29ya3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_59_chimera_59.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/before-evergreen/800/600",
+    "aiBrief": {
+      "searchTerm": "Landscaping transformation",
+      "aiPrompt": "A powerful before-and-after comparison of a yard transformation. The 'before' side is overgrown and messy; the 'after' side shows pristine order, vibrant flowers, and a defined edge. Outdoor lighting, clear distinction."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/voltelectric/800/600",
+    "aiBrief": {
+      "searchTerm": "Commercial electrical work",
+      "aiPrompt": "A wide shot inside a clean commercial space or data center, focusing on expertly organized electrical conduit runs, junction boxes, and wiring panels. Cool blue or white overhead lighting, emphasizing order and safety."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/before-volt/800/600",
+    "aiBrief": {
+      "searchTerm": "Electrical panel upgrade",
+      "aiPrompt": "A close-up shot comparing an old, messy electrical breaker box ('before') with a new, pristine, neatly labeled service panel ('after'). Use dramatic lighting to highlight the difference in neatness and safety."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1745600338356-bda3325e8173?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlY3RyaWNhbCUyMHBhbmVsJTIwdXBncmFkZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_62_chimera_62.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/keystone/800/600",
+    "aiBrief": {
+      "searchTerm": "Home remodeling construction",
+      "aiPrompt": "A contemporary interior space undergoing high-end renovation, featuring exposed architectural elements or high-quality framing. The focus should be on solid construction materials like heavy timber or stone. Bright, diffused construction lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1683141536111-3a3360d3e4f6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZSUyMHJlbW9kZWxpbmclMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_63_chimera_63.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/before-keystone/800/600",
+    "aiBrief": {
+      "searchTerm": "Remodeling before after",
+      "aiPrompt": "A split image showcasing the extreme transformation of a kitchen or bathroom. 'Before' is dated and worn; 'After' features modern finishes, clean surfaces, and excellent contemporary lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1753977725475-41b221add2c0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVtb2RlbGluZyUyMGJlZm9yZSUyMGFmdGVyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_64_chimera_64.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/chillfactor/800/600",
+    "aiBrief": {
+      "searchTerm": "HVAC system installation",
+      "aiPrompt": "A technician carefully installing or inspecting a large, modern HVAC unit (air handler or condenser). The setting should look industrial or commercial. Focused lighting on the machinery, emphasizing mechanical complexity."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661963078581-a4f091315692?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aHZhYyUyMHN5c3RlbSUyMGluc3RhbGxhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_65_chimera_65.webp"
+  },
+  {
+    "filePath": "src/pages/portfolio/portfolio.component.ts",
+    "originalReference": "https://picsum.photos/seed/before-chill/800/600",
+    "aiBrief": {
+      "searchTerm": "HVAC repair result",
+      "aiPrompt": "A detailed close-up of a newly installed, clean HVAC component, such as a pristine copper line set or evaporator coil. The image should feel cold and efficient, perhaps with slight condensation or frost effects. Crisp, technical photography style."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1644183605438-78e3ec96f792?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGh2YWMlMjByZXBhaXIlMjByZXN1bHR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_66_chimera_66.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/alex/500/500",
+    "aiBrief": {
+      "searchTerm": "Portrait business leader",
+      "aiPrompt": "A serious, thoughtful portrait of a middle-aged male business leader, looking slightly off-camera with an air of quiet confidence. Shot in a dimly lit, modern office setting. Soft, dramatic Rembrandt lighting highlighting facial features."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1664392107150-c01c0e1da1c4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M TN8fHBvcnRyYWl0JTIwYnVzaW5lc3MlMjBsZWFkZXJ8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_67_chimera_67.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/jessica/500/500",
+    "aiBrief": {
+      "searchTerm": "Professional female portrait",
+      "aiPrompt": "A friendly, approachable headshot of a woman in business attire, smiling genuinely directly at the camera. Clean, bright, professional studio background with soft, flattering key lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1671305003832-a7ee00826651?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmVzc2lvbmFsJTIwZmVtYWxlJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_68_chimera_68.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/ben/500/500",
+    "aiBrief": {
+      "searchTerm": "Software developer portrait",
+      "aiPrompt": "A portrait of a young man sitting at a multi-monitor desk filled with code. He should be looking intently at a screen, suggesting deep focus. Moody, dark environment illuminated primarily by the blue glow of the monitors."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1737574107736-9e02ca5d5387?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvZnR3YXJlJTIwZGV2ZWxvcGVyJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_69_chimera_69.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/samantha/500/500",
+    "aiBrief": {
+      "searchTerm": "Marketing director headshot",
+      "aiPrompt": "A dynamic, energetic portrait of a professional woman, perhaps in a creative workspace. She should have an engaging expression, suggesting communication and strategy. Balanced, vibrant lighting that implies creativity."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/map/1024/600",
+    "aiBrief": {
+      "searchTerm": "Strategy planning map",
+      "aiPrompt": "An aerial or high-angle shot of a large, physical map or whiteboard covered in colored markers, sticky notes, and workflow arrows, spread across a large table in a modern conference room. Clear, bright overhead lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1726797661357-f7897f35f865?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3RyYXRlZ3klMjBwbGFubmluZyUyMG1hcHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_71_chimera_71.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/team1/600/400",
+    "aiBrief": {
+      "searchTerm": "Team collaborating workshop",
+      "aiPrompt": "A candid, documentary-style photo of a small team collaborating intently around a table covered with sketches, laptops, and coffee cups. Focus on engaged body language. Warm, natural daylight streaming in from a window."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1714229505922-0ab8148bc2bf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGVhbSUyMGNvbGxhYm9yYXRpbmclMjB3b3Jrc2hvcHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_72_chimera_72.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/team2/600/400",
+    "aiBrief": {
+      "searchTerm": "Diverse business team",
+      "aiPrompt": "A horizontal group photo of three professionals (diverse ages and genders) standing closely together, looking satisfied and unified. Shot outdoors against a modern architectural background. Midday, slightly overcast lighting for soft shadows."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661494347883-374b12f2aea0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGl2ZXJzZSUyMGJ1c2luZXNzJTIwdGVhbXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_73_chimera_73.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/team3/600/400",
+    "aiBrief": {
+      "searchTerm": "Small business team photo",
+      "aiPrompt": "A group portrait of three colleagues standing shoulder-to-shoulder, all looking confidently towards the viewer. They are dressed in smart casual wear. Shallow depth of field blurring the background, which should be a bright, modern office interior."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1682430782030-6d77c3159739?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c21hbGwlMjBidXNpbmVzcyUyMHRlYW0lMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_74_chimera_74.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/team4/600/400",
+    "aiBrief": {
+      "searchTerm": "Group of people",
+      "aiPrompt": "A diverse group of four professionals standing together in a brightly lit, modern office setting, looking confidently at the camera. Soft, diffused lighting. Minimalist background."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1682436278291-bda5259b7b7c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3JvdXAlMjBvZiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_75_chimera_75.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/google/200/50",
+    "aiBrief": {
+      "searchTerm": "Technology company logos",
+      "aiPrompt": "A clean, minimalist graphic featuring the word 'Google' next to a placeholder small, rectangular image representing a modern tech logo. White background, corporate blue accents."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1681400110107-d995a9a196e2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGVjaG5vbG9neSUyMGNvbXBhbnklMjBsb2dvc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_76_chimera_76.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/twilio/200/50",
+    "aiBrief": {
+      "searchTerm": "Tech company logos",
+      "aiPrompt": "A row of three small, rectangular company logos displayed side-by-side on a simple, light grey background. Focus on 'Twilio' and 'Stripe' with clean, recognizable branding."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/stripe/200/50",
+    "aiBrief": {
+      "searchTerm": "Tech company logos",
+      "aiPrompt": "A visual composition showcasing three distinct, small placeholder images representing logos for 'Stripe', 'OpenAI', and another tech company. Use a dark background to make the small images pop."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/openai/200/50",
+    "aiBrief": {
+      "searchTerm": "Tech company logos grid",
+      "aiPrompt": "A tightly cropped, high-angle shot of four small rectangular placeholders for tech company logos: Stripe, OpenAI, Meta. The lighting should be professional and even, against a white surface."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/meta/200/50",
+    "aiBrief": {
+      "searchTerm": "Tech company logos small",
+      "aiPrompt": "A clean digital graphic showing three small, horizontally aligned rectangles representing the logos for OpenAI, Meta, and Zapier. Neutral color palette."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/zapier/200/50",
+    "aiBrief": {
+      "searchTerm": "Business team collaboration",
+      "aiPrompt": "Three to four diverse people collaborating around a tablet displaying data visualizations in a bright, contemporary office space. Focus on engagement and positive interaction."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1758518731457-5ef826b75b3b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwdGVhbSUyMGNvbGxhYm9yYXRpb258ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_81_chimera_81.webp"
+  },
+  {
+    "filePath": "src/pages/about/about.component.ts",
+    "originalReference": "https://picsum.photos/seed/alex-promise/150/150",
+    "aiBrief": {
+      "searchTerm": "Personal achievement portrait",
+      "aiPrompt": "A medium close-up portrait of a focused, confident man in professional attire, looking directly at the viewer with determination. Cinematic lighting, shallow depth of field."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/process/process.component.ts",
+    "originalReference": "https://picsum.photos/seed/process-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Business process planning",
+      "aiPrompt": "Overhead view of an organized whiteboard covered with flowcharts, arrows, and sticky notes, representing a business process. Bright, well-lit studio shot emphasizing clarity and strategy."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1676276374289-5051ed04c77a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1c2luZXNzJTIwcHJvY2VzcyUyMHBsYW5uaW5nfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_83_chimera_83.webp"
+  },
+  {
+    "filePath": "src/pages/process/process.component.ts",
+    "originalReference": "https://picsum.photos/seed/blueprint-call/800/600",
+    "aiBrief": {
+      "searchTerm": "Blueprint design meeting",
+      "aiPrompt": "Two architects or engineers pointing at a large, rolled-out blueprint on a wooden table. Soft, directional lighting highlighting the technical drawings. Serious, collaborative mood."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661292153089-3653983ec188?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ymx1ZXByaW50JTIwZGVzaWduJTIwbWVldGluZ3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_84_chimera_84.webp"
+  },
+  {
+    "filePath": "src/pages/process/process.component.ts",
+    "originalReference": "https://picsum.photos/seed/we-build/800/600",
+    "aiBrief": {
+      "searchTerm": "Product review discussion",
+      "aiPrompt": "A candid photograph of a small, diverse team reviewing a physical product prototype together in a workshop setting. Focus on the hands interacting with the object. Warm, focused task lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1664301035163-36eb710f4534?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZHVjdCUyMHJldmlldyUyMGRpc2N1c3Npb258ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_85_chimera_85.webp"
+  },
+  {
+    "filePath": "src/pages/process/process.component.ts",
+    "originalReference": "https://picsum.photos/seed/launch-train/800/600",
+    "aiBrief": {
+      "searchTerm": "Business launch excitement",
+      "aiPrompt": "Dynamic image of a diverse team celebrating a major business milestone, perhaps by high-fiving or cheering near a large screen displaying a success metric. Dramatic, uplifting lighting."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/careers/careers.component.ts",
+    "originalReference": "https://picsum.photos/seed/stressed1/600/400",
+    "aiBrief": {
+      "searchTerm": "Stressed business people",
+      "aiPrompt": "A split composition showing two separate images side-by-side, both featuring slightly stressed or overwhelmed individuals working late in an office environment. Moody, blue-toned lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661481894000-332e5f623eb7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3RyZXNzZWQlMjBidXNpbmVzcyUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_87_chimera_87.webp"
+  },
+  {
+    "filePath": "src/pages/careers/careers.component.ts",
+    "originalReference": "https://picsum.photos/seed/stressed2/600/400",
+    "aiBrief": {
+      "searchTerm": "Stressed professionals working",
+      "aiPrompt": "A collection of three thumbnail images arranged horizontally, each depicting a different person looking stressed while working in front of a computer screen. Dark, cool color grading."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/careers/careers.component.ts",
+    "originalReference": "https://picsum.photos/seed/stressed3/600/400",
+    "aiBrief": {
+      "searchTerm": "Overwhelmed office workers",
+      "aiPrompt": "A trio of small, square images showing people looking frustrated or burdened by paperwork and technology. The overall visual mood should convey high pressure and fatigue."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661456251021-72d617621b4d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3ZlcndoZWxtZWQlMjBvZmZpY2UlMjB3b3JrZXJzfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_89_chimera_89.webp"
+  },
+  {
+    "filePath": "src/pages/careers/careers.component.ts",
+    "originalReference": "https://picsum.photos/seed/alex/500/500",
+    "aiBrief": {
+      "searchTerm": "Professional headshot CEO",
+      "aiPrompt": "A professional, confident headshot of a middle-aged man, Alex Riley, with a slight smile. The background is blurred but suggests a modern executive office. Studio lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1682095933960-b6d67f555ac1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmVzc2lvbmFsJTIwaGVhZHNob3QlMjBjZW98ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_90_chimera_90.webp"
+  },
+  {
+    "filePath": "src/pages/careers/careers.component.ts",
+    "originalReference": "https://picsum.photos/seed/jessica/500/500",
+    "aiBrief": {
+      "searchTerm": "Professional headshot success",
+      "aiPrompt": "A portrait of a smiling woman, Jessica Miller, in business casual attire, looking directly at the camera with a welcoming expression. The image should feel approachable and success-oriented."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1758691737587-7630b4d31d16?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2Zlc3Npb25hbCUyMGhlYWRzaG90JTIwc3VjY2Vzc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_91_chimera_91.webp"
+  },
+  {
+    "filePath": "src/pages/careers/careers.component.ts",
+    "originalReference": "https://picsum.photos/seed/ben/500/500",
+    "aiBrief": {
+      "searchTerm": "Software developer portrait",
+      "aiPrompt": "A close-up portrait of Ben Carter, a young male developer, in front of a monitor displaying clean code. He should look thoughtful and capable. Lighting emphasizes focus and technical skill."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1737574107736-9e02ca5d5387?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNvZnR3YXJlJTIwZGV2ZWxvcGVyJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_92_chimera_92.webp"
+  },
+  {
+    "filePath": "src/pages/careers/careers.component.ts",
+    "originalReference": "https://picsum.photos/seed/samantha/500/500",
+    "aiBrief": {
+      "searchTerm": "Marketing director headshot",
+      "aiPrompt": "A vibrant, professional headshot of Samantha Chen, a Marketing Director, perhaps with a subtle graphic design element blurred in the background. Bright, energetic lighting."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/careers/careers.component.html",
+    "originalReference": "https://picsum.photos/seed/",
+    "aiBrief": {
+      "searchTerm": "Abstract digital tools",
+      "aiPrompt": "A macro shot of a complex digital interface or server rack with glowing blue and green lights, overlaid with small, subtle placeholders representing various software tools. Dark, high-tech aesthetic."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1760548425298-22aa4b60fc16?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWJzdHJhY3QlMjBkaWdpdGFsJTIwdG9vbHN8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_94_chimera_94.webp"
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/partners-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Business partnership success",
+      "aiPrompt": "Two diverse business people shaking hands over a desk in a modern setting, with a subtle overlay of connecting abstract lines or glowing digital nodes. Inspiring, optimistic lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661371394983-42485fed3a58?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVzaW5lc3MlMjBwYXJ0bmVyc2hpcCUyMHN1Y2Nlc3N8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_95_chimera_95.webp"
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/partners-reveal/1200/800",
+    "aiBrief": {
+      "searchTerm": "Large business reveal",
+      "aiPrompt": "A panoramic, cinematic shot capturing a modern, expansive office lobby or conference room with sunlight streaming through large windows. Suggests growth and large-scale operations."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/twilio/200/50",
+    "aiBrief": {
+      "searchTerm": "Tech partnership logos",
+      "aiPrompt": "A graphic layout featuring the word 'Twilio' next to a clean, small logo placeholder, emphasizing reliability through strong visual design. Blue and white color scheme."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1681400110107-d995a9a196e2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGVjaCUyMHBhcnRuZXJzaGlwJTIwbG9nb3N8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_97_chimera_97.webp"
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/mailgun/200/50",
+    "aiBrief": {
+      "searchTerm": "Software integration logos",
+      "aiPrompt": "A graphic composition highlighting the 'Mailgun' logo placeholder next to text describing communication reliability. Dark, professional background with metallic accents."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1758626042818-b05e9c91b84a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmUlMjBpbnRlZ3JhdGlvbiUyMGxvZ29zfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_98_chimera_98.webp"
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/google/200/50",
+    "aiBrief": {
+      "searchTerm": "Core business services",
+      "aiPrompt": "A clean, authoritative image showing a single, strong logo placeholder for 'Google' centered, with abstract digital data surrounding it, suggesting foundational strength. High contrast."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/ahrefs/200/50",
+    "aiBrief": {
+      "searchTerm": "Digital marketing tools",
+      "aiPrompt": "Close-up shot of professional, minimalist technology interfaces showcasing marketing analytics and data. Soft, corporate blue lighting, high-tech feel, shallow depth of field."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661425715124-310ec1b49b8a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGlnaXRhbCUyMG1hcmtldGluZyUyMHRvb2xzfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_100_chimera_100.webp"
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/openai/200/50",
+    "aiBrief": {
+      "searchTerm": "Artificial intelligence icons",
+      "aiPrompt": "Abstract visualization of artificial intelligence integration, featuring glowing neural network patterns superimposed over professional office setting. Deep blues and bright cyan accents, moody and futuristic."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/zapier/200/50",
+    "aiBrief": {
+      "searchTerm": "Business process automation",
+      "aiPrompt": "Conceptual image of seamless digital workflow integration, perhaps represented by interconnected glowing lines or smooth mechanical gears turning precisely. Bright, clean, modern studio lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1677094310899-02303289cadf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YnVzaW5lc3MlMjBwcm9jZXNzJTIwYXV0b21hdGlvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_102_chimera_102.webp"
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/stripe/200/50",
+    "aiBrief": {
+      "searchTerm": "Financial technology abstract",
+      "aiPrompt": "Macro shot focusing on complex circuit board traces or abstract shapes symbolizing secure digital transactions. Metallic textures, dramatic low-key lighting emphasizing security and reliability."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1664298145390-fa6018ad4093?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZmluYW5jaWFsJTIwdGVjaG5vbG9neSUyMGFic3RyYWN0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_103_chimera_103.webp"
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/integration-magic/1000/700",
+    "aiBrief": {
+      "searchTerm": "Teamwork technology connection",
+      "aiPrompt": "A dynamic scene where diverse professionals collaborate around a large, transparent screen displaying interconnected data points or code. Energetic, bright workspace lighting, emphasizing synergy."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1733328013343-e5ee77acaf05?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVhbXdvcmslMjB0ZWNobm9sb2d5JTIwY29ubmVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_104_chimera_104.webp"
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/future-pacing-partners/800/600",
+    "aiBrief": {
+      "searchTerm": "Future business success",
+      "aiPrompt": "Visionary image of a sleek, modern business environment overlooking a futuristic cityscape at sunset. A single executive stands confidently, symbolizing future pacing and advantage. Warm golden hour light."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661353332970-4660a24f6cd6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZnV0dXJlJTIwYnVzaW5lc3MlMjBzdWNjZXNzfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_105_chimera_105.webp"
+  },
+  {
+    "filePath": "src/pages/partners/partners.component.ts",
+    "originalReference": "https://picsum.photos/seed/rd-department/800/600",
+    "aiBrief": {
+      "searchTerm": "Modern technology lab",
+      "aiPrompt": "A clean, state-of-the-art research and development lab setting with glowing screens and complex but organized equipment. Focused overhead lighting, creating a sense of innovation and permanence."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1599726159910-f4378e03f9bb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZXJuJTIwdGVjaG5vbG9neSUyMGxhYnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_106_chimera_106.webp"
+  },
+  {
+    "filePath": "src/pages/printing/printing.component.ts",
+    "originalReference": "https://picsum.photos/seed/printing-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Marketing strategy blueprint",
+      "aiPrompt": "An overhead shot of a finely detailed blueprint or map spread across a dark wooden table, overlaid with stylized arrows and connection points, suggesting careful planning. Warm, focused desk lamp illumination."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1743385779347-1549dabf1320?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFya2V0aW5nJTIwc3RyYXRlZ3klMjBibHVlcHJpbnR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_107_chimera_107.webp"
+  },
+  {
+    "filePath": "src/pages/printing/printing.component.html",
+    "originalReference": "https://picsum.photos/seed/printing-solution/1200/800",
+    "aiBrief": {
+      "searchTerm": "Digital diagram complex",
+      "aiPrompt": "A complex, three-dimensional digital flow chart or schematic rendered in glowing blue lines against a dark, slightly smoky background. Highly technical, emphasizing structure and logic."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1753080951569-4134578b1c35?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGlnaXRhbCUyMGRpYWdyYW0lMjBjb21wbGV4fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_108_chimera_108.webp"
+  },
+  {
+    "filePath": "src/pages/book-call/book-call.component.ts",
+    "originalReference": "https://picsum.photos/seed/alex/500/500",
+    "aiBrief": {
+      "searchTerm": "Young business leader portrait",
+      "aiPrompt": "Professional, engaging portrait of a young male founder with sharp, focused eyes, dressed in modern business casual attire. Soft, diffused side lighting against a neutral, sophisticated background."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1736939627157-dbb5a6a3421b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHlvdW5nJTIwYnVzaW5lc3MlMjBsZWFkZXIlMjBwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_109_chimera_109.webp"
+  },
+  {
+    "filePath": "src/pages/features/functional-website/functional-website.component.ts",
+    "originalReference": "https://picsum.photos/seed/website-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Website conversion optimization",
+      "aiPrompt": "A brightly lit computer monitor displaying clear conversion metrics (graphs trending upwards) in a minimalist office setting. Strong focus on the screen, suggesting 24/7 customer capture."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2Vic2l0ZSUyMGNvbnZlcnNpb24lMjBvcHRpbWl6YXRpb258ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_110_chimera_110.webp"
+  },
+  {
+    "filePath": "src/pages/features/all-in-one-inbox/all-in-one-inbox.component.ts",
+    "originalReference": "https://picsum.photos/seed/inbox-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Mobile phone money",
+      "aiPrompt": "Conceptual image showing a smartphone emitting subtle golden light or digital currency symbols, held by a professional hand. Dark, moody background highlighting the device as a central tool."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1671459923070-b664abdaef00?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vYmlsZSUyMHBob25lJTIwbW9uZXl8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_111_chimera_111.webp"
+  },
+  {
+    "filePath": "src/pages/features/review-funnel/review-funnel.component.ts",
+    "originalReference": "https://picsum.photos/seed/review-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Local search ranking",
+      "aiPrompt": "A stylized map graphic showing concentrated digital influence radiating outward from a central point, symbolizing dominance in local search. Vibrant green and blue color palette, modern design."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/missed-call-text-back/missed-call-text-back.component.ts",
+    "originalReference": "https://picsum.photos/seed/missedcall-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Missed connection communication",
+      "aiPrompt": "A symbolic image of a stylized phone icon with a subtle gap or shadow, representing a missed call, contrasted against a background showing smooth, uninterrupted digital flow. Somber blue tones."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/local-seo/local-seo.component.ts",
+    "originalReference": "https://picsum.photos/seed/localseo-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Lead generation success",
+      "aiPrompt": "An abstract visualization of high-intent leads funneling into a brightly lit reservoir or container. Dynamic motion blur suggesting speed and volume, utilizing warm orange and yellow tones."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/local-seo/local-seo.component.ts",
+    "originalReference": "https://picsum.photos/seed/gmb-profile/800/600",
+    "aiBrief": {
+      "searchTerm": "Business profile management",
+      "aiPrompt": "A close-up of a tablet screen clearly displaying an optimized Google Business Profile dashboard, with checkmarks and positive metrics visible. Well-lit, clean wooden desk surface."
+    },
+    "newImageSourceUrl": "https://picsum.photos/seed/gmb-profile/800/600",
+    "newLocalPath": "chimera_assets/chimera_115_chimera_115.webp"
+  },
+  {
+    "filePath": "src/pages/features/local-seo/local-seo.component.ts",
+    "originalReference": "https://picsum.photos/seed/website-seo/800/600",
+    "aiBrief": {
+      "searchTerm": "Technical SEO optimization",
+      "aiPrompt": "Abstract representation of clean, well-structured code or a perfectly indexed website structure, perhaps using glowing blocks or data packets moving efficiently. Cool, clean lighting emphasizing technical soundness."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1682464651356-3c6780eff00c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVjaG5pY2FsJTIwc2VvJTIwb3B0aW1pemF0aW9ufGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_116_chimera_116.webp"
+  },
+  {
+    "filePath": "src/pages/features/local-seo/local-seo.component.ts",
+    "originalReference": "https://picsum.photos/seed/citations-reviews/800/600",
+    "aiBrief": {
+      "searchTerm": "Digital citation signals",
+      "aiPrompt": "A dynamic visual illustrating data flowing outward from a central hub to various online locations (represented by small glowing nodes). Focus on connectivity and signal strength, ethereal blue light."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGlnaXRhbCUyMGNpdGF0aW9uJTIwc2lnbmFsc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_117_chimera_117.webp"
+  },
+  {
+    "filePath": "src/pages/features/automated-lead-follow-up/automated-lead-follow-up.component.ts",
+    "originalReference": "https://picsum.photos/seed/leadfollowup/800/600",
+    "aiBrief": {
+      "searchTerm": "Sales conversion funnel",
+      "aiPrompt": "A high-angle shot looking down into a visually complex, sleek conversion funnel graphic made of glass or transparent material, showing prospects moving smoothly to the bottom. Intense focus, sharp lines, professional studio lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1690637341573-ec73400f9dec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNhbGVzJTIwY29udmVyc2lvbiUyMGZ1bm5lbHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_118_chimera_118.webp"
+  },
+  {
+    "filePath": "src/pages/features/automated-lead-follow-up/automated-lead-follow-up.component.ts",
+    "originalReference": "https://picsum.photos/seed/leadscold/100/100",
+    "aiBrief": {
+      "searchTerm": "Cold lead management",
+      "aiPrompt": "A symbolic image showing a few isolated, faint sparks struggling to ignite against a dark, cold background, representing leads going cold. Overcast, low-key lighting emphasizing loss."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/automated-lead-follow-up/automated-lead-follow-up.component.ts",
+    "originalReference": "https://picsum.photos/seed/forgetfollowup/100/100",
+    "aiBrief": {
+      "searchTerm": "Business follow up failure",
+      "aiPrompt": "A close-up on a single, dusty business card resting on an unused desk surface, suggesting forgotten or missed opportunities. Muted, melancholic lighting."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/automated-lead-follow-up/automated-lead-follow-up.component.ts",
+    "originalReference": "https://picsum.photos/seed/losejobs/100/100",
+    "aiBrief": {
+      "searchTerm": "Losing business deals",
+      "aiPrompt": "A conceptual image of a perfectly tied knot suddenly slipping apart or a small gap appearing in a strong chain link. Dramatic lighting emphasizing failure under pressure."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/automated-lead-follow-up/automated-lead-follow-up.component.ts",
+    "originalReference": "https://picsum.photos/seed/autofeature1/800/600",
+    "aiBrief": {
+      "searchTerm": "Automated text messaging",
+      "aiPrompt": "A stylized shot of a modern smartphone displaying perfectly timed outgoing text messages with accompanying checkmarks, implying immediate, controlled communication. Bright, inviting interface colors."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1718641527614-8edd0ca13235?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXV0b21hdGVkJTIwdGV4dCUyMG1lc3NhZ2luZ3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_122_chimera_122.webp"
+  },
+  {
+    "filePath": "src/pages/features/automated-lead-follow-up/automated-lead-follow-up.component.ts",
+    "originalReference": "https://picsum.photos/seed/autofeature2/800/600",
+    "aiBrief": {
+      "searchTerm": "AI chatbot conversation",
+      "aiPrompt": "A split screen showing a human face interacting naturally with a clean, friendly AI chatbot interface on a screen. Warm, empathetic lighting focused on the human side, cool on the AI side."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1760360497581-0606569510a6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFpJTIwY2hhdGJvdCUyMGNvbnZlcnNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_123_chimera_123.webp"
+  },
+  {
+    "filePath": "src/pages/features/automated-lead-follow-up/automated-lead-follow-up.component.ts",
+    "originalReference": "https://picsum.photos/seed/autofeature3/800/600",
+    "aiBrief": {
+      "searchTerm": "Reviving dead leads",
+      "aiPrompt": "Metaphorical image of a previously dry, cracked earth suddenly receiving a splash of vibrant, life-giving water or light, symbolizing lead reactivation. Dramatic contrast between dry and wet areas."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/automated-lead-follow-up/automated-lead-follow-up.component.ts",
+    "originalReference": "https://picsum.photos/seed/contractor6/500/500",
+    "aiBrief": {
+      "searchTerm": "roofer contractor working",
+      "aiPrompt": "A friendly, middle-aged male roofer in a clean, professional work uniform standing confidently on a shingled roof. He should be looking directly at the camera with a slight, trustworthy smile. The background should show a sunny suburban house under construction or repair. Bright, natural daylight, high-quality photograph."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1722619734320-9daad59bac19?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9vZmVyJTIwY29udHJhY3RvciUyMHdvcmtpbmd8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_125_chimera_125.webp"
+  },
+  {
+    "filePath": "src/pages/features/business-phone/business-phone.component.ts",
+    "originalReference": "https://picsum.photos/seed/businessphone/800/600",
+    "aiBrief": {
+      "searchTerm": "business phone screen",
+      "aiPrompt": "Close-up, sleek photograph of a modern smartphone displaying a business call log or analytics screen. The focus should be sharp on the screen interface, perhaps showing call tracking metrics. Minimalist background, professional, high-tech feel, soft diffused lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1608714783717-618b2de85e39?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBwaG9uZSUyMHNjcmVlbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_126_chimera_126.webp"
+  },
+  {
+    "filePath": "src/pages/features/business-phone/business-phone.component.ts",
+    "originalReference": "https://picsum.photos/seed/callhours/100/100",
+    "aiBrief": {
+      "searchTerm": "worker overwhelmed calls",
+      "aiPrompt": "A tradesperson, possibly Frank the roofer, looking stressed while juggling multiple ringing telephones or hearing the noise of many phone calls. Emphasize the feeling of being overwhelmed. Moody, slightly dramatic lighting to convey the pain point."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661486923644-97f0fa32bb2e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29ya2VyJTIwb3ZlcndoZWxtZWQlMjBjYWxsc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_127_chimera_127.webp"
+  },
+  {
+    "filePath": "src/pages/features/business-phone/business-phone.component.ts",
+    "originalReference": "https://picsum.photos/seed/onemanshow/100/100",
+    "aiBrief": {
+      "searchTerm": "solo business owner",
+      "aiPrompt": "A single small business owner, perhaps a tradesperson, looking slightly isolated or burdened while surrounded by tools or paperwork, implying they are doing everything alone. Focus on the concept of a 'one-man show.' Slightly desaturated, serious tone."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661684469640-26c8265c0cc2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c29sbyUyMGJ1c2luZXNzJTIwb3duZXJ8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_128_chimera_128.webp"
+  },
+  {
+    "filePath": "src/pages/features/business-phone/business-phone.component.ts",
+    "originalReference": "https://picsum.photos/seed/notracking/100/100",
+    "aiBrief": {
+      "searchTerm": "tracking data analytics",
+      "aiPrompt": "Abstract visualization of lost or untracked data, perhaps visualized as glowing digital streams flowing away from a central point or dissolving into static. Dark background with neon blue or orange lines representing missing phone call data. Conceptual and modern."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/business-phone/business-phone.component.ts",
+    "originalReference": "https://picsum.photos/seed/phonefeature1/800/600",
+    "aiBrief": {
+      "searchTerm": "phone call analysis feature",
+      "aiPrompt": "A hand interacting with a mobile app interface displaying a transcript or summary of a recent phone conversation. The screen should highlight key phrases or data points. Clean desk setting, professional lighting, emphasizing clarity and insight."
+    },
+    "newImageSourceUrl": "https://picsum.photos/seed/phonefeature1/800/600",
+    "newLocalPath": "chimera_assets/chimera_130_chimera_130.webp"
+  },
+  {
+    "filePath": "src/pages/features/business-phone/business-phone.component.ts",
+    "originalReference": "https://picsum.photos/seed/phonefeature2/800/600",
+    "aiBrief": {
+      "searchTerm": "business ROI dashboard",
+      "aiPrompt": "A detailed, vibrant digital dashboard showing metrics like call volume, duration, and answered rates represented by clear bar graphs and circular charts. The focus should be on successful conversion metrics, suggesting high return on investment. Modern interface design."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/business-phone/business-phone.component.ts",
+    "originalReference": "https://picsum.photos/seed/phonefeature3/800/600",
+    "aiBrief": {
+      "searchTerm": "private business number",
+      "aiPrompt": "A side-by-side comparison or visual metaphor showing a personal cell phone number protected by a digital shield or barrier, while a business number is clearly displayed for customer interaction. Focus on privacy and separation. Clean, slightly abstract graphic style."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/business-phone/business-phone.component.ts",
+    "originalReference": "https://picsum.photos/seed/contractor7/500/500",
+    "aiBrief": {
+      "searchTerm": "HVAC technician smiling",
+      "aiPrompt": "A competent, friendly female HVAC technician (Jenny) wearing a clean uniform and safety glasses, kneeling beside an exterior air conditioning unit. She should be giving a thumbs-up or looking reassuringly toward the viewer. Warm afternoon light, emphasizing helpfulness."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/one-click-marketing/one-click-marketing.component.ts",
+    "originalReference": "https://picsum.photos/seed/marketing/800/600",
+    "aiBrief": {
+      "searchTerm": "marketing message outreach",
+      "aiPrompt": "A series of stylized text bubbles or messages floating out from a smartphone screen towards icons representing happy customers or business growth symbols. Dynamic composition, bright colors, conveying proactive outreach."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1682310158823-917a4f726802?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWFya2V0aW5nJTIwbWVzc2FnZSUyMG91dHJlYWNofGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_134_chimera_134.webp"
+  },
+  {
+    "filePath": "src/pages/features/one-click-marketing/one-click-marketing.component.ts",
+    "originalReference": "https://picsum.photos/seed/forgotten/100/100",
+    "aiBrief": {
+      "searchTerm": "forgotten customer list",
+      "aiPrompt": "A dimly lit, cluttered desk featuring an old, dusty spreadsheet or physical Rolodex that is clearly unused or forgotten. A single beam of light illuminates the neglected item, symbolizing lost past customers. Moody, evocative photography."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/one-click-marketing/one-click-marketing.component.ts",
+    "originalReference": "https://picsum.photos/seed/tooslow/100/100",
+    "aiBrief": {
+      "searchTerm": "slow communication metaphor",
+      "aiPrompt": "A visual representation of slow speed, perhaps a person laboriously writing a long letter or sending a snail mail envelope, contrasted subtly with a modern, fast-moving digital element. Focus on the inefficiency of manual processes. Sepia tones mixed with crisp digital blue."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1747596489101-4422f83b7005?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNsb3clMjBjb21tdW5pY2F0aW9uJTIwbWV0YXBob3J8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_136_chimera_136.webp"
+  },
+  {
+    "filePath": "src/pages/features/one-click-marketing/one-click-marketing.component.ts",
+    "originalReference": "https://picsum.photos/seed/repeatbiz/100/100",
+    "aiBrief": {
+      "searchTerm": "repeat business growth",
+      "aiPrompt": "A visual metaphor for recurring revenue, such as a loop or spiral graphic composed of small, happy customer icons flowing back toward a central business logo or structure. Vibrant, optimistic colors emphasizing retention."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/one-click-marketing/one-click-marketing.component.ts",
+    "originalReference": "https://picsum.photos/seed/marketfeature1/800/600",
+    "aiBrief": {
+      "searchTerm": "contractor marketing templates",
+      "aiPrompt": "A clean tablet or laptop screen displaying various professionally designed, branded marketing message templates specifically tailored for trade industries like roofing or plumbing. Focus on clear, ready-to-use content. Well-lit workspace."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/one-click-marketing/one-click-marketing.component.ts",
+    "originalReference": "https://picsum.photos/seed/marketfeature2/800/600",
+    "aiBrief": {
+      "searchTerm": "personalized marketing conversation",
+      "aiPrompt": "A split image or composition where one side shows a generic mass text message, and the other side shows a highly personalized, human-like text conversation appearing on a phone screen. Use soft focus for the generic side and sharp focus for the personal side."
+    },
+    "newImageSourceUrl": "https://picsum.photos/seed/marketfeature2/800/600",
+    "newLocalPath": "chimera_assets/chimera_139_chimera_139.webp"
+  },
+  {
+    "filePath": "src/pages/features/one-click-marketing/one-click-marketing.component.ts",
+    "originalReference": "https://picsum.photos/seed/marketfeature3/800/600",
+    "aiBrief": {
+      "searchTerm": "scheduled automation marketing",
+      "aiPrompt": "A calendar or scheduling interface displayed on a screen, showing automated marketing messages set far into the future (next month, next quarter). Use visual cues like clocks and smooth timeline graphics. Modern, precise aesthetic."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/one-click-marketing/one-click-marketing.component.ts",
+    "originalReference": "https://picsum.photos/seed/contractor8/500/500",
+    "aiBrief": {
+      "searchTerm": "pressure washer working",
+      "aiPrompt": "A dynamic, action shot of a cheerful pressure washer technician (Kevin) using a powerful washer to clean grime off a sidewalk or siding. Water spray should be visible and sharp. Bright daylight, emphasizing effectiveness and hard work."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/contact/contact.component.ts",
+    "originalReference": "https://picsum.photos/seed/alex/500/500",
+    "aiBrief": {
+      "searchTerm": "professional business headshot",
+      "aiPrompt": "A modern, approachable corporate headshot of a man in his late 30s, dressed in smart business casual attire, smiling confidently. He is positioned slightly off-center against a clean, neutral background. Professional studio lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1651684215020-f7a5b6610f23?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmVzc2lvbmFsJTIwYnVzaW5lc3MlMjBoZWFkc2hvdHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_142_chimera_142.webp"
+  },
+  {
+    "filePath": "src/pages/contact/contact.component.ts",
+    "originalReference": "https://picsum.photos/seed/map/1024/600",
+    "aiBrief": {
+      "searchTerm": "nationwide service map",
+      "aiPrompt": "A stylized, illuminated digital map of the United States showing numerous small, glowing connection points spread evenly across the country, representing nationwide service coverage. Dark background with bright blue or white light lines connecting the points. Futuristic data visualization."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1570106413982-7f2897b8d0c5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0aW9ud2lkZSUyMHNlcnZpY2UlMjBtYXB8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_143_chimera_143.webp"
+  },
+  {
+    "filePath": "src/components/shared/live-chat-widget/live-chat-widget.component.html",
+    "originalReference": "https://picsum.photos/seed/robot/100/100",
+    "aiBrief": {
+      "searchTerm": "friendly robot mascot",
+      "aiPrompt": "A close-up, friendly portrait of a cartoon robot mascot face. The robot should have large, expressive eyes and a warm smile, rendered in polished, slightly metallic textures. Soft, inviting lighting, focusing purely on the character design."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1681208068652-f3d8e1e52005?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnJpZW5kbHklMjByb2JvdCUyMG1hc2NvdHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_144_chimera_144.webp"
+  },
+  {
+    "filePath": "src/components/shared/social-proof/social-proof.component.ts",
+    "originalReference": "https://picsum.photos/seed/analyze/100/100",
+    "aiBrief": {
+      "searchTerm": "trade professional analysis",
+      "aiPrompt": "A close-up shot of a tradesperson's hands (e.g., plumber or electrician) pointing at a digital screen or tablet that displays a website analytics report. Focus on the action of analyzing data related to their trade. Workshop or clean office environment."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/components/shared/social-proof/social-proof.component.ts",
+    "originalReference": "https://picsum.photos/seed/demo/100/100",
+    "aiBrief": {
+      "searchTerm": "booked a demo meeting",
+      "aiPrompt": "A calendar icon or meeting schedule interface prominently displayed with a confirmation checkmark next to a booked appointment time. A blurred background suggests a busy professional environment. Bright, successful color palette."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1517916358207-1e49f666e851?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va2VkJTIwYSUyMGRlbW8lMjBtZWV0aW5nfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_146_chimera_146.webp"
+  },
+  {
+    "filePath": "src/components/shared/social-proof/social-proof.component.ts",
+    "originalReference": "https://picsum.photos/seed/review/100/100",
+    "aiBrief": {
+      "searchTerm": "five star review icon",
+      "aiPrompt": "A large, shining, perfectly formed five-star icon, perhaps rendered in gold or bright yellow, with a subtle reflection. The background should be clean and simple to emphasize the perfect rating. Macro photography style."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1682309674226-fa47fc54568e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZpdmUlMjBzdGFyJTIwcmV2aWV3JTIwaWNvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_147_chimera_147.webp"
+  },
+  {
+    "filePath": "src/components/shared/social-proof/social-proof.component.ts",
+    "originalReference": "https://picsum.photos/seed/analyze2/100/100",
+    "aiBrief": {
+      "searchTerm": "website analysis notification",
+      "aiPrompt": "A stylized graphic showing a magnifying glass hovering over a webpage wireframe or small website mockup, with overlaid digital data points indicating analysis completion. The overall mood should be informative and modern. Teal and white color scheme."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/services/blog.service.ts",
+    "originalReference": "https://picsum.photos/seed/alex/100/100",
+    "aiBrief": {
+      "searchTerm": "business thought leader portrait",
+      "aiPrompt": "A professional, trustworthy portrait of a man (Alex Riley) looking directly at the viewer with an engaged and intelligent expression. He is dressed professionally, possibly in a well-lit modern office setting. Shallow depth of field, high-quality editorial photograph."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1664475017773-c55f05bdb242?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1c2luZXNzJTIwdGhvdWdodCUyMGxlYWRlciUyMHBvcnRyYWl0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_149_chimera_149.webp"
+  },
+  {
+    "filePath": "src/services/blog.service.ts",
+    "originalReference": "https://picsum.photos/seed/blog1/1200/800",
+    "aiBrief": {
+      "searchTerm": "Marketing lead generation",
+      "aiPrompt": "A bright, energetic, professional photo representing digital marketing and lead generation. Focus on abstract concepts like data flow, connections, or growth charts overlaid on a modern office or clean design background. Soft, diffused lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1733306503329-7a8c701fa9ad?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFya2V0aW5nJTIwbGVhZCUyMGdlbmVyYXRpb258ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_150_chimera_150.webp"
+  },
+  {
+    "filePath": "src/services/blog.service.ts",
+    "originalReference": "https://picsum.photos/seed/samantha/100/100",
+    "aiBrief": {
+      "searchTerm": "Professional portrait woman",
+      "aiPrompt": "A friendly, professional headshot of a woman in her 30s, named Samantha Chen, looking directly at the camera with a confident yet approachable smile. Neutral, softly lit studio background. High resolution, shallow depth of field."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1671305003832-a7ee00826651?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_151_chimera_151.webp"
+  },
+  {
+    "filePath": "src/services/blog.service.ts",
+    "originalReference": "https://picsum.photos/seed/blog2/1200/800",
+    "aiBrief": {
+      "searchTerm": "SEO optimization strategy",
+      "aiPrompt": "A visually engaging image symbolizing Search Engine Optimization (SEO). This could be a close-up of a computer screen showing positive search rankings, or a stylized representation of climbing a ladder towards a large 'G' (for Google). Cool blue and green color palette, focused lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1633307057722-a4740ba0c5d0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNlbyUyMG9wdGltaXphdGlvbiUyMHN0cmF0ZWd5fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_152_chimera_152.webp"
+  },
+  {
+    "filePath": "src/pages/resources/resource-hub.component.ts",
+    "originalReference": "https://picsum.photos/seed/bad-advice/800/600",
+    "aiBrief": {
+      "searchTerm": "Trades business strategy",
+      "aiPrompt": "A grounded, authentic image representing effective strategies for trade businesses. Perhaps a close-up of weathered hands holding blueprints or tools next to a modern tablet displaying business metrics. Warm, workshop lighting with strong textures."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/resources/resource-hub.component.ts",
+    "originalReference": "https://picsum.photos/seed/alex/500/500",
+    "aiBrief": {
+      "searchTerm": "Founder CEO portrait",
+      "aiPrompt": "A corporate portrait of Alex Riley, a founder and CEO, possibly in a modern, minimalist office setting. He should appear thoughtful and established. Natural light coming from a side window, creating soft shadows. Composition should be a medium close-up."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1621388730896-b0e6b1ba5c51?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZvdW5kZXIlMjBjZW8lMjBwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_154_chimera_154.webp"
+  },
+  {
+    "filePath": "src/pages/resources/resource-hub.component.ts",
+    "originalReference": "https://picsum.photos/seed/samantha/500/500",
+    "aiBrief": {
+      "searchTerm": "Marketing director professional",
+      "aiPrompt": "A vibrant and energetic professional photo of Samantha Chen, a Marketing Director. She is in a dynamic pose, perhaps gesturing towards a screen or standing in a bright, modern collaborative workspace. High key lighting, emphasizing creativity."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/resources/resource-hub.component.ts",
+    "originalReference": "https://picsum.photos/seed/jd-success/800/600",
+    "aiBrief": {
+      "searchTerm": "Work life balance success",
+      "aiPrompt": "An aspirational image capturing the success of achieving work-life balance, specifically a construction or trade business owner relaxing happily on a family vacation. Bright sunshine, clear blue water in the background, sense of freedom and achievement."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/all-in-one-inbox/all-in-one-inbox.component.html",
+    "originalReference": "https://picsum.photos/seed/inbox-dashboard/1200/800",
+    "aiBrief": {
+      "searchTerm": "Business dashboard analytics",
+      "aiPrompt": "A clean, high-tech image of a modern business dashboard displayed prominently on a large monitor or tablet, showing positive metrics like increased jobs or performance indicators. Focus on the screen details, shot from a slight angle, futuristic blue and white lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661696460502-16e797daaef8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVzaW5lc3MlMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_157_chimera_157.webp"
+  },
+  {
+    "filePath": "src/pages/features/review-funnel/review-funnel.component.html",
+    "originalReference": "https://picsum.photos/seed/review-dashboard/1200/800",
+    "aiBrief": {
+      "searchTerm": "Customer review dashboard",
+      "aiPrompt": "A close-up shot of a digital dashboard focusing specifically on customer satisfaction metrics, ratings, or reviews. The interface should look clean and professional. Soft, professional lighting, emphasizing trust and quality."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1682309650634-363db7521e6d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3VzdG9tZXIlMjByZXZpZXclMjBkYXNoYm9hcmR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_158_chimera_158.webp"
+  },
+  {
+    "filePath": "src/pages/features/missed-call-text-back/missed-call-text-back.component.html",
+    "originalReference": "https://picsum.photos/seed/missedcall-dashboard/1200/800",
+    "aiBrief": {
+      "searchTerm": "Missed call management system",
+      "aiPrompt": "A detailed screenshot or graphic representation of a system tracking missed calls or customer communications, highlighting an organized inbox or resolution screen. Dark, moody background with bright, focused screen elements, suggesting efficiency in crisis."
+    },
+    "newImageSourceUrl": "https://picsum.photos/seed/missedcall-dashboard/1200/800",
+    "newLocalPath": "chimera_assets/chimera_159_chimera_159.webp"
+  },
+  {
+    "filePath": "src/pages/the-difference/the-difference.component.ts",
+    "originalReference": "https://picsum.photos/seed/difference-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Escaping long hours",
+      "aiPrompt": "A dramatic and symbolic image illustrating escape from burnout. A silhouette of a person walking away from a cluttered, dimly lit office towards a bright, open exterior view (like a sunrise or horizon). Strong contrast between dark foreground and bright background."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/home/transformation-slider/transformation-slider.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdbefore/800/600",
+    "aiBrief": {
+      "searchTerm": "Before renovation construction",
+      "aiPrompt": "A raw, slightly messy 'before' shot of a job site or office space belonging to 'JD Roofing' in Dallas, TX. The image should convey disorganization or a challenging starting point, perhaps cluttered desks or materials. Natural, slightly harsh daytime light."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1675601690595-41b44f3cacd7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmVmb3JlJTIwcmVub3ZhdGlvbiUyMGNvbnN0cnVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_161_chimera_161.webp"
+  },
+  {
+    "filePath": "src/pages/home/transformation-slider/transformation-slider.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdafter/800/600",
+    "aiBrief": {
+      "searchTerm": "After construction improvement",
+      "aiPrompt": "A crisp, organized 'after' shot of a clean office or job site for a roofing company. The space should look professional, efficient, and calm, contrasting sharply with the 'before' image. Bright, clean, and professional lighting."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/home/command-center/command-center.component.html",
+    "originalReference": "https://picsum.photos/seed/dashboard-center/400/300",
+    "aiBrief": {
+      "searchTerm": "Central control dashboard",
+      "aiPrompt": "A detailed, slightly isometric view of a central command dashboard, possibly showing various integrated data points in distinct colored blocks. The composition should emphasize the control center aspect. Cinematic lighting, focusing on the screen elements."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661933412929-53d378749254?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNlbnRyYWwlMjBjb250cm9sJTIwZGFzaGJvYXJkfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_163_chimera_163.webp"
+  },
+  {
+    "filePath": "src/pages/features/functional-website/anatomy-of-a-website/anatomy-of-a-website.component.html",
+    "originalReference": "https://picsum.photos/seed/wireframe/800/600",
+    "aiBrief": {
+      "searchTerm": "Website wireframe design",
+      "aiPrompt": "A minimalist, top-down shot of a physical or digital website wireframe laid out on a desk. The image should show the basic structural layout using simple lines and boxes (low fidelity). Neutral, even lighting on a light wood surface."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1546017535-ed107a04ac7b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2Vic2l0ZSUyMHdpcmVmcmFtZSUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_164_chimera_164.webp"
+  },
+  {
+    "filePath": "src/pages/features/functional-website/anatomy-of-a-website/anatomy-of-a-website.component.html",
+    "originalReference": "https://picsum.photos/seed/design/800/600",
+    "aiBrief": {
+      "searchTerm": "Website visual design",
+      "aiPrompt": "A mid-fidelity website design mockup displayed on a modern monitor, showing defined styling, color palettes, and typography (Framing stage). The image should emphasize aesthetics and user interface elements. Bright, focused studio lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnNpdGUlMjB2aXN1YWwlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_165_chimera_165.webp"
+  },
+  {
+    "filePath": "src/pages/features/functional-website/anatomy-of-a-website/anatomy-of-a-website.component.html",
+    "originalReference": "https://picsum.photos/seed/ctas/800/600",
+    "aiBrief": {
+      "searchTerm": "Website call to action",
+      "aiPrompt": "A close-up, engaging shot of a finished website mock-up prominently featuring clear, brightly colored Call To Action (CTA) buttons. The focus should be on the immediate visual appeal designed to prompt user interaction. Vibrant colors, sharp focus on the buttons."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/functional-website/website-before-after/website-before-after.component.ts",
+    "originalReference": "https://picsum.photos/seed/before-plumbing/800/600",
+    "aiBrief": {
+      "searchTerm": "Plumbing before job site",
+      "aiPrompt": "A challenging 'before' image of a plumbing job site or basement that is cluttered, perhaps wet or showing significant disrepair. The scene should look like it requires immediate expert attention. Dim, slightly gritty environmental lighting."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1592523821997-217514e8e434?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGx1bWJpbmclMjBiZWZvcmUlMjBqb2IlMjBzaXRlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_167_chimera_167.webp"
+  },
+  {
+    "filePath": "src/pages/features/functional-website/website-before-after/website-before-after.component.ts",
+    "originalReference": "https://picsum.photos/seed/after-plumbing/800/600",
+    "aiBrief": {
+      "searchTerm": "Plumbing after service improvement",
+      "aiPrompt": "A pristine 'after' image showcasing perfectly installed, clean plumbing fixtures or organized utility space. The image should reflect high quality, precision, and cleanliness. Bright, sterile, professional lighting emphasizing new materials."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1734029815125-58149f75742e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGx1bWJpbmclMjBhZnRlciUyMHNlcnZpY2UlMjBpbXByb3ZlbWVudHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_168_chimera_168.webp"
+  },
+  {
+    "filePath": "src/pages/features/functional-website/mobile-showcase/mobile-showcase.component.ts",
+    "originalReference": "https://picsum.photos/seed/desktop-view/1024/768",
+    "aiBrief": {
+      "searchTerm": "Responsive web design",
+      "aiPrompt": "A showcase of responsive web design, displaying the same webpage simultaneously on a desktop monitor, a tablet, and a mobile phone, arranged slightly overlapping. Clean, white or neutral background, professional presentation."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/functional-website/mobile-showcase/mobile-showcase.component.ts",
+    "originalReference": "https://picsum.photos/seed/tablet-view/768/1024",
+    "aiBrief": {
+      "searchTerm": "Device screen mockups",
+      "aiPrompt": "A composition featuring three distinct device screens—desktop, tablet, and mobile—each displaying a consistent, colorful website layout. The devices should be arranged to show the fluidity across screen sizes. Studio lighting, clean presentation."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/pages/features/functional-website/mobile-showcase/mobile-showcase.component.ts",
+    "originalReference": "https://picsum.photos/seed/mobile-view/400/800",
+    "aiBrief": {
+      "searchTerm": "Mobile optimized website",
+      "aiPrompt": "A close-up, vertical shot focusing entirely on a smartphone screen displaying a perfectly optimized mobile website. The image should convey ease of use on the go. Bright, modern aesthetic, perhaps held casually in a hand."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661501364674-ffa7db99d057?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW9iaWxlJTIwb3B0aW1pemVkJTIwd2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_171_chimera_171.webp"
+  },
+  {
+    "filePath": "src/pages/pricing/pricing-case-study-slider/pricing-case-study-slider.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdbefore/800/600",
+    "aiBrief": {
+      "searchTerm": "Roofing company before",
+      "aiPrompt": "An authentic 'before' photo illustrating the state of a property or paperwork chaos for a roofing business in Dallas, TX. The image should suggest high operational friction before process improvement. Overcast daylight or work-in-progress feel."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1745081971385-518b0fe02644?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9vZmluZyUyMGNvbXBhbnklMjBiZWZvcmV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_172_chimera_172.webp"
+  },
+  {
+    "filePath": "src/pages/pricing/pricing-case-study-slider/pricing-case-study-slider.component.ts",
+    "originalReference": "https://picsum.photos/seed/jdafter/800/600",
+    "aiBrief": {
+      "searchTerm": "Roofing company after",
+      "aiPrompt": "A positive 'after' image showing an organized, efficient office or a beautifully completed roofing project. The focus should be on the transformation to professionalism and success. Bright, clear daylight, conveying trust and quality workmanship."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1745048708036-d8428cd8fbaf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9vZmluZyUyMGNvbXBhbnklMjBhZnRlcnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_173_chimera_173.webp"
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/difference-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "Hero marketing image",
+      "aiPrompt": "A compelling, high-quality banner image representing a core value proposition ('Why Us') for a service business. It should evoke trust, expertise, and transformation, possibly showing a conceptual image of overcoming a hurdle or achieving clarity. Cinematic, aspirational lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1731154420734-fa6055fb4826?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhlcm8lMjBtYXJrZXRpbmclMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_174_chimera_174.webp"
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/process-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "website asset placeholders",
+      "aiPrompt": "A minimalist, abstract background image composed of geometric shapes in soft, pastel colors, designed to serve as a clean placeholder for a website hero section. The image should have ample negative space for text overlay, conveying a sense of modern design and digital structure."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/testimonials-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "digital process workflow",
+      "aiPrompt": "A sleek, conceptual image illustrating a multi-stage digital process flow. Use interconnected nodes or pathways with glowing lines against a dark, high-tech background, symbolizing movement and progress, suitable for a technical process page."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1666148670142-2f01b117e6e0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGlnaXRhbCUyMHByb2Nlc3MlMjB3b3JrZmxvd3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_176_chimera_176.webp"
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/partners-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "client testimonial background",
+      "aiPrompt": "A softly focused, warm-toned image featuring a blurred office environment or a bright, inviting space. The central focus should be shallow, suggesting a place for dialogue or shared success, perfect for highlighting testimonials."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1698047681452-08eba22d0c64?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xpZW50JTIwdGVzdGltb25pYWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_177_chimera_177.webp"
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/website-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "business partnership agreement",
+      "aiPrompt": "A professional close-up shot of two people shaking hands over a contract or document on a polished wooden table. The lighting should be bright and optimistic, symbolizing trust and successful collaboration."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1661317206281-5332934c6a2a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YnVzaW5lc3MlMjBwYXJ0bmVyc2hpcCUyMGFncmVlbWVudHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_178_chimera_178.webp"
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/inbox-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "website hero landing",
+      "aiPrompt": "An energetic, wide-angle shot of a contemporary, clean website dashboard interface displayed on multiple screens (desktop, tablet). The mood should be aspirational, focusing on clarity and immediate accessibility."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/review-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "digital inbox interface",
+      "aiPrompt": "A close-up, slightly dramatic overhead shot of a modern digital inbox interface, focusing on organized tabs and notifications. The image should evoke efficiency, perhaps with soft blue or green accent lighting."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1719930117940-3cfe57d50208?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGlnaXRhbCUyMGluYm94JTIwaW50ZXJmYWNlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_180_chimera_180.webp"
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/missedcall-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "customer review feedback",
+      "aiPrompt": "An extreme close-up of a hand holding a smartphone displaying a 5-star rating pop-up against a blurred, bright background. The focus must be sharp on the rating, conveying immediate positive feedback."
+    },
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1739436074076-3c6d73478d59?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGN1c3RvbWVyJTIwcmV2aWV3JTIwZmVlZGJhY2t8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_181_chimera_181.webp"
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/localseo-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "missed call notification",
+      "aiPrompt": "A moody, low-key photograph of a smartphone screen displaying a prominent 'Missed Call' alert in the center. Use deep shadows and subtle screen glare to emphasize the importance of the communication gap."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1586175373981-3ace20794a7a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWlzc2VkJTIwY2FsbCUyMG5vdGlmaWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_182_chimera_182.webp"
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/printing-hero/800/600",
+    "aiBrief": {
+      "searchTerm": "local SEO concept",
+      "aiPrompt": "A conceptual image combining a digital map interface with pins representing businesses, overlaid with subtle network or data visualization elements. The color palette should be professional, perhaps incorporating greens and blues to suggest growth and location data."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/businessphone/800/600",
+    "aiBrief": {
+      "searchTerm": "business printing services",
+      "aiPrompt": "A high-quality photograph showing brightly colored, freshly printed materials (brochures or flyers) stacked neatly on a modern white surface, with a subtle, blurred industrial printer in the background."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1630327722923-5ebd594ddda9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBwcmludGluZyUyMHNlcnZpY2VzfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_184_chimera_184.webp"
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/marketing/800/600",
+    "aiBrief": {
+      "searchTerm": "digital marketing strategy",
+      "aiPrompt": "A dynamic flat lay composition featuring various marketing tools: a laptop displaying analytics graphs, colorful sticky notes, a pen, and perhaps a small growth plant. The image should feel organized, strategic, and vibrant."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "src/services/preloading.service.ts",
+    "originalReference": "https://picsum.photos/seed/leadfollowup/800/600",
+    "aiBrief": {
+      "searchTerm": "lead follow-up process",
+      "aiPrompt": "A focused shot of a pen marking a checkmark next to an item on a detailed CRM or sales pipeline checklist displayed on a tablet. The lighting should be warm, suggesting successful task completion and diligent follow-up."
+    },
+    "newImageSourceUrl": null,
+    "newLocalPath": null
+  },
+  {
+    "filePath": "index.html",
+    "originalReference": "favicon.ico",
+    "aiBrief": {
+      "searchTerm": "web development setup",
+      "aiPrompt": "A close-up view of a computer monitor displaying lines of clean, modern code (HTML/CSS/JavaScript) with syntax highlighting. Include a peripheral like a modern mouse or keyboard for context. The lighting should be focused and cool, emphasizing concentration."
+    },
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1637937459053-c788742455be?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2ViJTIwZGV2ZWxvcG1lbnQlMjBzZXR1cHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "chimera_assets/chimera_187_chimera_187.webp"
+  }
+]

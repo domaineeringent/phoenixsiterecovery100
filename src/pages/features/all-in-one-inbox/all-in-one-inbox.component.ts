@@ -21,7 +21,7 @@ export class AllInOneInboxComponent {
   hero = {
     title: `Stop Chasing Conversations.<br> Start <span class="text-amber-400">Closing Deals.</span>`,
     subtitle: `The All-in-One Command Center that captures every lead, organizes every conversation, and turns your phone into a money-making machine.`,
-    imageUrl: 'https://picsum.photos/seed/inbox-hero/800/600'
+    imageUrl: 'chimera_assets/chimera_111_chimera_111.webp'
   };
 
   problem = {

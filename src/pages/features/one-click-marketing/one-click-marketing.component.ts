@@ -21,14 +21,14 @@ export class OneClickMarketingComponent {
       subtitle: 'Reactivate Past Customers',
       title: 'One-Click Marketing <span class="text-amber-400">Campaigns</span>',
       description: 'Launch powerful marketing campaigns to your entire customer list with a single click. Re-engage past clients, ask for reviews, or announce special promotions.',
-      imageUrl: 'https://picsum.photos/seed/marketing/800/600',
+      imageUrl: 'chimera_assets/chimera_134_chimera_134.webp',
     },
     problem: {
       title: 'Your Biggest Asset is Collecting Dust',
       description: 'Your list of past customers is a gold mine. But you\'re too busy to manually contact them all for repeat business, referrals, or reviews. That\'s untapped revenue sitting in a spreadsheet.',
       painPoints: [
         { imageUrl: 'https://picsum.photos/seed/forgotten/100/100', text: 'Past customers forget about you.' },
-        { imageUrl: 'https://picsum.photos/seed/tooslow/100/100', text: 'Manually texting/emailing is too slow.' },
+        { imageUrl: 'chimera_assets/chimera_136_chimera_136.webp', text: 'Manually texting/emailing is too slow.' },
         { imageUrl: 'https://picsum.photos/seed/repeatbiz/100/100', text: 'Losing out on easy repeat business.' },
       ]
     },
@@ -53,7 +53,7 @@ export class OneClickMarketingComponent {
       title: 'Smart & Simple Campaigning',
       features: [
         { title: 'Proven Templates', description: 'Don\'t worry about what to say. We provide a set of high-converting message templates written specifically for contractors.', imageUrl: 'https://picsum.photos/seed/marketfeature1/800/600' },
-        { title: 'Personalization Tags', description: 'Automatically insert the customer\'s first name into each text message, making your mass campaigns feel like personal, one-to-one conversations.', imageUrl: 'https://picsum.photos/seed/marketfeature2/800/600' },
+        { title: 'Personalization Tags', description: 'Automatically insert the customer\'s first name into each text message, making your mass campaigns feel like personal, one-to-one conversations.', imageUrl: 'chimera_assets/chimera_139_chimera_139.webp' },
         { title: 'Scheduling', description: 'Plan your campaigns in advance. Write your message today and schedule it to be sent next week, next month, or whenever you want.', imageUrl: 'https://picsum.photos/seed/marketfeature3/800/600' },
       ]
     },
