@@ -11,8 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class MobileShowcaseComponent {
   devices = {
-    desktop: 'https://picsum.photos/seed/desktop-view/1024/768',
-    tablet: 'https://picsum.photos/seed/tablet-view/768/1024',
-    mobile: 'chimera_assets/chimera_171_chimera_171.webp',
+    desktop: '/chimera_assets/chimera_169_chimera_169.webp',
+    tablet: '/chimera_assets/chimera_170_chimera_170.webp',
+    mobile: '/chimera_assets/chimera_171_chimera_171.webp',
   };
 }

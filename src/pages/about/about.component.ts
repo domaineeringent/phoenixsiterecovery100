@@ -19,7 +19,7 @@ export class AboutComponent {
     originStory: {
       title: `Born from <span class="text-amber-500">Crisis</span>`,
       story: `Our founder, Alex Riley, grew up in a family of contractors. He saw the 70-hour weeks, the missed family dinners, and the constant stress. The breaking point came when his family's outdated website was hacked, shutting down their main source of leads for weeks. It was a costly disaster that nearly crippled the business. After a decade in tech, Alex founded Phoenix Recovery not as a business idea, but as a personal mission: to ensure no other contractor family had to go through that hell.`,
-      imageUrl: 'chimera_assets/chimera_67_chimera_67.webp'
+      imageUrl: '/chimera_assets/premium_photo-1664304900146-a6534be3fa45_ixlib_rb-4_1_chimera_67.webp'
     },
     manifesto: {
       title: `Our Manifesto`,
@@ -32,24 +32,24 @@ export class AboutComponent {
       { title: 'Real People, Real Talk', description: 'No corporate jargon. No support tickets into the void. You get a dedicated team of real people you can talk to, who understand your business.' }
     ],
     theCrew: [
-      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'chimera_assets/chimera_67_chimera_67.webp', bio: 'The Architect. Ensures every tool we build solves a real contractor problem.' },
-      { name: 'Jessica Miller', role: 'Head of Client Success', imageUrl: 'chimera_assets/chimera_68_chimera_68.webp', bio: 'Your Partner. Makes sure your phone never stops ringing with new leads.' },
-      { name: 'Ben Carter', role: 'Lead Developer', imageUrl: 'chimera_assets/chimera_69_chimera_69.webp', bio: 'The Builder. Crafts the simple, powerful tools that save you 10+ hours a week.' },
-      { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: 'https://picsum.photos/seed/samantha/500/500', bio: 'The Megaphone. Tells the world why you\'re the best contractor for the job.' },
+      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: '/chimera_assets/premium_photo-1664304900146-a6534be3fa45_ixlib_rb-4_1_chimera_67.webp', bio: 'The Architect. Ensures every tool we build solves a real contractor problem.' },
+      { name: 'Jessica Miller', role: 'Head of Client Success', imageUrl: '/chimera_assets/premium_photo-1681484249903-ac3364f52b66_ixlib_rb-4_1_chimera_68.webp', bio: 'Your Partner. Makes sure your phone never stops ringing with new leads.' },
+      { name: 'Ben Carter', role: 'Lead Developer', imageUrl: '/chimera_assets/premium_photo-1661371243525-d02768a7feee_ixlib_rb-4_1_chimera_69.webp', bio: 'The Builder. Crafts the simple, powerful tools that save you 10+ hours a week.' },
+      { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: '/chimera_assets/chimera_70_chimera_70.webp', bio: 'The Megaphone. Tells the world why you\'re the best contractor for the job.' },
     ],
     mapData: {
       title: `Join the Nationwide Network of <span class="text-amber-500 dark:text-amber-400">Winning Contractors</span>`,
       subtitle: `From coast to coast, we're the unfair advantage for contractors who are serious about growth.`,
-      imageUrl: 'chimera_assets/chimera_71_chimera_71.webp'
+      imageUrl: '/chimera_assets/chimera_71_chimera_71.webp'
     },
     workshop: {
       title: 'Our Digital Workshop',
       subtitle: `We're a remote-first team of passionate builders and problem-solvers obsessed with crafting the perfect tools for the trades.`,
       images: [
-        'chimera_assets/chimera_72_chimera_72.webp',
-        'chimera_assets/chimera_73_chimera_73.webp',
-        'chimera_assets/chimera_74_chimera_74.webp',
-        'chimera_assets/chimera_75_chimera_75.webp'
+        '/chimera_assets/chimera_72_chimera_72.webp',
+        '/chimera_assets/chimera_73_chimera_73.webp',
+        '/chimera_assets/chimera_74_chimera_74.webp',
+        'https://picsum.photos/seed/team4/600/400'
       ]
     },
     phoenixStandard: {
@@ -58,12 +58,12 @@ export class AboutComponent {
       description: `The world doesn't move without skilled tradespeople. You build our homes, fix our infrastructure, and keep our lives running. You deserve technology that works as hard as you do. Our commitment is to apply the principles of good craftsmanship—precision, durability, and integrity—to the digital tools we build for you.`
     },
     arsenal: [
-      { name: 'Google', imageUrl: 'chimera_assets/chimera_76_chimera_76.webp' },
-      { name: 'Twilio', imageUrl: 'https://picsum.photos/seed/twilio/200/50' },
-      { name: 'Stripe', imageUrl: 'https://picsum.photos/seed/stripe/200/50' },
-      { name: 'OpenAI', imageUrl: 'https://picsum.photos/seed/openai/200/50' },
+      { name: 'Google', imageUrl: '/chimera_assets/premium_photo-1752231227830-20cee47c4663_ixlib_rb-4_1_chimera_76.webp' },
+      { name: 'Twilio', imageUrl: '/chimera_assets/chimera_77_chimera_77.webp' },
+      { name: 'Stripe', imageUrl: '/chimera_assets/premium_photo-1739091068161-7d44864dd155_ixlib_rb-4_1_chimera_78.webp' },
+      { name: 'OpenAI', imageUrl: '/chimera_assets/chimera_79_chimera_79.webp' },
       { name: 'Meta', imageUrl: 'https://picsum.photos/seed/meta/200/50' },
-      { name: 'Zapier', imageUrl: 'chimera_assets/chimera_81_chimera_81.webp' },
+      { name: 'Zapier', imageUrl: 'https://picsum.photos/seed/zapier/200/50' },
     ],
     resultsDashboard: [
       { value: '$50M+', label: 'In Client Revenue Generated' },
