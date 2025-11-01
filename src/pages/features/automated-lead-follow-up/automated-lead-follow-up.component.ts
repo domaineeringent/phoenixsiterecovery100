@@ -21,13 +21,13 @@ export class AutomatedLeadFollowUpComponent {
       subtitle: 'Never Let a Lead Go Cold',
       title: 'Automated SMS <span class="text-amber-400">Lead Follow-up</span>',
       description: 'The fortune is in the follow-up. Our system automatically follows up with new leads via text message over several days until they respond, ensuring you get the highest possible conversion rate.',
-      imageUrl: 'https://picsum.photos/seed/leadfollowup/800/600',
+      imageUrl: '../../../../chimera_assets/premium_photo-1683980578016-a1f980719ec2_ixlib_rb-4_1_chimera_118.webp',
     },
     problem: {
       title: 'You\'re Too Busy to Chase Every Lead',
       description: 'A new lead is interested right now, but you\'re on a job. By the time you call them back hours later, they\'ve already spoken to three other contractors. You lost the job before you even had a chance.',
       painPoints: [
-        { imageUrl: 'https://picsum.photos/seed/leadscold/100/100', text: 'Leads go cold before you can call.' },
+        { imageUrl: '../../../../chimera_assets/chimera_119_chimera_119.webp', text: 'Leads go cold before you can call.' },
         { imageUrl: 'https://picsum.photos/seed/forgetfollowup/100/100', text: 'Forgetting to follow up after one try.' },
         { imageUrl: 'https://picsum.photos/seed/losejobs/100/100', text: 'Losing jobs to faster competitors.' },
       ]
@@ -52,7 +52,7 @@ export class AutomatedLeadFollowUpComponent {
     featureDeepDive: {
       title: 'Intelligent Automation',
       features: [
-        { title: 'Customizable Campaigns', description: 'We work with you to write the follow-up messages, making sure they match your brand voice. You control the timing and content of every text.', imageUrl: 'https://picsum.photos/seed/autofeature1/800/600' },
+        { title: 'Customizable Campaigns', description: 'We work with you to write the follow-up messages, making sure they match your brand voice. You control the timing and content of every text.', imageUrl: '../../../../chimera_assets/premium_photo-1726079247255-d06bc93e3d28_ixlib_rb-4_1_chimera_122.webp' },
         { title: 'Smart Stop', description: 'The moment a lead responds to any message in the sequence, the automated campaign for them stops instantly. This ensures you can take over with a natural, human conversation.', imageUrl: 'https://picsum.photos/seed/autofeature2/800/600' },
         { title: 'Reactivation Campaigns', description: 'Use the same automation power to re-engage old leads that went cold. A simple "Hey, are you still looking for help with [service]?" can bring dead leads back to life.', imageUrl: 'https://picsum.photos/seed/autofeature3/800/600' },
       ]
@@ -63,7 +63,7 @@ export class AutomatedLeadFollowUpComponent {
     },
     scenario: {
       title: 'Meet Frank, The Roofer',
-      imageUrl: 'https://picsum.photos/seed/contractor6/500/500',
+      imageUrl: '../../../../chimera_assets/chimera_125_chimera_125.webp',
       story: 'A homeowner filled out Frank\'s website form at 9 PM on a Tuesday. Frank was asleep. The system instantly texted the lead, "Thanks for your roof quote request! We\'ll review and get back to you in the morning." The next day, it followed up again. The homeowner replied, impressed by the professional communication, and Frank booked the quote.'
     },
     testimonial: {

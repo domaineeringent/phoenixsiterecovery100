@@ -64,7 +64,7 @@ export class BookCallComponent {
     guide: {
       name: 'Alex Riley',
       title: 'Founder & Head of Strategy',
-      imageUrl: 'https://picsum.photos/seed/alex/500/500',
+      imageUrl: '../../../chimera_assets/premium_photo-1682095933960-b6d67f555ac1_ixlib_rb-4_1_chimera_109.webp',
       bio: `You'll be speaking directly with me. I grew up in a contractor family, and I founded Phoenix Recovery to solve the exact problems that kept my father up at night. I'm not a salesperson; I'm a problem-solver. My only goal is to see if we can help.`
     },
     agenda: {

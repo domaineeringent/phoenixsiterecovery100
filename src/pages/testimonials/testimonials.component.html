@@ -42,7 +42,7 @@
         <h3 class="text-3xl font-oswald uppercase tracking-wider text-slate-800 dark:text-white">Join the Nationwide Network of <span class="text-amber-500 dark:text-amber-400">Winning Contractors</span></h3>
         <p class="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">From coast to coast, we're the unfair advantage for contractors who are serious about growth.</p>
         <div class="mt-8">
-            <img src="https://picsum.photos/seed/map/1024/600" alt="Map of USA with dots showing client locations" class="max-w-4xl mx-auto dark:opacity-70 rounded-lg shadow-lg">
+            <img src="../../../chimera_assets/premium_photo-1682310073315-d3bb4efd1eeb_ixlib_rb-4_1_chimera_44.webp" alt="Map of USA with dots showing client locations" class="max-w-4xl mx-auto dark:opacity-70 rounded-lg shadow-lg">
         </div>
     </div>
 </div>
@@ -181,7 +181,7 @@
             @for(review of writtenReviews; track review.author) {
                 <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow break-inside-avoid" appAnimateOnScroll>
                     <div class="flex items-center mb-4">
-                        <img [src]="'https://picsum.photos/seed/' + review.source.toLowerCase() + '/100/30'" [alt]="review.source + ' Logo'" class="h-6 mr-3">
+                        <img [src]="'../../../chimera_assets/chimera_45_chimera_45.webp' + review.source.toLowerCase() + '/100/30'" [alt]="review.source + ' Logo'" class="h-6 mr-3">
                         <div class="flex text-amber-400">@for(i of [1,2,3,4,5]; track i) {<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>}</div>
                     </div>
                     <p class="text-slate-600 dark:text-slate-300 italic">"{{review.quote}}"</p>

@@ -15,10 +15,10 @@ interface Testimonial {
 })
 export class TestimonialSliderComponent {
   testimonials = signal<Testimonial[]>([
-    { name: 'John Doe', company: 'JD Roofing', videoThumbnailUrl: '../../../../chimera_assets/premium_photo-1661607314718-9fbfe46bef2b_ixlib_rb-4_1_chimera_1.webp' },
-    { name: 'Mike Smith', company: 'Smith Electric', videoThumbnailUrl: '../../../../chimera_assets/premium_photo-1661607314718-9fbfe46bef2b_ixlib_rb-4_1_chimera_2.webp' },
-    { name: 'Carlos Garcia', company: 'Garcia Landscaping', videoThumbnailUrl: '../../../../chimera_assets/premium_photo-1661607314718-9fbfe46bef2b_ixlib_rb-4_1_chimera_3.webp' },
-    { name: 'David Chen', company: 'Chen\'s Plumbing', videoThumbnailUrl: '../../../../chimera_assets/premium_photo-1661607314718-9fbfe46bef2b_ixlib_rb-4_1_chimera_4.webp' },
+    { name: 'John Doe', company: 'JD Roofing', videoThumbnailUrl: 'https://picsum.photos/seed/jdroofing/600/400' },
+    { name: 'Mike Smith', company: 'Smith Electric', videoThumbnailUrl: 'https://picsum.photos/seed/smithelectric/600/400' },
+    { name: 'Carlos Garcia', company: 'Garcia Landscaping', videoThumbnailUrl: 'https://picsum.photos/seed/garcialand/600/400' },
+    { name: 'David Chen', company: 'Chen\'s Plumbing', videoThumbnailUrl: '../../../../chimera_assets/premium_photo-1681839037622-68577ea73b34_ixlib_rb-4_1_chimera_4.webp' },
   ]);
 
   currentIndex = signal(0);

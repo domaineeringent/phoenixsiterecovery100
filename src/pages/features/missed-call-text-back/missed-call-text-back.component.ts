@@ -21,7 +21,7 @@ export class MissedCallTextBackComponent {
   hero = {
     title: `Your Voicemail is a <span class="text-amber-400">Black Hole</span> for New Jobs.`,
     subtitle: `While you're on a ladder, your next big job is calling your competitor. We'll show you how our system catches every single lead, even when you can't answer the phone.`,
-    imageUrl: 'https://picsum.photos/seed/missedcall-hero/800/600'
+    imageUrl: '../../../../chimera_assets/premium_photo-1711987208994-28aa5e73235c_ixlib_rb-4_1_chimera_113.webp'
   };
 
   problem = {
