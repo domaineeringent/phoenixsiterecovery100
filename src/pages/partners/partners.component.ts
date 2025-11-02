@@ -22,7 +22,7 @@ export class PartnersComponent {
     hero: {
       title: `You're Losing a Tech Arms Race You Didn't Know You Were In.`,
       subtitle: `Your competitors are leveraging world-class technology to get faster, smarter, and more efficient. We've assembled the arsenal you need to fight back and win—all in one simple platform.`,
-      imageUrl: 'https://picsum.photos/seed/partners-hero/800/600'
+      imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/51e9eeba9807271bef3067b819476d6ac325683e9fc18b7b5f847d653bc51499.webp'
     },
     problem: {
       title: `The "Tech Tax" is Crippling Your Business`,
@@ -50,14 +50,14 @@ export class PartnersComponent {
     theReveal: {
       title: `Stop Being a Systems Integrator. We've Done The Work For You.`,
       description: `We've spent years vetting, partnering with, and deeply integrating the world's best technology into a single, seamless platform. When you partner with Phoenix, you get the power of a multi-million dollar tech stack working for you from day one, for one simple price.`,
-      imageUrl: 'https://picsum.photos/seed/partners-reveal/1200/800'
+      imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/a4387e5501bbcca09ce549bbd15d628a9c13d2ab024aee63aab14dd3bf62cfb1.webp'
     },
     arsenal: [
       { 
         category: 'Communication Powerhouse', 
         description: 'Ensuring every call, text, and email is delivered instantly and reliably.',
         partners: [
-          { name: 'Twilio', logoUrl: 'https://picsum.photos/seed/twilio/200/50', benefit: 'For bulletproof SMS & voice reliability.' },
+          { name: 'Twilio', logoUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/b0c0f0f0fc6d565296c7beb4be94dade3cb46d4f6ed72b6ba0a252f76987f8c3.webp', benefit: 'For bulletproof SMS & voice reliability.' },
           { name: 'Mailgun', logoUrl: 'https://picsum.photos/seed/mailgun/200/50', benefit: 'For best-in-class email deliverability.' },
         ]
       },
@@ -65,8 +65,8 @@ export class PartnersComponent {
         category: 'Search Dominance Engine', 
         description: 'Leveraging the same tools the big marketing agencies use to get you ranked.',
         partners: [
-          { name: 'Google', logoUrl: 'https://picsum.photos/seed/google/200/50', benefit: 'The core of your local search presence.' },
-          { name: 'Ahrefs', logoUrl: 'https://picsum.photos/seed/ahrefs/200/50', benefit: 'For deep competitor and keyword analysis.' },
+          { name: 'Google', logoUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/f7e05bf55eadf5e78783e52bb9baf740c76683fcd50fef951f040306cbb15674.webp', benefit: 'The core of your local search presence.' },
+          { name: 'Ahrefs', logoUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/713b64a750b1a3bbe4fa7a4f40960e368766223b13293617de0da97c46e3dc19.webp', benefit: 'For deep competitor and keyword analysis.' },
         ]
       },
       { 
@@ -74,7 +74,7 @@ export class PartnersComponent {
         description: 'The brains behind your 24/7 automated sales and operations assistant.',
         partners: [
           { name: 'OpenAI', logoUrl: 'https://picsum.photos/seed/openai/200/50', benefit: 'Powering intelligent responses and summaries.' },
-          { name: 'Zapier', logoUrl: 'https://picsum.photos/seed/zapier/200/50', benefit: 'Connecting our platform to thousands of other tools.' },
+          { name: 'Zapier', logoUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/a51e33002c6528156cfaa39fc16e8bb2d4cd93d265c3e4b3dfca5af29237bc37.webp', benefit: 'Connecting our platform to thousands of other tools.' },
         ]
       },
       { 
@@ -88,7 +88,7 @@ export class PartnersComponent {
     integrationMagic: {
       title: `The Magic isn't the Parts. It's How They Work <span class="text-amber-500">Together.</span>`,
       description: `Anyone can buy these tools. The Phoenix difference is how we've woven them into a single, intelligent system. When a lead comes from your Google Ad, it instantly triggers a Twilio text message, creates a contact in your CRM, and notifies you—all in less than a second. That's the power of true integration.`,
-      imageUrl: 'https://picsum.photos/seed/integration-magic/1000/700'
+      imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/6c9c5abb23ce74aee752280f57e3f950cc1d0c69d38396075125851eeac8707f.webp'
     },
     futurePacing: {
         title: `Your Competitors are Playing Checkers. We Give You Chess.`,

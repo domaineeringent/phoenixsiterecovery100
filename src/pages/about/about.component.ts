@@ -33,7 +33,7 @@ export class AboutComponent {
     ],
     theCrew: [
       { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'https://picsum.photos/seed/alex/500/500', bio: 'The Architect. Ensures every tool we build solves a real contractor problem.' },
-      { name: 'Jessica Miller', role: 'Head of Client Success', imageUrl: 'https://picsum.photos/seed/jessica/500/500', bio: 'Your Partner. Makes sure your phone never stops ringing with new leads.' },
+      { name: 'Jessica Miller', role: 'Head of Client Success', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/51f62f6ed91c60d882d50c551ec180be8854cc496de57b0dd00456d9eb4bc5ff.webp', bio: 'Your Partner. Makes sure your phone never stops ringing with new leads.' },
       { name: 'Ben Carter', role: 'Lead Developer', imageUrl: 'https://picsum.photos/seed/ben/500/500', bio: 'The Builder. Crafts the simple, powerful tools that save you 10+ hours a week.' },
       { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: 'https://picsum.photos/seed/samantha/500/500', bio: 'The Megaphone. Tells the world why you\'re the best contractor for the job.' },
     ],
@@ -46,10 +46,10 @@ export class AboutComponent {
       title: 'Our Digital Workshop',
       subtitle: `We're a remote-first team of passionate builders and problem-solvers obsessed with crafting the perfect tools for the trades.`,
       images: [
-        'https://picsum.photos/seed/team1/600/400',
-        'https://picsum.photos/seed/team2/600/400',
-        'https://picsum.photos/seed/team3/600/400',
-        'https://picsum.photos/seed/team4/600/400'
+        'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/d4ea11d51e09b5bb400aad5e19a1b93e814e98d82b629264b5deefe7de59c1c4.webp',
+        'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/e9442cd3a2abd5beca28e2fff69c248a43be10c415cbf17912e25f45b298ed3a.webp',
+        'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/5e199d39322c4522a34e468571d0703c109c6207e0c656c74855ade5de12654a.webp',
+        'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/29e9370fadcdc14307faf7c693bfc48c397a09062255fc662dfc3ac24877982f.webp'
       ]
     },
     phoenixStandard: {
@@ -58,12 +58,12 @@ export class AboutComponent {
       description: `The world doesn't move without skilled tradespeople. You build our homes, fix our infrastructure, and keep our lives running. You deserve technology that works as hard as you do. Our commitment is to apply the principles of good craftsmanship—precision, durability, and integrity—to the digital tools we build for you.`
     },
     arsenal: [
-      { name: 'Google', imageUrl: 'https://picsum.photos/seed/google/200/50' },
+      { name: 'Google', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/4189c02db42f173d94477ae4c46b1ddbd4b267f80176269ad3662bf9f1c002f4.webp' },
       { name: 'Twilio', imageUrl: 'https://picsum.photos/seed/twilio/200/50' },
-      { name: 'Stripe', imageUrl: 'https://picsum.photos/seed/stripe/200/50' },
-      { name: 'OpenAI', imageUrl: 'https://picsum.photos/seed/openai/200/50' },
+      { name: 'Stripe', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/ec907f1b4af57e6342eec9da41602830afca84a0084fd0901d18b1fac4e839c8.webp' },
+      { name: 'OpenAI', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/4189c02db42f173d94477ae4c46b1ddbd4b267f80176269ad3662bf9f1c002f4.webp' },
       { name: 'Meta', imageUrl: 'https://picsum.photos/seed/meta/200/50' },
-      { name: 'Zapier', imageUrl: 'https://picsum.photos/seed/zapier/200/50' },
+      { name: 'Zapier', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/51c6bf4c15dfff6c34bdac2883e33c4ff01d04aaf822cd4b1a50d9c8c9244c36.webp' },
     ],
     resultsDashboard: [
       { value: '$50M+', label: 'In Client Revenue Generated' },
@@ -83,7 +83,7 @@ export class AboutComponent {
     foundersPromise: {
       title: `A Promise, from One Builder to Another`,
       message: `"I built this platform to solve the exact problems that kept my father up at night. My promise to you is that we will never lose sight of that. We will never stop fighting to build the tools that give you your time, your freedom, and your control back. Your success is the only thing that matters."`,
-      imageUrl: 'https://picsum.photos/seed/alex-promise/150/150'
+      imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/1802e70141b98d8f5edb94b3392c480bb51fb67c68c9f981af376bb564c87469.webp'
     }
   };
 }

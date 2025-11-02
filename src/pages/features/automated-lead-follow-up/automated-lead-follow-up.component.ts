@@ -27,7 +27,7 @@ export class AutomatedLeadFollowUpComponent {
       title: 'You\'re Too Busy to Chase Every Lead',
       description: 'A new lead is interested right now, but you\'re on a job. By the time you call them back hours later, they\'ve already spoken to three other contractors. You lost the job before you even had a chance.',
       painPoints: [
-        { imageUrl: 'https://picsum.photos/seed/leadscold/100/100', text: 'Leads go cold before you can call.' },
+        { imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/69acf960c5e1bc7ccbad6c404d5b6549dd17a1fdeb70861bafd481ecb12ad7ee.webp', text: 'Leads go cold before you can call.' },
         { imageUrl: 'https://picsum.photos/seed/forgetfollowup/100/100', text: 'Forgetting to follow up after one try.' },
         { imageUrl: 'https://picsum.photos/seed/losejobs/100/100', text: 'Losing jobs to faster competitors.' },
       ]
@@ -63,7 +63,7 @@ export class AutomatedLeadFollowUpComponent {
     },
     scenario: {
       title: 'Meet Frank, The Roofer',
-      imageUrl: 'https://picsum.photos/seed/contractor6/500/500',
+      imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/3daf76a010a414a3064bd1aef179e5d4cce5b5889546d32617f47a2f8c790f1d.webp',
       story: 'A homeowner filled out Frank\'s website form at 9 PM on a Tuesday. Frank was asleep. The system instantly texted the lead, "Thanks for your roof quote request! We\'ll review and get back to you in the morning." The next day, it followed up again. The homeowner replied, impressed by the professional communication, and Frank booked the quote.'
     },
     testimonial: {

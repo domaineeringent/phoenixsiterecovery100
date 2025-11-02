@@ -36,7 +36,7 @@ export class FunctionalWebsiteComponent {
   hero = {
     title: `Your Website Isn't a Brochure. <br> It's Your <span class="text-amber-400">#1 Salesperson.</span>`,
     subtitle: `Stop letting your website be a passive, online business card. We build high-performance "Digital Job Sites" engineered for one purpose: to turn clicks into customers, 24/7.`,
-    imageUrl: 'https://picsum.photos/seed/website-hero/800/600'
+    imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/b4885e6e21b34f01669619adbb5753ea9eb1084d0be6ca8a16169c7151345aff.webp'
   };
 
   problem = {

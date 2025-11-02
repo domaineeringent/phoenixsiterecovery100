@@ -15,7 +15,7 @@ export class TransformationSliderComponent {
     name: 'JD Roofing',
     trade: 'Dallas, TX',
     before: {
-        imageUrl: 'https://picsum.photos/seed/jdbefore/800/600',
+        imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/0157830b6a9a9307ecf190f65c4ce4210f4e49e45d948acaa019c00c50e156d8.webp',
         stats: [
             { value: 3, label: 'Leads / Week' },
             { value: 12, label: 'Total Google Reviews' },
