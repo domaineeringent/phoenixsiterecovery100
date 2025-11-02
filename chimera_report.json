@@ -26,8 +26,8 @@
       "searchTerm": "electrician portrait",
       "aiPrompt": "A photograph of a male tradesperson, Mike Smith, perhaps wearing a work uniform or carrying light electrical tools. The setting should imply a modern construction or service environment. The mood is competent and reliable. Natural, slightly directional lighting emphasizing expertise."
     },
-    "newImageSourceUrl": null,
-    "newLocalPath": null
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1682086494934-09aba88b9a46?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZWxlY3RyaWNpYW4lMjBwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "src/components/shared/testimonial-slider/chimera_assets/chimera_2_chimera_2.webp"
   },
   {
     "filePath": "src/components/shared/testimonial-slider/testimonial-slider.component.ts",
@@ -36,8 +36,8 @@
       "searchTerm": "landscaping service professional",
       "aiPrompt": "A bright, outdoor portrait of a friendly man, Carlos Garcia, standing near well-maintained greenery or landscaping equipment. The lighting should be sunny and warm, conveying success and hard work in the service industry."
     },
-    "newImageSourceUrl": null,
-    "newLocalPath": null
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1683316924890-6a8c5ab10d29?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFuZHNjYXBpbmclMjBzZXJ2aWNlJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000",
+    "newLocalPath": "src/components/shared/testimonial-slider/chimera_assets/chimera_3_chimera_3.webp"
   },
   {
     "filePath": "src/components/shared/testimonial-slider/testimonial-slider.component.ts",
@@ -46,8 +46,8 @@
       "searchTerm": "plumber service professional",
       "aiPrompt": "A portrait of a friendly, middle-aged man, David Chen, possibly wearing a clean work shirt or polo, standing in a well-lit, organized utility room or construction site. The mood is professional and ready to solve problems. Crisp, clear lighting."
     },
-    "newImageSourceUrl": null,
-    "newLocalPath": null
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1604118600242-e7a6d23ec3a9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGx1bWJlciUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "src/components/shared/testimonial-slider/chimera_assets/chimera_4_chimera_4.webp"
   },
   {
     "filePath": "src/pages/home/home.component.ts",
@@ -76,8 +76,8 @@
       "searchTerm": "team profile pictures arrangement",
       "aiPrompt": "A close-up, shallow depth-of-field shot showing four small, round profile thumbnails arranged tightly together, suggesting a growing team. The lighting should be soft studio quality, focusing attention on the human element."
     },
-    "newImageSourceUrl": null,
-    "newLocalPath": null
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1760893107446-58b108d419d8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRlYW0lMjBwcm9maWxlJTIwcGljdHVyZXMlMjBhcnJhbmdlbWVudHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "src/pages/home/chimera_assets/chimera_7_chimera_7.webp"
   },
   {
     "filePath": "src/pages/home/home.component.ts",
@@ -86,8 +86,8 @@
       "searchTerm": "team profile pictures arrangement",
       "aiPrompt": "A flat lay arrangement of five distinct, small, circular profile photos, suggesting a growing roster of team members. The background should be a clean, professional surface like brushed metal or light concrete. Bright, uniform lighting."
     },
-    "newImageSourceUrl": null,
-    "newLocalPath": null
+    "newImageSourceUrl": "https://images.unsplash.com/photo-1760893107446-58b108d419d8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRlYW0lMjBwcm9maWxlJTIwcGljdHVyZXMlMjBhcnJhbmdlbWVudHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "src/pages/home/chimera_assets/chimera_8_chimera_8.webp"
   },
   {
     "filePath": "src/pages/home/home.component.ts",
@@ -96,8 +96,8 @@
       "searchTerm": "business logo collection",
       "aiPrompt": "A clean, minimalist representation of several recognizable, high-profile business logos arranged neatly on a white background, emphasizing credibility and recognition. Focus should be sharp on the logos."
     },
-    "newImageSourceUrl": null,
-    "newLocalPath": null
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1752231227830-20cee47c4663?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVzaW5lc3MlMjBsb2dvJTIwY29sbGVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "src/pages/home/chimera_assets/chimera_9_chimera_9.webp"
   },
   {
     "filePath": "src/pages/home/home.component.ts",
@@ -106,8 +106,8 @@
       "searchTerm": "business logos banner",
       "aiPrompt": "A wide, horizontal banner displaying several company logos (like Forbes and Inc. 5000) rendered as simple white silhouettes or grayscale icons on a dark, sophisticated background. Professional, subdued lighting."
     },
-    "newImageSourceUrl": null,
-    "newLocalPath": null
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1752231227830-20cee47c4663?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVzaW5lc3MlMjBsb2dvcyUyMGJhbm5lcnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "src/pages/home/chimera_assets/chimera_10_chimera_10.webp"
   },
   {
     "filePath": "src/pages/home/home.component.ts",
@@ -116,8 +116,8 @@
       "searchTerm": "industry magazine logos",
       "aiPrompt": "A row of logos representing construction or home service industry publications (like Inc. 5000, Builder Magazine). The logos should be clearly legible but presented in a uniform, muted color palette against a light background to suggest industry recognition."
     },
-    "newImageSourceUrl": null,
-    "newLocalPath": null
+    "newImageSourceUrl": "https://plus.unsplash.com/premium_photo-1752231227830-20cee47c4663?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGluZHVzdHJ5JTIwbWFnYXppbmUlMjBsb2dvc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+    "newLocalPath": "src/pages/home/chimera_assets/chimera_11_chimera_11.webp"
   },
   {
     "filePath": "src/pages/home/home.component.ts",
