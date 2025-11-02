@@ -1,6 +1,9 @@
+INFO: No 'public' or 'static' directory found. Creating 'public' as a best-practice default.
 REPLACED: In file [src/components/shared/cta-section/cta-section.component.html], replaced "https://picsum.photos/seed/robot/400/400" with absolute path "/chimera_assets/chimera_0_chimera_0.webp".
 REPLACED: In file [src/components/shared/testimonial-slider/testimonial-slider.component.ts], replaced "https://picsum.photos/seed/jdroofing/600/400" with absolute path "/chimera_assets/chimera_1_chimera_1.webp".
 REPLACED: In file [src/components/shared/testimonial-slider/testimonial-slider.component.ts], replaced "https://picsum.photos/seed/smithelectric/600/400" with absolute path "/chimera_assets/chimera_2_chimera_2.webp".
 REPLACED: In file [src/components/shared/testimonial-slider/testimonial-slider.component.ts], replaced "https://picsum.photos/seed/garcialand/600/400" with absolute path "/chimera_assets/chimera_3_chimera_3.webp".
 REPLACED: In file [src/components/shared/testimonial-slider/testimonial-slider.component.ts], replaced "https://picsum.photos/seed/chenplumb/600/400" with absolute path "/chimera_assets/chimera_4_chimera_4.webp".
-REPLACED: In file [src/pages/home/home.component.ts], replaced "https://picsum.photos/seed/p1/100/100" with absolute path "/chimera_assets/chimera_5_chimera_5.webp".
+REPLACED: In file [src/pages/home/home.component.ts], replaced "https://picsum.photos/seed/p2/100/100" with absolute path "/chimera_assets/chimera_6_chimera_6.webp".
+REPLACED: In file [src/pages/home/home.component.ts], replaced "https://picsum.photos/seed/p4/100/100" with absolute path "/chimera_assets/chimera_8_chimera_8.webp".
+INFO: Created 'public/_redirects' to ensure correct SPA routing on Cloudflare Pages.
