@@ -34,15 +34,15 @@ export class HomeComponent {
     avatars: [
       'https://picsum.photos/seed/p1/100/100',
       'https://picsum.photos/seed/p2/100/100',
-      './chimera_assets/chimera_7_chimera_7.webp',
-      './chimera_assets/chimera_8_chimera_8.webp',
-      './chimera_assets/chimera_9_chimera_9.webp'
+      'https://picsum.photos/seed/p3/100/100',
+      'https://picsum.photos/seed/p4/100/100',
+      'https://picsum.photos/seed/p5/100/100'
     ],
   };
 
   authorityLogos = [
-    { name: 'Forbes', imageUrl: './chimera_assets/chimera_10_chimera_10.webp' },
-    { name: 'Inc. 5000', imageUrl: './chimera_assets/chimera_11_chimera_11.webp' },
+    { name: 'Forbes', imageUrl: 'https://picsum.photos/seed/forbes/200/50' },
+    { name: 'Inc. 5000', imageUrl: 'https://picsum.photos/seed/inc5000/200/50' },
     { name: 'Builder Magazine', imageUrl: 'https://picsum.photos/seed/builder/200/50' },
     { name: 'Roofing Contractor', imageUrl: 'https://picsum.photos/seed/roofermag/200/50' },
     { name: 'This Old House', imageUrl: 'https://picsum.photos/seed/oldhouse/200/50' },
