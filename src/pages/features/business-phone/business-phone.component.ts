@@ -21,14 +21,14 @@ export class BusinessPhoneComponent {
       subtitle: 'A Professional Line',
       title: 'Business <span class="text-amber-400">Phone</span>',
       description: 'Separate your personal and business calls. Get a dedicated local business phone number that works on your existing cell phone, complete with call tracking and recording.',
-      imageUrl: '../../../../chimera_assets/premium_photo-1661781325797-e5512bceef01_ixlib_rb-4_1_chimera_126.webp',
+      imageUrl: 'https://picsum.photos/seed/businessphone/800/600',
     },
     problem: {
       title: 'Is Your Personal Cell Phone Your Business Line?',
       description: 'Using your personal number for business looks unprofessional, makes it impossible to disconnect, and gives you no data on where your calls are coming from. It mixes business with family.',
       painPoints: [
-        { imageUrl: '../../../../chimera_assets/premium_photo-1661500880017-1219c2a14702_ixlib_rb-4_1_chimera_127.webp', text: 'Customers calling at all hours.' },
-        { imageUrl: '../../../../chimera_assets/chimera_128_chimera_128.webp', text: 'Looking like a one-man show.' },
+        { imageUrl: 'https://picsum.photos/seed/callhours/100/100', text: 'Customers calling at all hours.' },
+        { imageUrl: 'https://picsum.photos/seed/onemanshow/100/100', text: 'Looking like a one-man show.' },
         { imageUrl: 'https://picsum.photos/seed/notracking/100/100', text: 'No tracking of call performance.' },
       ]
     },
