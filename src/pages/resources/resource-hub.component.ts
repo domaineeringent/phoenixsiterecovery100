@@ -47,8 +47,8 @@ export class ResourceHubComponent {
       points: ['Systemize', 'Automate', 'Dominate']
     },
     mentors: [
-      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/9ef4782eaeaf500a6daad205a7c2559249184b1bfba9707890299a1c38510d4a.webp', bio: 'Grew up in a contractor family. Obsessed with building systems that give contractors their time back.' },
-      { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/771f368e816a76f6e930ca5781c494031ec7f56cd75b9947dcd794f34e593153.webp', bio: 'A master of local SEO and digital marketing. She turns contractors into the go-to choice in their local market.' },
+      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/9ef4782eaeaf500a6daad205a7c2559249184b1bfba9707890299a1c38510d4a.webp', bio: 'Grew up in a contractor family. Obsessed with building systems that give contractors their time back.' },
+      { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/771f368e816a76f6e930ca5781c494031ec7f56cd75b9947dcd794f34e593153.webp', bio: 'A master of local SEO and digital marketing. She turns contractors into the go-to choice in their local market.' },
     ],
     caseStudy: {
       name: 'JD Roofing',

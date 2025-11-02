@@ -21,7 +21,7 @@ export class TheDifferenceComponent {
   hero = {
     title: `You're a Great Contractor. <br> But You're <span class="text-amber-400">Trapped.</span>`,
     subtitle: `You're stuck on the "Contractor's Hamster Wheel"—juggling a dozen apps, drowning in paperwork, and working 60-hour weeks just to keep up. It's time to escape.`,
-    imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/cbe2a5205a5b79dfaee2a621ca7f3763b4cd869f1b6d56efab66d40805ac387e.webp'
+    imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/cbe2a5205a5b79dfaee2a621ca7f3763b4cd869f1b6d56efab66d40805ac387e.webp'
   };
 
   problem = {

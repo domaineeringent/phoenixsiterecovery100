@@ -32,21 +32,21 @@ export class HomeComponent {
     title: `The Operating System for America's Most <span class="text-amber-400">Successful Contractors</span>`,
     subtitle: `We provide the platform, process, and partnership that turns great contractors into dominant business owners. Stop fighting chaos. Start building an empire.`,
     avatars: [
-      'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/5b57fedb283a08933c5e2a20a943d3b7cd0c6337aee5e12d34234eb8a4ba391d.webp',
-      'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/1c27307e9a7eedcf913f61feda635770ee4fd474d6b32499454009b8b7eab241.webp',
-      'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/93fdcd99cee1369f2ad615bc575d36f92d112c88258eef2c67b79583c015b583.webp',
-      'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/e6762d09d03bd7d899930516e8bfe241372daf0d819c66173f5f757f66725c54.webp',
+      'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/5b57fedb283a08933c5e2a20a943d3b7cd0c6337aee5e12d34234eb8a4ba391d.webp',
+      'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/1c27307e9a7eedcf913f61feda635770ee4fd474d6b32499454009b8b7eab241.webp',
+      'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/93fdcd99cee1369f2ad615bc575d36f92d112c88258eef2c67b79583c015b583.webp',
+      'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/e6762d09d03bd7d899930516e8bfe241372daf0d819c66173f5f757f66725c54.webp',
       'https://picsum.photos/seed/p5/100/100'
     ],
   };
 
   authorityLogos = [
-    { name: 'Forbes', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/5e69e47e12be4129c04682f641ef88a041d9d7d24698301da51429a1045ed583.webp' },
+    { name: 'Forbes', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/5e69e47e12be4129c04682f641ef88a041d9d7d24698301da51429a1045ed583.webp' },
     { name: 'Inc. 5000', imageUrl: 'https://picsum.photos/seed/inc5000/200/50' },
-    { name: 'Builder Magazine', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/9cd6dfda9c91c7cc824196e3eeaaeda8611b3a5c81d00bccdb56b3024a4a08f7.webp' },
+    { name: 'Builder Magazine', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/9cd6dfda9c91c7cc824196e3eeaaeda8611b3a5c81d00bccdb56b3024a4a08f7.webp' },
     { name: 'Roofing Contractor', imageUrl: 'https://picsum.photos/seed/roofermag/200/50' },
     { name: 'This Old House', imageUrl: 'https://picsum.photos/seed/oldhouse/200/50' },
-    { name: 'HGTV', imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/9a260ea48906b55ebf88c915985e808bfc2a440800f4b8001df209d1db8a0460.webp' }
+    { name: 'HGTV', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/9a260ea48906b55ebf88c915985e808bfc2a440800f4b8001df209d1db8a0460.webp' }
   ];
 
   problemAgitation = [
@@ -67,9 +67,9 @@ export class HomeComponent {
   ];
   
   videoTestimonials = [
-    { name: 'John Doe', company: 'JD Roofing', videoThumbnailUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/8cffef3d6db47a5588906d2367fcefe5584bae52baa488c9db04cf76b0b254fe.webp' },
-    { name: 'Mike Smith', company: 'Smith Electric', videoThumbnailUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/7b87c81709d5504610c56a6fd1cd86f7bd568496d6aff9bd3ddc698cec2891ae.webp' },
-    { name: 'Carlos Garcia', company: 'Garcia Landscaping', videoThumbnailUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/d304e29cab5c7bfacf4b9e3e95dd87ea6bb3219d6c914a2e39f823ee557cfc4c.webp' },
+    { name: 'John Doe', company: 'JD Roofing', videoThumbnailUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/8cffef3d6db47a5588906d2367fcefe5584bae52baa488c9db04cf76b0b254fe.webp' },
+    { name: 'Mike Smith', company: 'Smith Electric', videoThumbnailUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/7b87c81709d5504610c56a6fd1cd86f7bd568496d6aff9bd3ddc698cec2891ae.webp' },
+    { name: 'Carlos Garcia', company: 'Garcia Landscaping', videoThumbnailUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/d304e29cab5c7bfacf4b9e3e95dd87ea6bb3219d6c914a2e39f823ee557cfc4c.webp' },
   ];
   
   writtenReviews = [
@@ -80,7 +80,7 @@ export class HomeComponent {
   founder = {
     name: 'Alex Riley',
     title: 'Founder & CEO',
-    imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/30b0c61402492f08951827d55c3a4727b1a8813b6cb375692dc07ec40f69ef18.webp',
+    imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/30b0c61402492f08951827d55c3a4727b1a8813b6cb375692dc07ec40f69ef18.webp',
     story: `Alex grew up in a family of contractors. He saw firsthand the long hours and the stress of running a business after their outdated website was hacked, shutting down their main source of leads. After a decade in tech, Alex founded Phoenix Recovery with a single mission: to give contractors the bulletproof technology and systems they deserve, so they can win back their time and dominate their market.`
   };
 

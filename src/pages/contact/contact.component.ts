@@ -51,7 +51,7 @@ export class ContactComponent {
     guide: {
       name: 'Alex Riley',
       title: 'Founder & Head of Strategy',
-      imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/21c2d8abd967dc603680c09461b33734fbafe37fac4961d3583c0fdc608f2d65.webp',
+      imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/21c2d8abd967dc603680c09461b33734fbafe37fac4961d3583c0fdc608f2d65.webp',
       bio: `You'll be speaking directly with me. I grew up in a contractor family, and I founded Phoenix Recovery to solve the exact problems that kept my father up at night. I'm not a salesperson; I'm a problem-solver. My only goal is to see if we can help.`
     },
     agenda: {
@@ -102,7 +102,7 @@ export class ContactComponent {
     },
     map: {
         title: 'Serving Contractors Nationwide',
-        imageUrl: 'https://34b5c4bd622194aff81f417c1e9fe6dc.r2.cloudflarestorage.com/chimera_assets/53bd22237596f0799688ddb3a6dd4b33db0d8d64b490c06a428adc5e03a2b71b.webp'
+        imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/53bd22237596f0799688ddb3a6dd4b33db0d8d64b490c06a428adc5e03a2b71b.webp'
     }
   };
 }
