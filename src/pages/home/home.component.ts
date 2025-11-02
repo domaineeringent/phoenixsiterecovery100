@@ -33,9 +33,9 @@ export class HomeComponent {
     subtitle: `We provide the platform, process, and partnership that turns great contractors into dominant business owners. Stop fighting chaos. Start building an empire.`,
     avatars: [
       'https://picsum.photos/seed/p1/100/100',
-      '/chimera_assets/chimera_6_chimera_6.webp',
+      'https://picsum.photos/seed/p2/100/100',
       'https://picsum.photos/seed/p3/100/100',
-      '/chimera_assets/chimera_8_chimera_8.webp',
+      'https://picsum.photos/seed/p4/100/100',
       'https://picsum.photos/seed/p5/100/100'
     ],
   };
