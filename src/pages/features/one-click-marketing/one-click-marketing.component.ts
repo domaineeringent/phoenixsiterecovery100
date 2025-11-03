@@ -53,7 +53,7 @@ export class OneClickMarketingComponent {
       title: 'Smart & Simple Campaigning',
       features: [
         { title: 'Proven Templates', description: 'Don\'t worry about what to say. We provide a set of high-converting message templates written specifically for contractors.', imageUrl: 'https://picsum.photos/seed/marketfeature1/800/600' },
-        { title: 'Personalization Tags', description: 'Automatically insert the customer\'s first name into each text message, making your mass campaigns feel like personal, one-to-one conversations.', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/2cf2ceb3b92cad023d29ff3c6b18c7debacca4ebc5f1129994f8d71afd145ce1.webp' },
+        { title: 'Personalization Tags', description: 'Automatically insert the customer\'s first name into each text message, making your mass campaigns feel like personal, one-to-one conversations.', imageUrl: 'https://picsum.photos/seed/marketfeature2/800/600' },
         { title: 'Scheduling', description: 'Plan your campaigns in advance. Write your message today and schedule it to be sent next week, next month, or whenever you want.', imageUrl: 'https://picsum.photos/seed/marketfeature3/800/600' },
       ]
     },
@@ -63,7 +63,7 @@ export class OneClickMarketingComponent {
     },
     scenario: {
       title: 'Meet Kevin, The Pressure Washer',
-      imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/b4d58888da182f5d335bcdc673f59733ec34bd8c2d7d01328b57a173e19da895.webp',
+      imageUrl: 'https://picsum.photos/seed/contractor8/500/500',
       story: 'Kevin\'s business is slow in the fall. He uploaded his list of 300 customers from the spring and sent a "Fall Gutter Cleaning" special with one click. Within an hour, his inbox had 40 replies. He booked 15 jobs that week from a single text campaign that took him 5 minutes to set up.'
     },
     testimonial: {

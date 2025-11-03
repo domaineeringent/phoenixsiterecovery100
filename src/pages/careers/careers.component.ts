@@ -75,10 +75,10 @@ export class CareersComponent {
       }
     },
     theCrew: [
-      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/d9fb9e0b32e2698b16b4e892c1e1c137e398a55c26b8f413dd4dbb30f1424051.webp', bio: 'The Architect. Ensures every tool we build solves a real contractor problem.', why: 'I saw my family struggle. I build so others don\'t have to.' },
-      { name: 'Jessica Miller', role: 'Head of Client Success', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/8bc9dc234cb2f3447498ffbc7b24a064c42cc18a5b2ca4e85132293e277fb47c.webp', bio: 'Your Partner. Makes sure your phone never stops ringing with new leads.', why: 'The moment a client says "we just had our best month ever" is why I\'m here.' },
-      { name: 'Ben Carter', role: 'Lead Developer', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/d8db847f9d4d73471800976245add6403d9ffbb222b082c36827a98f3d098b2d.webp', bio: 'The Builder. Crafts the simple, powerful tools that save you 10+ hours a week.', why: 'I love building elegant solutions to complex, real-world problems. This is a builder\'s paradise.' },
-      { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/771f368e816a76f6e930ca5781c494031ec7f56cd75b9947dcd794f34e593153.webp', bio: 'The Megaphone. Tells the world why you\'re the best contractor for the job.', why: 'I get to tell the stories of hardworking people and help them win. It\'s the most fulfilling marketing job there is.' },
+      { name: 'Alex Riley', role: 'Founder & CEO', imageUrl: 'https://picsum.photos/seed/alex/500/500', bio: 'The Architect. Ensures every tool we build solves a real contractor problem.', why: 'I saw my family struggle. I build so others don\'t have to.' },
+      { name: 'Jessica Miller', role: 'Head of Client Success', imageUrl: 'https://picsum.photos/seed/jessica/500/500', bio: 'Your Partner. Makes sure your phone never stops ringing with new leads.', why: 'The moment a client says "we just had our best month ever" is why I\'m here.' },
+      { name: 'Ben Carter', role: 'Lead Developer', imageUrl: 'https://picsum.photos/seed/ben/500/500', bio: 'The Builder. Crafts the simple, powerful tools that save you 10+ hours a week.', why: 'I love building elegant solutions to complex, real-world problems. This is a builder\'s paradise.' },
+      { name: 'Samantha Chen', role: 'Marketing Director', imageUrl: 'https://picsum.photos/seed/samantha/500/500', bio: 'The Megaphone. Tells the world why you\'re the best contractor for the job.', why: 'I get to tell the stories of hardworking people and help them win. It\'s the most fulfilling marketing job there is.' },
     ],
     codeWeLiveBy: [
       { title: 'We Give a F*ck', description: 'Your wins are our wins. We\'re personally invested in the success of our clients and our teammates.', icon: 'M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z' },
@@ -117,8 +117,8 @@ export class CareersComponent {
       ]
     },
     testimonials: [
-        { quote: "The best part of working here is seeing our clients succeed. When a contractor tells us they were able to hire a new employee because of the leads we helped them generate, that's the best feeling.", author: 'Jessica Miller, Head of Client Success', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/8bc9dc234cb2f3447498ffbc7b24a064c42cc18a5b2ca4e85132293e277fb47c.webp' },
-        { quote: "We have a culture of 'builders'. We're always looking for ways to improve the product and make it even more valuable for our clients. It's a challenging and rewarding environment.", author: 'Ben Carter, Lead Developer', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/d8db847f9d4d73471800976245add6403d9ffbb222b082c36827a98f3d098b2d.webp' }
+        { quote: "The best part of working here is seeing our clients succeed. When a contractor tells us they were able to hire a new employee because of the leads we helped them generate, that's the best feeling.", author: 'Jessica Miller, Head of Client Success', imageUrl: 'https://picsum.photos/seed/jessica/500/500' },
+        { quote: "We have a culture of 'builders'. We're always looking for ways to improve the product and make it even more valuable for our clients. It's a challenging and rewarding environment.", author: 'Ben Carter, Lead Developer', imageUrl: 'https://picsum.photos/seed/ben/500/500' }
     ],
     idealCandidate: {
       title: 'Are You a Builder?',

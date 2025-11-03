@@ -20,7 +20,7 @@ export class SocialProofComponent implements OnInit, OnDestroy {
     { trade: 'Roofer', city: 'Dallas, TX', action: 'analyzed their website', imageUrl: 'https://picsum.photos/seed/analyze/100/100' },
     { trade: 'Plumber', city: 'Miami, FL', action: 'booked a demo', imageUrl: 'https://picsum.photos/seed/demo/100/100' },
     { trade: 'Landscaper', city: 'Denver, CO', action: 'got a 5-star review', imageUrl: 'https://picsum.photos/seed/review/100/100' },
-    { trade: 'Electrician', city: 'Phoenix, AZ', action: 'analyzed their website', imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/606a7ed744f19d88e4f96bad617bfeb8fd10fedc1d15310e7acade843a1bbf9c.webp' }
+    { trade: 'Electrician', city: 'Phoenix, AZ', action: 'analyzed their website', imageUrl: 'https://picsum.photos/seed/analyze2/100/100' }
   ];
 
   currentNotification = signal<Notification | null>(null);

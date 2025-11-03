@@ -14,7 +14,7 @@ export class WebsiteBeforeAfterComponent {
   caseStudy = {
     name: 'Precision Plumbing Co.',
     before: {
-        imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/8f1ccc6401b4140056da623d9d6096047ea62e29030d83a3a99f258f5ef266db.webp',
+        imageUrl: 'https://picsum.photos/seed/before-plumbing/800/600',
         stats: [
             { value: 2, label: 'Leads / Month' },
             { value: 15, suffix: '%', label: 'Mobile Conversion' },

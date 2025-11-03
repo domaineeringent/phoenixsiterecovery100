@@ -59,21 +59,21 @@ export class LocalSeoComponent {
   gmbDeepDive = {
     title: 'Your GMB Profile: The New Homepage',
     description: 'Your Google Business Profile is often the first impression a customer has of your business. We treat it with the importance it deserves.',
-    imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/0d18a675646cb4066b9f54987eb7bcc8e991317bfa2a569f43a51cd09c955c19.webp',
+    imageUrl: 'https://picsum.photos/seed/gmb-profile/800/600',
     features: ['Weekly Posts & Updates', 'Geo-tagged Photo Uploads', 'Service & Product Optimization', 'Q&A Management']
   };
 
   websiteDeepDive = {
     title: 'Your Website: The Authority Hub',
     description: 'Your website is the central hub that validates your expertise to Google. We ensure it\'s technically sound and content-rich.',
-    imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/b5215e7957e31b91d11863e14f64d5a85e0629af6328429b61f33bfa4da57510.webp',
+    imageUrl: 'https://picsum.photos/seed/website-seo/800/600',
     features: ['Local Keyword Targeting', 'Service & City Page Creation', 'Schema Markup Implementation', 'Mobile Speed Optimization']
   };
 
   citationsDeepDive = {
     title: 'Citations & Reviews: The Trust Signals',
     description: 'Consistency and reputation across the web are huge trust signals for Google. We build and manage them for you.',
-    imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/42a1354de98c098c39305709e27294c33d8fec9d7721592feabe3ca86e10df59.webp',
+    imageUrl: 'https://picsum.photos/seed/citations-reviews/800/600',
     features: ['NAP Consistency Audit & Cleanup', 'High-Authority Directory Submissions', 'Review Velocity Monitoring', 'Automated Review Streaming to Website']
   };
 

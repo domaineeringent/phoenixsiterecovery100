@@ -8,104 +8,9 @@
           <span class="text-2xl font-bold font-oswald text-gray-800 dark:text-white">Phoenix Recovery</span>
         </a>
       </div>
-      <div class="hidden lg:flex items-center space-x-8">
-        <!-- Features Menu -->
-        <div class="relative" (mouseenter)="handleMenuEnter('features')" (mouseleave)="handleMenuLeave()">
-          <button type="button" class="inline-flex items-center gap-x-1 text-base font-bold font-oswald uppercase tracking-wider text-gray-700 dark:text-gray-300 hover:text-amber-500">
-            <span>Features</span>
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-            </svg>
-          </button>
-          @if (openMegaMenu() === 'features') {
-            <div (mouseenter)="handleMenuEnter('features')" (mouseleave)="handleMenuLeave()" class="absolute -left-8 top-full z-10 mt-5 w-screen max-w-3xl overflow-hidden rounded-3xl bg-white dark:bg-slate-800 shadow-lg ring-1 ring-gray-900/5">
-              <div class="p-8 grid grid-cols-2 gap-4">
-                @for (feature of features; track feature.path) {
-                   <a [routerLink]="feature.path" (click)="closeAllMenus()" class="group block rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-slate-50 dark:hover:bg-slate-700/50">
-                      <div class="flex items-start gap-x-4">
-                        <div class="flex h-12 w-12 flex-none items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-700 group-hover:bg-amber-500 transition-colors">
-                            <svg class="h-6 w-6 text-slate-600 dark:text-slate-400 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" [attr.d]="feature.icon" />
-                            </svg>
-                        </div>
-                        <div class="flex-auto">
-                            <p class="font-oswald text-sm font-bold uppercase tracking-wider text-slate-800 dark:text-white">{{ feature.label }}</p>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">{{ feature.description }}</p>
-                        </div>
-                      </div>
-                    </a>
-                }
-              </div>
-            </div>
-          }
-        </div>
-        
-        <a routerLink="/pricing" routerLinkActive="text-amber-500" [routerLinkActiveOptions]="{exact: true}" class="text-base font-bold font-oswald uppercase tracking-wider text-gray-700 dark:text-gray-300 hover:text-amber-500">Pricing</a>
-
-         <!-- Why Us Menu -->
-        <div class="relative" (mouseenter)="handleMenuEnter('whyUs')" (mouseleave)="handleMenuLeave()">
-          <button type="button" class="inline-flex items-center gap-x-1 text-base font-bold font-oswald uppercase tracking-wider text-gray-700 dark:text-gray-300 hover:text-amber-500">
-            <span>Why Us</span>
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
-          </button>
-          @if (openMegaMenu() === 'whyUs') {
-            <div (mouseenter)="handleMenuEnter('whyUs')" (mouseleave)="handleMenuLeave()" class="absolute -left-8 top-full z-10 mt-5 w-screen max-w-lg overflow-hidden rounded-3xl bg-white dark:bg-slate-800 shadow-lg ring-1 ring-gray-900/5">
-               <div class="p-6 space-y-2">
-                @for (link of whyUsLinks; track link.path) {
-                  <a [routerLink]="link.path" (click)="closeAllMenus()" class="group block rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-slate-50 dark:hover:bg-slate-700/50">
-                    <div class="flex items-center gap-x-4">
-                        <div class="flex h-12 w-12 flex-none items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-700 group-hover:bg-amber-500 transition-colors">
-                            <svg class="h-6 w-6 text-slate-600 dark:text-slate-400 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" [attr.d]="link.icon" />
-                            </svg>
-                        </div>
-                        <div class="flex-auto">
-                            <p class="font-oswald text-sm font-bold uppercase tracking-wider text-slate-800 dark:text-white">{{ link.label }}</p>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">{{ link.description }}</p>
-                        </div>
-                    </div>
-                  </a>
-                }
-              </div>
-            </div>
-          }
-        </div>
-
-        <a routerLink="/resources" routerLinkActive="text-amber-500" [routerLinkActiveOptions]="{exact: true}" class="text-base font-bold font-oswald uppercase tracking-wider text-gray-700 dark:text-gray-300 hover:text-amber-500">Resources</a>
-        
-         <!-- Company Menu -->
-        <div class="relative" (mouseenter)="handleMenuEnter('company')" (mouseleave)="handleMenuLeave()">
-          <button type="button" class="inline-flex items-center gap-x-1 text-base font-bold font-oswald uppercase tracking-wider text-gray-700 dark:text-gray-300 hover:text-amber-500">
-            <span>Company</span>
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
-          </button>
-           @if (openMegaMenu() === 'company') {
-            <div (mouseenter)="handleMenuEnter('company')" (mouseleave)="handleMenuLeave()" class="absolute -left-8 top-full z-10 mt-5 w-screen max-w-lg overflow-hidden rounded-3xl bg-white dark:bg-slate-800 shadow-lg ring-1 ring-gray-900/5">
-               <div class="p-6 space-y-2">
-                @for (link of companyLinks; track link.path) {
-                  <a [routerLink]="link.path" (click)="closeAllMenus()" class="group block rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-slate-50 dark:hover:bg-slate-700/50">
-                    <div class="flex items-center gap-x-4">
-                        <div class="flex h-12 w-12 flex-none items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-700 group-hover:bg-amber-500 transition-colors">
-                            <svg class="h-6 w-6 text-slate-600 dark:text-slate-400 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" [attr.d]="link.icon" />
-                            </svg>
-                        </div>
-                        <div class="flex-auto">
-                            <p class="font-oswald text-sm font-bold uppercase tracking-wider text-slate-800 dark:text-white">{{ link.label }}</p>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">{{ link.description }}</p>
-                        </div>
-                    </div>
-                  </a>
-                }
-              </div>
-            </div>
-          }
-        </div>
-
-      </div>
       <div class="hidden lg:flex items-center space-x-6">
           <a routerLink="/login" class="text-base font-bold text-gray-700 dark:text-gray-300 hover:text-amber-500 transition-colors">Log In</a>
-          <a routerLink="/book-a-call" class="px-8 py-3 text-base font-bold uppercase tracking-wider text-white bg-amber-500 rounded-full hover:bg-amber-600 shadow-lg hover:shadow-amber-500/40 transition-all duration-300 transform hover:-translate-y-0.5">Book a Call</a>
+          <a routerLink="/book-a-call" class="px-8 py-3 text-base font-bold uppercase tracking-wider text-white bg-amber-500 rounded-full hover:bg-amber-600 shadow-lg hover:shadow-amber-500/40 transition-all duration-300 transform hover:-translate-y-0.5">Book Your Free Site Audit</a>
       </div>
       <div class="lg:hidden flex items-center">
           <button (click)="toggleMobileMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-amber-500 focus:outline-none">
@@ -129,30 +34,10 @@
     <div class="lg:hidden" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a routerLink="/" (click)="closeAllMenus()" routerLinkActive="bg-amber-500 text-white" [routerLinkActiveOptions]="{exact: true}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
-          <a routerLink="/pricing" (click)="closeAllMenus()" routerLinkActive="bg-amber-500 text-white" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">Pricing</a>
-          <a routerLink="/resources" (click)="closeAllMenus()" routerLinkActive="bg-amber-500 text-white" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">Resources</a>
           <a routerLink="/login" (click)="closeAllMenus()" routerLinkActive="bg-amber-500 text-white" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">Log In</a>
-          
-          <div class="border-t border-gray-200 dark:border-gray-700 my-2"></div>
-          <p class="px-3 py-2 text-sm font-semibold text-gray-500 dark:text-gray-400">Features</p>
-          @for (feature of features; track feature.path) {
-            <a [routerLink]="feature.path" (click)="closeAllMenus()" routerLinkActive="bg-amber-500 text-white" class="block rounded-md py-2 pl-6 pr-3 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">{{ feature.label }}</a>
-          }
-          
-          <div class="border-t border-gray-200 dark:border-gray-700 my-2"></div>
-          <p class="px-3 py-2 text-sm font-semibold text-gray-500 dark:text-gray-400">Why Us</p>
-          @for (link of whyUsLinks; track link.path) {
-            <a [routerLink]="link.path" (click)="closeAllMenus()" routerLinkActive="bg-amber-500 text-white" class="block rounded-md py-2 pl-6 pr-3 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">{{ link.label }}</a>
-          }
-
-          <div class="border-t border-gray-200 dark:border-gray-700 my-2"></div>
-          <p class="px-3 py-2 text-sm font-semibold text-gray-500 dark:text-gray-400">Company</p>
-          @for (link of companyLinks; track link.path) {
-            <a [routerLink]="link.path" (click)="closeAllMenus()" routerLinkActive="bg-amber-500 text-white" class="block rounded-md py-2 pl-6 pr-3 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">{{ link.label }}</a>
-          }
       </div>
       <div class="px-5 pb-6">
-          <a routerLink="/book-a-call" (click)="closeAllMenus()" class="block w-full px-8 py-3 text-center text-base font-bold uppercase tracking-wider text-white bg-amber-500 rounded-md hover:bg-amber-600 transition-colors">Book a Call</a>
+          <a routerLink="/book-a-call" (click)="closeAllMenus()" class="block w-full px-8 py-3 text-center text-base font-bold uppercase tracking-wider text-white bg-amber-500 rounded-md hover:bg-amber-600 transition-colors">Book Your Free Site Audit</a>
       </div>
     </div>
   }

@@ -15,7 +15,7 @@ export class PricingCaseStudySliderComponent {
     name: 'JD Roofing',
     trade: 'Dallas, TX',
     before: {
-        imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/03411e973c2830efd0cadba034364779132e932e64fd52558ecb73a72dd78fd1.webp',
+        imageUrl: 'https://picsum.photos/seed/jdbefore/800/600',
         stats: [
             { value: 3, label: 'Leads / Week' },
             { value: 12, label: 'Total Google Reviews' },

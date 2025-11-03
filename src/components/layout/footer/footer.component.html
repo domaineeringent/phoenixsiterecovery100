@@ -1,57 +1,18 @@
 <footer class="bg-slate-100 dark:bg-slate-950 text-slate-500 dark:text-slate-400">
   <div class="container mx-auto px-4 py-16">
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
       <!-- Logo & Mission -->
-      <div class="col-span-2 md:col-span-1">
+      <div class="text-center md:text-left">
         <h3 class="text-2xl font-bold font-oswald text-slate-800 dark:text-white">Phoenix Recovery</h3>
         <p class="mt-2 text-sm">The all-in-one marketing & management platform for contractors.</p>
-        <div class="mt-4 flex space-x-4">
+        <div class="mt-4 flex space-x-4 justify-center md:justify-start">
           <a href="#" class="hover:text-amber-400 transition-colors"><span class="sr-only">Facebook</span><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
           <a href="#" class="hover:text-amber-400 transition-colors"><span class="sr-only">Twitter</span><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
         </div>
       </div>
-      <!-- Why Us -->
-      <div>
-        <h4 class="font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider text-sm">Why Us</h4>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li><a routerLink="/the-phoenix-recovery-difference" class="hover:text-amber-400 transition-colors">The Difference</a></li>
-          <li><a routerLink="/our-process" class="hover:text-amber-400 transition-colors">Our Process</a></li>
-          <li><a routerLink="/our-work" class="hover:text-amber-400 transition-colors">Our Work</a></li>
-          <li><a routerLink="/testimonials" class="hover:text-amber-400 transition-colors">Testimonials</a></li>
-        </ul>
-      </div>
-      <!-- Features -->
-      <div>
-        <h4 class="font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider text-sm">Features</h4>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li><a routerLink="/features/functional-website" class="hover:text-amber-400 transition-colors">Functional Website</a></li>
-          <li><a routerLink="/features/all-in-one-inbox" class="hover:text-amber-400 transition-colors">All-in-One Inbox</a></li>
-          <li><a routerLink="/features/5-star-review-funnel" class="hover:text-amber-400 transition-colors">Review Funnel</a></li>
-          <li><a routerLink="/features/missed-call-text-back" class="hover:text-amber-400 transition-colors">Missed Call Text Back</a></li>
-        </ul>
-      </div>
-       <!-- Company -->
-      <div>
-        <h4 class="font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider text-sm">Company</h4>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li><a routerLink="/about" class="hover:text-amber-400 transition-colors">About Us</a></li>
-          <li><a routerLink="/careers" class="hover:text-amber-400 transition-colors">Careers</a></li>
-          <li><a routerLink="/partners" class="hover:text-amber-400 transition-colors">Partners</a></li>
-          <li><a routerLink="/contact" class="hover:text-amber-400 transition-colors">Contact</a></li>
-        </ul>
-      </div>
-       <!-- Resources -->
-      <div>
-        <h4 class="font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider text-sm">Resources</h4>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li><a routerLink="/resources" class="hover:text-amber-400 transition-colors">Resource Hub</a></li>
-          <li><a routerLink="/pricing" class="hover:text-amber-400 transition-colors">Pricing</a></li>
-          <li><a routerLink="/book-a-call" class="hover:text-amber-400 transition-colors">Book a Call</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm">
-      <p>&copy; {{ currentYear }} Phoenix Site Recovery. All rights reserved.</p>
+       <div class="mt-8 md:mt-0 text-center md:text-right">
+         <p>&copy; {{ currentYear }} Phoenix Site Recovery. All rights reserved.</p>
+       </div>
     </div>
   </div>
 </footer>

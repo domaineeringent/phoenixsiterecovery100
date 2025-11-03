@@ -22,7 +22,7 @@ export class ProcessComponent {
     hero: {
       title: `Most "Solutions" Take 3 Months to Launch.<br> We Launch Yours in <span class="text-amber-400">7 Days.</span>`,
       subtitle: `Stop waiting. Our "White Glove" Onboarding Process is a rapid-deployment system that takes you from consultation to a fully-operational marketing and sales machine in one business week.`,
-      imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/4fe800f25a4fa6534344cee78fda7a79416dad20a0d423dcf3547b93ef15476d.webp'
+      imageUrl: 'https://picsum.photos/seed/process-hero/800/600'
     },
     problem: {
       title: `Welcome to "Onboarding Hell"`,
@@ -56,7 +56,7 @@ export class ProcessComponent {
       day1: {
         title: "Day 1: The Blueprint Call",
         description: "This isn't a sales call. It's a mission-critical strategy session. We'll dive deep into your business goals, your customer journey, and your biggest operational headaches. We leave the call with a precise architectural plan for your new business operating system. You leave the call with clarity and confidence.",
-        imageUrl: "https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/f96077781d2e43cde3d5374fbb64a5b61386524d1ec80cd9ca9d9c7cb1150485.webp"
+        imageUrl: "https://picsum.photos/seed/blueprint-call/800/600"
       },
       day2_5: {
         title: "Days 2-5: The 'White Glove' Buildout",
@@ -66,7 +66,7 @@ export class ProcessComponent {
       day6_7: {
         title: "Days 6-7: Launch & Training",
         description: "We don't hand you a 100-page manual. We give you the keys. We launch your new website and system, and then conduct a hyper-efficient 25-minute training session. Our platform is so intuitive, that's all you'll need to feel like a pro and start running your business with more control than ever before.",
-        imageUrl: "https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/2a8179d60860dfb1abd7630cb480851001cae34a0dc94d772a66f9cc9d136742.webp"
+        imageUrl: "https://picsum.photos/seed/launch-train/800/600"
       }
     },
     caseStudy: {

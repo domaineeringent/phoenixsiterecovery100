@@ -1,7 +1,9 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal, OnInit, OnDestroy, ElementRef, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CtaSectionComponent } from '../../components/shared/cta-section/cta-section.component';
 import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
+
+declare var Calendly: any;
 
 @Component({
   selector: 'app-contact',
@@ -10,8 +12,30 @@ import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.dir
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit, OnDestroy {
   openFaq = signal<number | null>(null);
+  private elementRef = inject(ElementRef);
+
+  ngOnInit(): void {
+    setTimeout(() => {
+        if (typeof Calendly !== 'undefined' && typeof Calendly.initInlineWidget === 'function') {
+        const widgetContainer = this.elementRef.nativeElement.querySelector('#calendly-contact-widget');
+        if (widgetContainer) {
+            Calendly.initInlineWidget({
+                url: 'https://calendly.com/ben-phoenixsiterecovery/30min?hide_event_type_details=1&hide_gdpr_banner=1',
+                parentElement: widgetContainer,
+            });
+        }
+        }
+    }, 0);
+  }
+
+  ngOnDestroy(): void {
+    const widgetContainer = this.elementRef.nativeElement.querySelector('#calendly-contact-widget');
+    if (widgetContainer) {
+      widgetContainer.innerHTML = '';
+    }
+  }
 
   toggleFaq(index: number) {
     this.openFaq.update(current => (current === index ? null : index));
@@ -51,7 +75,7 @@ export class ContactComponent {
     guide: {
       name: 'Alex Riley',
       title: 'Founder & Head of Strategy',
-      imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/21c2d8abd967dc603680c09461b33734fbafe37fac4961d3583c0fdc608f2d65.webp',
+      imageUrl: 'https://picsum.photos/seed/alex/500/500',
       bio: `You'll be speaking directly with me. I grew up in a contractor family, and I founded Phoenix Recovery to solve the exact problems that kept my father up at night. I'm not a salesperson; I'm a problem-solver. My only goal is to see if we can help.`
     },
     agenda: {
@@ -102,7 +126,7 @@ export class ContactComponent {
     },
     map: {
         title: 'Serving Contractors Nationwide',
-        imageUrl: 'https://pub-7b0107d999fd4c8a8018460dffd25378.r2.dev/chimera_assets/53bd22237596f0799688ddb3a6dd4b33db0d8d64b490c06a428adc5e03a2b71b.webp'
+        imageUrl: 'https://picsum.photos/seed/map/1024/600'
     }
   };
 }
